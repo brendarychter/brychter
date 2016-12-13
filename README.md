@@ -1,2 +1,4 @@
 # brychter
-Githhub repo for my personal website
+Personal Website - Portfolio
+
+
