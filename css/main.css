@@ -1,38 +1,61 @@
-#header .intro {
+.intro {
   display: table;
   width: 100%;
   height: auto;
   padding: 100px 0;
   text-align: center;
   color: #fff;
-  background: url(../img/intro-bg.jpg) no-repeat center top;
-  background-color: #7bc3d1;
+  background-color: #ffcb0d;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover; }
+  -o-background-size: cover;
+  font-family: 'Lato', sans-serif; }
+  .intro .intro-text p {
+    font-family: inherit;
+    color: #000;
+    letter-spacing: 1px; }
+  .intro .intro-text .what-i-do {
+    color: #000;
+    background-color: transparent;
+    border-color: #000;
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 16px;
+    border-radius: 0;
+    font-family: inherit;
+    transition: all 0.3s ease 0s; }
+    .intro .intro-text .what-i-do:hover {
+      background: #000;
+      color: #fff; }
+  .intro h1 {
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    padding: 12px;
+    width: 65%;
+    background-color: #000; }
+  .intro .name {
+    font-weight: 600; }
 
-.intro .intro-text {
-  max-width: 75%; }
-
-.intro .intro-text p {
-  font-family: 'Lato', sans-serif;
-  font-size: 20px;
-  margin-bottom: 40px;
-  margin-top: 20px; }
-
-section {
-  padding: 120px 0; }
-
-header .intro-text {
-  padding-top: 200px;
-  padding-bottom: 100px; }
-
+/* Resolutions */
+@media (min-width: 1px) and (max-width: 767px) {
+  .intro h1 {
+    margin: 0 auto;
+    font-size: 24px;
+    margin-bottom: 20px; } }
 @media (min-width: 768px) {
   .intro {
     height: 100%;
     padding: 0;
-    text-align: left;
-    color: #fff; } }
+    text-align: left; }
+    .intro .intro-text {
+      max-width: 75%;
+      padding-top: 300px;
+      padding-bottom: 200px; }
+      .intro .intro-text p {
+        font-size: 20px;
+        margin-bottom: 40px;
+        margin-top: 20px; } }
 
 /*# sourceMappingURL=main.css.map */
