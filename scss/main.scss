@@ -12,6 +12,9 @@ $color-2: #7bc3d1;
 	margin: 50px;
 	width: $logo-header;
 	height: $logo-header;
+	img{
+		width: $logo-header;
+	}
 }
 .intro{
 	display: table;
@@ -29,28 +32,13 @@ $color-2: #7bc3d1;
     		color: #000;
     		letter-spacing: 1px;
 		}
-		.what-i-do{
-			color: #000;
-		    background-color: transparent;
-		    border-color: #000;
-		    padding: 10px 20px;
-		    margin: 0;
-		    font-size: 16px;
-		    border-radius: 0;
-		    font-family: inherit;
-		    transition: all 0.3s ease 0s;
-		    &:hover{
-		    	background: #000;
-		    	color: #fff;
-		    }
-		}
 	}
 	h1{
 		font-size: 60px;
 		font-weight: 400;
 		letter-spacing: 4px;
 		padding: 12px;
-		width: 65%;
+		width: 94%;
 		background-color: #000;
 	}
 	.name{
@@ -58,17 +46,58 @@ $color-2: #7bc3d1;
 	}
 }
 
+/* Botones */
+.styled-button{
+	color: #000;
+    background-color: transparent;
+    border-color: #000;
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 16px;
+    border-radius: 0;
+    font-family: inherit;
+    transition: all 0.3s ease 0s;
+    &:hover{
+    	background: #000;
+    	color: #fff;
+    }
+}
 
+#main-section{
+	.description{
+		font-size: 18px;
+	    margin-bottom: 40px;
+	    margin-top: 20px;
+	    font-family: $font;
+	    line-height: 30px;
+	    max-width: 75%;
+	    padding-top: 300px;
+	    padding-bottom: 200px;
+	    p{
+	    	margin-bottom: 22px;
+	    }
+	}
+}
 /* Resolutions */
 
 @media (min-width: 1px) and (max-width: 767px){
 	.intro h1{
 		margin: 0 auto;
-	    font-size: 24px;
+	    font-size: 25px;
 	    margin-bottom: 20px;		
 	}
+	.header-logo{
+		right: 0;
+		margin: 3px;
+		width: 65px;
+		height: 65px;
+		img{
+			width: 65px;
+			height: 65px;
+		}
+	}
 }
-@media (min-width: 768px){
+@media (min-width: 768px) and (max-width: 1023px){
 	.intro {
 	    height: 100%;
 	    padding: 0;
@@ -85,4 +114,47 @@ $color-2: #7bc3d1;
     		}
 		}
 	}
+}
+@media (min-width: 1024px) and (max-width: 1279px){
+	.intro {
+	    height: 100%;
+	    padding: 0;
+	    text-align: left;
+	    .intro-text {
+		    max-width: 90%;
+		    padding-top: 300px;
+    		padding-bottom: 200px;
+    		p{
+    			font-size: 20px;
+			    margin-bottom: 40px;
+			    margin-top: 20px;
+			    
+    		}
+		}
+	}
+	.header-logo{
+		margin: 25px;
+	}
+}
+@media (min-width: 1280px){
+	.intro {
+	    height: 100%;
+	    padding: 0;
+	    text-align: left;
+	    .intro-text {
+		    max-width: 75%;
+		    padding-top: 300px;
+    		padding-bottom: 200px;
+    		p{
+    			font-size: 20px;
+			    margin-bottom: 40px;
+			    margin-top: 20px;
+			    
+    		}
+		}
+	}
+	.header-logo{
+		margin: 50px;
+	}
+
 }
