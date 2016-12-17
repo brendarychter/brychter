@@ -1,3 +1,10 @@
+.header-logo {
+  position: absolute;
+  right: 0;
+  margin: 50px;
+  width: 150px;
+  height: 150px; }
+
 .intro {
   display: table;
   width: 100%;
@@ -6,11 +13,7 @@
   text-align: center;
   color: #fff;
   background-color: #ffcb0d;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  font-family: 'Lato', sans-serif; }
+  font-family: "Lato", sans-serif; }
   .intro .intro-text p {
     font-family: inherit;
     color: #000;

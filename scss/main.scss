@@ -1,3 +1,18 @@
+/* Common variables */
+
+$font: 'Lato', sans-serif;
+$main-color: #ffcb0d;
+$logo-header: 150px;
+$color-1: #ffcb0d;
+$color-2: #7bc3d1;
+
+.header-logo{
+	position: absolute;
+	right: 0;
+	margin: 50px;
+	width: $logo-header;
+	height: $logo-header;
+}
 .intro{
 	display: table;
 	width: 100%;
@@ -5,13 +20,9 @@
 	padding: 100px 0;
 	text-align: center;
 	color: #fff;
-	// background: url(../img/intro-bg.jpg) no-repeat center top;
-	background-color: #ffcb0d;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-	font-family: 'Lato', sans-serif;
+	background-color: $main-color;
+	font-family: $font;
+	
 	.intro-text{
 		p{
 			font-family: inherit;
