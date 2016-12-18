@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 
 	//Array fotos para slider de home
-	var arrayPhotos = ["img/img1.svg", "img/img2.png"];
+	var arrayPhotos = ["img/libro.svg", "img/onda_vaga.png"];
 	var i = 0;
 	setInterval(function(){
 		if (i == arrayPhotos.length){
