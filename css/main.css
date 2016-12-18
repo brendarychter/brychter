@@ -18,7 +18,8 @@
       letter-spacing: 2px;
       line-height: 30px;
       font-weight: 200;
-      transition: all 0.3s ease 0s; }
+      transition: all 0.3s ease 0s;
+      cursor: pointer; }
       .menu-navbar ul li a:hover {
         color: #ffcb0d;
         background-color: #121d1f; }
@@ -98,7 +99,7 @@
     padding-top: 50px;
     padding-bottom: 30px; }
     #video-section .container p {
-      font-size: 16px;
+      font-size: 18px;
       font-family: "Lato", sans-serif;
       font-weight: 200;
       letter-spacing: 1px;
@@ -111,21 +112,32 @@
       background: #fff;
       color: #000; }
   #video-section #video-home {
+    margin-top: 20px;
     width: 100%;
     height: 580px; }
 
 .footer-site {
   background-color: #121d1f;
-  padding: 100px 0 40px 0;
+  padding: 50px 0 40px 0;
   color: #fff; }
-  .footer-site .social {
-    margin-top: 60px; }
-    .footer-site .social ul {
+  .footer-site .social .container {
+    text-align: center; }
+    .footer-site .social .container ul {
       padding: 0;
       list-style-type: none; }
-      .footer-site .social ul li {
+      .footer-site .social .container ul li {
         display: inline-block;
         margin: 0 20px; }
+        .footer-site .social .container ul li a i.fa {
+          font-size: 30px;
+          padding: 4px 5px;
+          color: #fff;
+          transition: all 0.5s; }
+          .footer-site .social .container ul li a i.fa:hover {
+            color: #ffcb0d; }
+    .footer-site .social .container p {
+      font-family: "Lato", sans-serif;
+      letter-spacing: 1px; }
 
 /* Resolutions */
 @media (min-width: 1px) and (max-width: 767px) {
@@ -193,6 +205,8 @@
 #contact {
   font-family: "Lato", sans-serif;
   letter-spacing: 1px; }
+  #contact .container {
+    margin-bottom: 20px; }
   #contact input, #contact textarea {
     border-radius: 0;
     border: 1px solid #000; }
@@ -208,7 +222,7 @@
 #success {
   background-color: #ffcb0d; }
   #success .intro-text-success {
-    padding-top: 200px;
+    padding-top: 250px;
     padding-bottom: 50px; }
 
 /*# sourceMappingURL=main.css.map */
