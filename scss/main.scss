@@ -256,6 +256,9 @@ footer{
 	.pink{
 		background-color: $color-1;
 	}
+	.yellow{
+		background-color: $main-color;
+	}
 }
 /* Resolutions */
 
@@ -382,5 +385,17 @@ footer{
 	background-color: $color-2;
 }
 .yellow-color{
+	background-color: $main-color;
+}
 
+.pink-color-footer, .pink-color-header{
+	&:hover{
+		color: $color-1 !important;
+	}
+}
+
+.blue-color-footer, .blue-color-header{
+	&:hover{
+		color: $color-2 !important;
+	}
 }

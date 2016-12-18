@@ -199,6 +199,8 @@ footer {
     background-color: #7bc3d1; }
   .color-changer .pink {
     background-color: #FF8C69; }
+  .color-changer .yellow {
+    background-color: #ffcb0d; }
 
 /* Resolutions */
 @media (min-width: 1px) and (max-width: 767px) {
@@ -291,5 +293,14 @@ footer {
 
 .blue-color {
   background-color: #7bc3d1; }
+
+.yellow-color {
+  background-color: #ffcb0d; }
+
+.pink-color-footer:hover, .pink-color-header:hover {
+  color: #FF8C69 !important; }
+
+.blue-color-footer:hover, .blue-color-header:hover {
+  color: #7bc3d1 !important; }
 
 /*# sourceMappingURL=main.css.map */

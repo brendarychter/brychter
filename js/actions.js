@@ -18,21 +18,73 @@ $(document).ready(function(){
 	},3000);
 
 
+
 	$('.pick-color').on('click', function(){
 		var color = $(this).attr('color');
 
-		//Footer hover
-		//menu hover
 		//success
 		//localStorage color for whole site
 		if(color == "blue"){
 			console.log("change to blue")
 			$('.color-change').removeClass("pink-color");
+			$('.color-change').removeClass("yellow-color");
 			$('.color-change').addClass("blue-color");
+
+			//Footer
+			$('.color-change-footer').hover(function(){
+				$(this).removeClass('pink-color-footer');
+				$(this).removeClass('yellow-color-footer');
+				$(this).addClass('blue-color-footer');
+			})
+
+			//Header
+			$('.color-change-header').hover(function(){
+				$(this).removeClass('pink-color-header');
+				$(this).removeClass('yellow-color-header');
+				$(this).addClass('blue-color-header');
+			})
+
+			$(this).removeClass("blue");
+			$(this).addClass("yellow");
+			$(this).attr('color', "yellow");
 		}else if (color == "pink"){
 			console.log("change to pink")
 			$('.color-change').removeClass("blue-color");
+			$('.color-change').removeClass("yellow-color");
 			$('.color-change').addClass("pink-color");
+
+			//Footer
+			$('.color-change-footer').hover(function(){
+				$(this).removeClass('blue-color-footer');
+				$(this).removeClass('yellow-color-footer');
+				$(this).addClass('pink-color-footer');
+			})
+
+			//Header
+			$('.color-change-header').hover(function(){
+				$(this).removeClass('blue-color-header');
+				$(this).removeClass('yellow-color-header');
+				$(this).addClass('pink-color-header');
+			})
+		}else if (color == "yellow"){
+			console.log("change to pink")
+			$('.color-change').removeClass("blue-color");
+			$('.color-change').removeClass("pink-color");
+			$('.color-change').addClass("yellow-color");
+
+			//Footer
+			$('.color-change-footer').hover(function(){
+				$(this).removeClass('blue-color-footer');
+				$(this).removeClass('pink-color-footer');
+				$(this).addClass('yellow-color-footer');
+			})
+
+			//Header
+			$('.color-change-header').hover(function(){
+				$(this).removeClass('blue-color-header');
+				$(this).removeClass('pink-color-header');
+				$(this).addClass('yellow-color-header');
+			})
 		}
 	})
 });
