@@ -25,10 +25,9 @@ $(document).ready(function(){
 
 	$('.pick-color').on('click', function(){
 		var color = $(this).attr('color');
-		console.log(color)
 		localStorage.setItem("color", color);
-		changeColor(color);
 		
+		changeColor(color);
 	})
 
 	function changeColor(color){
@@ -38,75 +37,38 @@ $(document).ready(function(){
 		}else{
 			color = localStorage.getItem("color");
 		}
-		console.log(color)
 		if(color == "blue"){
-			localStorage.setItem("color", "blue");
-			$('.color-change').removeClass("pink-color");
-			$('.color-change').removeClass("yellow-color");
-			$('.color-change').addClass("blue-color");
-
-			//Footer
-			$('.color-change-footer').hover(function(){
-				$(this).removeClass('pink-color-footer');
-				$(this).removeClass('yellow-color-footer');
-				$(this).addClass('blue-color-footer');
-			})
-
-			//Header
-			$('.color-change-header').hover(function(){
-				$(this).removeClass('pink-color-header');
-				$(this).removeClass('yellow-color-header');
-				$(this).addClass('blue-color-header');
-			})
-
-			$('.pick-color').removeClass("active-color");
-			$('.blue').addClass("active-color");
-
-
+			changeColorItems("blue", "yellow", "pink");
 		}else if (color == "pink"){
-			localStorage.setItem("color", "pink");
-			$('.color-change').removeClass("blue-color");
-			$('.color-change').removeClass("yellow-color");
-			$('.color-change').addClass("pink-color");
-
-			//Footer
-			$('.color-change-footer').hover(function(){
-				$(this).removeClass('blue-color-footer');
-				$(this).removeClass('yellow-color-footer');
-				$(this).addClass('pink-color-footer');
-			})
-
-			//Header
-			$('.color-change-header').hover(function(){
-				$(this).removeClass('blue-color-header');
-				$(this).removeClass('yellow-color-header');
-				$(this).addClass('pink-color-header');
-			})
-			$('.pick-color').removeClass("active-color");
-			$('.pink').addClass("active-color");
-			
+			changeColorItems("pink", "blue", "yellow");
 		}else if (color == "yellow"){
-			localStorage.setItem("color", "yellow");
-			$('.color-change').removeClass("blue-color");
-			$('.color-change').removeClass("pink-color");
-			$('.color-change').addClass("yellow-color");
-
-			//Footer
-			$('.color-change-footer').hover(function(){
-				$(this).removeClass('blue-color-footer');
-				$(this).removeClass('pink-color-footer');
-				$(this).addClass('yellow-color-footer');
-			})
-
-			//Header
-			$('.color-change-header').hover(function(){
-				$(this).removeClass('blue-color-header');
-				$(this).removeClass('pink-color-header');
-				$(this).addClass('yellow-color-header');
-			})
-			$('.pick-color').removeClass("active-color");
-			$('.yellow').addClass("active-color");
-
+			changeColorItems("yellow", "blue", "pink");
 		}
+	}
+
+	function changeColorItems(selectedColor, color2, color3){
+		localStorage.setItem("color", selectedColor);
+
+		$('.color-change').removeClass(color2+"-color");
+		$('.color-change').removeClass(color3+"-color");
+		$('.color-change').addClass(selectedColor+"-color");
+
+		//Footer
+		$('.color-change-footer').hover(function(){
+			$(this).removeClass(color2+'-color-footer');
+			$(this).removeClass(color3+'-color-footer');
+			$(this).addClass(selectedColor+'-color-footer');
+		})
+
+		//Header
+		$('.color-change-header').hover(function(){
+			$(this).removeClass(color2+'-color-header');
+			$(this).removeClass(color3+'-color-header');
+			$(this).addClass(selectedColor+'-color-header');
+		})
+
+		//Active color in footer
+		$('.pick-color').removeClass("active-color");
+		$('.'+selectedColor).addClass("active-color");
 	}
 });
