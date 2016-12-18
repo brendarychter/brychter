@@ -57,6 +57,19 @@
   padding-bottom: 200px; }
   #main-section .description p {
     margin-bottom: 22px; }
+#main-section .slider {
+  padding-top: 250px;
+  padding-bottom: 150px; }
+  #main-section .slider img {
+    width: 250px;
+    height: 250px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50%; }
+
+#video-section {
+  color: #fff;
+  background-color: #ccc; }
 
 /* Resolutions */
 @media (min-width: 1px) and (max-width: 767px) {
@@ -101,7 +114,10 @@
         margin-top: 20px; }
 
   .header-logo {
-    margin: 25px; } }
+    margin: 25px; }
+
+  #main-section .description {
+    font-size: 15px; } }
 @media (min-width: 1280px) {
   .intro {
     height: 100%;
