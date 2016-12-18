@@ -7,6 +7,11 @@ $(document).ready(function(){
 	    }, 1000);
 	})
 
+
+	var color = "";
+	changeColor(color);
+
+
 	//Array fotos para slider de home
 	var arrayPhotos = ["img/img1.svg", "img/img2.png"];
 	var i = 0;
@@ -18,14 +23,24 @@ $(document).ready(function(){
 	},3000);
 
 
-
 	$('.pick-color').on('click', function(){
 		var color = $(this).attr('color');
+		console.log(color)
+		localStorage.setItem("color", color);
+		changeColor(color);
+		
+	})
 
-		//success
-		//localStorage color for whole site
+	function changeColor(color){
+		if (localStorage.color == undefined){
+			localStorage.setItem("color", "yellow");
+			color = "yellow";
+		}else{
+			color = localStorage.getItem("color");
+		}
+		console.log(color)
 		if(color == "blue"){
-			console.log("change to blue")
+			localStorage.setItem("color", "blue");
 			$('.color-change').removeClass("pink-color");
 			$('.color-change').removeClass("yellow-color");
 			$('.color-change').addClass("blue-color");
@@ -44,11 +59,12 @@ $(document).ready(function(){
 				$(this).addClass('blue-color-header');
 			})
 
-			$(this).removeClass("blue");
-			$(this).addClass("yellow");
-			$(this).attr('color', "yellow");
+			$('.pick-color').removeClass("active-color");
+			$('.blue').addClass("active-color");
+
+
 		}else if (color == "pink"){
-			console.log("change to pink")
+			localStorage.setItem("color", "pink");
 			$('.color-change').removeClass("blue-color");
 			$('.color-change').removeClass("yellow-color");
 			$('.color-change').addClass("pink-color");
@@ -66,8 +82,11 @@ $(document).ready(function(){
 				$(this).removeClass('yellow-color-header');
 				$(this).addClass('pink-color-header');
 			})
+			$('.pick-color').removeClass("active-color");
+			$('.pink').addClass("active-color");
+			
 		}else if (color == "yellow"){
-			console.log("change to pink")
+			localStorage.setItem("color", "yellow");
 			$('.color-change').removeClass("blue-color");
 			$('.color-change').removeClass("pink-color");
 			$('.color-change').addClass("yellow-color");
@@ -85,6 +104,9 @@ $(document).ready(function(){
 				$(this).removeClass('pink-color-header');
 				$(this).addClass('yellow-color-header');
 			})
+			$('.pick-color').removeClass("active-color");
+			$('.yellow').addClass("active-color");
+
 		}
-	})
+	}
 });

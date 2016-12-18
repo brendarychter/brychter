@@ -250,6 +250,7 @@ footer{
 		display: inline-block;
 		cursor: pointer;
 	}
+
 	.blue{
 		background-color: $color-2;
 	}
@@ -259,6 +260,9 @@ footer{
 	.yellow{
 		background-color: $main-color;
 	}
+}
+.active-color{
+	border: 2px solid #fff;
 }
 /* Resolutions */
 
@@ -397,5 +401,11 @@ footer{
 .blue-color-footer, .blue-color-header{
 	&:hover{
 		color: $color-2 !important;
+	}
+}
+
+.yellow-color-footer, .yellow-color-header{
+	&:hover{
+		color: $main-color !important;
 	}
 }
