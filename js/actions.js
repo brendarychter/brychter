@@ -17,4 +17,22 @@ $(document).ready(function(){
     	$("#slider-images").prop("src", arrayPhotos[i++]);
 	},3000);
 
+
+	$('.pick-color').on('click', function(){
+		var color = $(this).attr('color');
+
+		//Footer hover
+		//menu hover
+		//success
+		//localStorage color for whole site
+		if(color == "blue"){
+			console.log("change to blue")
+			$('.color-change').removeClass("pink-color");
+			$('.color-change').addClass("blue-color");
+		}else if (color == "pink"){
+			console.log("change to pink")
+			$('.color-change').removeClass("blue-color");
+			$('.color-change').addClass("pink-color");
+		}
+	})
 });

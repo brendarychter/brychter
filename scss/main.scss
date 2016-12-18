@@ -3,9 +3,8 @@
 $font: 'Lato', sans-serif;
 $main-color: #ffcb0d;
 $logo-header: 150px;
-$color-1: #ffcb0d;
+$color-1: #FF8C69;
 $color-2: #7bc3d1;
-
 
 .home-page{
 	#home-navbar{
@@ -155,7 +154,9 @@ $color-2: #7bc3d1;
 	}
 }
 
-
+footer{
+	position: relative;
+}
 .footer-site{
 	background-color: #121d1f;
 	padding: 50px 0 40px 0;
@@ -188,6 +189,25 @@ $color-2: #7bc3d1;
 				letter-spacing: 1px;
 			}
 		}
+	}
+}
+.color-changer{
+	position: absolute;
+	right: 20px;
+	font-family: $font;
+	bottom: 12px;
+	.pick-color{
+		width: 20px;
+		height: 20px;
+		margin-left: 5px;
+		display: inline-block;
+		cursor: pointer;
+	}
+	.blue{
+		background-color: $color-2;
+	}
+	.pink{
+		background-color: $color-1;
 	}
 }
 /* Resolutions */
@@ -276,8 +296,6 @@ $color-2: #7bc3d1;
 
 }
 
-
-
 #contact{
 	font-family: $font;
 	letter-spacing: 1px;
@@ -308,4 +326,14 @@ $color-2: #7bc3d1;
 		padding-top: 250px;
 		padding-bottom: 50px;
 	}
+}
+
+.pink-color{
+	background-color: $color-1;
+}
+.blue-color{
+	background-color: $color-2;
+}
+.yellow-color{
+
 }

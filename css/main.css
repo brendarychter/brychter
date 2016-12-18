@@ -116,6 +116,9 @@
     width: 100%;
     height: 580px; }
 
+footer {
+  position: relative; }
+
 .footer-site {
   background-color: #121d1f;
   padding: 50px 0 40px 0;
@@ -138,6 +141,22 @@
     .footer-site .social .container p {
       font-family: "Lato", sans-serif;
       letter-spacing: 1px; }
+
+.color-changer {
+  position: absolute;
+  right: 20px;
+  font-family: "Lato", sans-serif;
+  bottom: 12px; }
+  .color-changer .pick-color {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    display: inline-block;
+    cursor: pointer; }
+  .color-changer .blue {
+    background-color: #7bc3d1; }
+  .color-changer .pink {
+    background-color: #FF8C69; }
 
 /* Resolutions */
 @media (min-width: 1px) and (max-width: 767px) {
@@ -224,5 +243,11 @@
   #success .intro-text-success {
     padding-top: 250px;
     padding-bottom: 50px; }
+
+.pink-color {
+  background-color: #FF8C69; }
+
+.blue-color {
+  background-color: #7bc3d1; }
 
 /*# sourceMappingURL=main.css.map */
