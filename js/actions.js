@@ -8,5 +8,13 @@ $(document).ready(function(){
 	})
 
 	//Array fotos para slider de home
-	var arrayPhotos = ["img1.png", "img2.png", "video1.mp4", "img3.png", "video2.mp4"]
+	var arrayPhotos = ["img/img1.svg", "img/img2.png"];
+	var i = 0;
+	setInterval(function(){
+		if (i == arrayPhotos.length){
+			i = 0;
+		}
+    	$("#slider-images").prop("src", arrayPhotos[i++]);
+	},3000);
+
 });
