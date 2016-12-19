@@ -7,7 +7,7 @@ $(document).ready(function(){
 		{"name": "Hiperrealismo", "id": 4, "subject": "Dise&ntilde;o I", "image": "img/gallery/thumbs/thumb_5.png"},
 		{"name": "Web App", "id": 5, "subject": "Programaci&oacute;n Multimedial III", "image": "img/gallery/thumbs/thumb_6.png"},
 		{"name": "Stop Motion", "id": 6, "subject": "Fotograf&iacute;a", "image": "img/gallery/thumbs/thumb_1.png"},
-		{"name": "Patra&ntilde;", "id": 7, "subject": "Fase 8", "image": "img/gallery/thumbs/thumb_8.png"},
+		{"name": "Patra&ntilde;a", "id": 7, "subject": "Fase 8", "image": "img/gallery/thumbs/thumb_8.png"},
 		{"name": "Tripnic", "id": 8, "subject": "Dise&ntilde;o II", "image": "img/gallery/thumbs/thumb_1.png"},
 		{"name": "Trabajo 1", "id": 9, "subject": "subject 1", "image": "img/gallery/thumbs/thumb_1.png"},
 		{"name": "Trabajo 1", "id": 10, "subject": "subject 1", "image": "img/gallery/thumbs/thumb_1.png"},

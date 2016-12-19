@@ -171,6 +171,7 @@ footer{
 	    	height: 260px;
     		overflow: hidden;
     		position: relative;
+
     		.hover-text {
 			    position: absolute;
 			    text-align: center;
@@ -182,20 +183,6 @@ footer{
 			    width: 100%;
 			    opacity: 0;
 			    transition: all 0.5s;
-			    h4 {
-				    opacity: 0;
-				    color: #fff;
-				    font-weight: 400;
-				    -webkit-transform: translateY(100%);
-				    transform: translateY(100%);
-				    transition: all 0.3s;
-				    &:hover{
-		    			opacity: 1;
-					}
-				}
-				&:hover{
-	    			opacity: 1;
-				}
 			}
 	    }
 	    &:hover{
@@ -205,5 +192,22 @@ footer{
 		    -o-transform: scale(1.1);
 		    transform: scale(1.1);
 	    }
+	    .hover-item:hover .hover-text {
+		    opacity: 1;
+		}
+		.hover-item .hover-text>h4 {
+		    opacity: 0;
+		    color: #fff;
+		    font-weight: 400;
+		    -webkit-transform: translateY(100%);
+		    transform: translateY(100%);
+		    transition: all 0.3s;
+		}
+		.hover-item:hover .hover-text>h4 {
+		    opacity: 1;
+		    -webkit-backface-visibility: hidden;
+		    -webkit-transform: translateY(0);
+		    transform: translateY(0);
+		}
     }
 }
