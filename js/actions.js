@@ -14,14 +14,14 @@ $(document).ready(function(){
 
 	//Array fotos para slider de home
 	//Agregar title y alt
-	var arrayPhotos = ["img/libro.svg", "img/onda_vaga.png"];
+	var arrayPhotos = ["img/img_1.png", "img/img_2.png", "img/img_3.png", "img/img_4.png"];
 	var i = 0;
 	setInterval(function(){
 		if (i == arrayPhotos.length){
 			i = 0;
 		}
     	$("#slider-images").prop("src", arrayPhotos[i++]);
-	},3000);
+	}, 3000);
 
 
 	$('.pick-color').on('click', function(){
