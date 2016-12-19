@@ -67,6 +67,15 @@ $(document).ready(function(){
 			$(this).addClass(selectedColor+'-color-header');
 		})
 
+		// //Cv online
+		// $('.timeline-image').removeClass(color2);
+		// $('.timeline-image').removeClass(color3);
+		// $('.timeline-image').addClass(selectedColor);
+
+		// $('.subheading').removeClass(color2);
+		// $('.subheading').removeClass(color3);
+		// $('.subheading').addClass(selectedColor);
+
 		//Active color in footer
 		$('.pick-color').removeClass("active-color");
 		$('.'+selectedColor).addClass("active-color");

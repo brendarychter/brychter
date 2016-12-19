@@ -1,10 +1,11 @@
 // Import files
 @import '_home';
 @import '_contact';
+@import '_cv';
+@import '_gallery';
 @import '_variables';
 
-
-
+//Common styles across the web
 /* Menu NavBar */
 .menu-navbar{
 	background-color: #121d1f;
@@ -115,6 +116,105 @@ footer{
 }
 
 
+
+//CV
+#about-me{
+	padding: 50px 0;
+    font-family: $font;
+    font-weight: 200;
+
+    img{
+    	border-radius: 50%;
+	    width: 200px;
+	    height: 200px;
+	    display: inline-block;
+    }
+    .about-download-cv{
+    	margin-top: 20px;
+    }
+}
+#cv-online{
+	font-family: $font;
+	.section-title{
+		padding: 25px 0 45px 0;
+		h2{
+			line-height: 20px;
+		    margin: 0;
+		    color: #121d1f;
+		    font-weight: 200;
+		    margin-bottom: 30px;
+		    font-size: 20px;
+		    text-transform: uppercase;
+		}
+		hr{
+			width: 200px;
+		}
+	}
+	.timeline{
+		position: relative;
+	    padding: 0;
+	    list-style: none;
+
+	    &:before{
+	    	content: "";
+		    position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    left: 40px;
+		    width: 2px;
+		    margin-left: -1.5px;
+		    background-color: #eee;
+		    left: 50%;
+	    }
+	}
+	.timeline>li {
+	    position: relative;
+	    margin-bottom: 100px;
+	    min-height: 170px;
+	}
+	.timeline>li .timeline-image {
+	    z-index: 100;
+	    position: absolute;
+	    border: 1px solid #eee;
+	    border-radius: 100%;
+	    text-align: center;
+	    background: #fff;
+	    left: 50%;
+	    width: 150px;
+	    height: 150px;
+	    margin-left: -75px;
+	    background-color: #ffcb0d;
+	    h4{
+	    	text-transform: uppercase;
+	    	font-size: 18px;
+    		margin-top: 40px;
+    		font-weight: 400;
+	    }
+	}
+
+	.timeline>li .timeline-panel {
+	    position: relative;
+	    padding: 0 20px 0 100px;
+	    text-align: right;
+	    float: left;
+    	width: 41%;
+    	padding: 10px 20px 20px 100px;
+	}
+	.timeline .timeline-heading{
+		h4{
+		    margin-top: 0;
+		    text-transform: uppercase;
+		    font-size: 16px;
+		} 
+	    .subheading {
+		    text-transform: none;
+		    color: $main-color;
+		    font-size: 20px;
+		}
+	}
+}
+
+
 //COLOR CHANGER
 .pink-color{
 	background-color: $color-1;
@@ -143,6 +243,3 @@ footer{
 		color: $main-color !important;
 	}
 }
-
-
-//GALERIA
