@@ -208,90 +208,6 @@
     padding-top: 250px;
     padding-bottom: 50px; }
 
-/* Menu NavBar */
-.menu-navbar {
-  background-color: #121d1f;
-  color: #fff;
-  text-transform: uppercase; }
-  .menu-navbar ul {
-    float: right;
-    list-style-type: none;
-    height: 60px; }
-    .menu-navbar ul li a {
-      text-decoration: none;
-      font-size: 15px;
-      color: #fff;
-      letter-spacing: 2px;
-      line-height: 30px;
-      font-weight: 200;
-      transition: all 0.3s ease 0s;
-      cursor: pointer; }
-      .menu-navbar ul li a:hover {
-        color: #ffcb0d;
-        background-color: #121d1f; }
-
-/* Botones */
-.styled-button {
-  color: #000;
-  background-color: transparent;
-  border-color: #000;
-  padding: 10px 20px;
-  margin: 0;
-  font-size: 16px;
-  border-radius: 0;
-  font-family: inherit;
-  transition: all 0.3s ease 0s; }
-  .styled-button:hover {
-    background: #000;
-    color: #fff; }
-
-footer {
-  position: relative; }
-
-.footer-site {
-  background-color: #121d1f;
-  padding: 50px 0 40px 0;
-  color: #fff; }
-  .footer-site .social .container {
-    text-align: center; }
-    .footer-site .social .container ul {
-      padding: 0;
-      list-style-type: none; }
-      .footer-site .social .container ul li {
-        display: inline-block;
-        margin: 0 20px; }
-        .footer-site .social .container ul li a i.fa {
-          font-size: 30px;
-          padding: 4px 5px;
-          color: #fff;
-          transition: all 0.5s; }
-          .footer-site .social .container ul li a i.fa:hover {
-            color: #ffcb0d; }
-    .footer-site .social .container p {
-      font-family: "Lato", sans-serif;
-      letter-spacing: 1px; }
-
-.color-changer {
-  position: absolute;
-  right: 20px;
-  font-family: "Lato", sans-serif;
-  bottom: 12px; }
-  .color-changer .pick-color {
-    width: 20px;
-    height: 20px;
-    margin-left: 5px;
-    display: inline-block;
-    cursor: pointer; }
-  .color-changer .blue {
-    background-color: #7bc3d1; }
-  .color-changer .pink {
-    background-color: #FF8C69; }
-  .color-changer .yellow {
-    background-color: #ffcb0d; }
-
-.active-color {
-  border: 2px solid #fff; }
-
 #about-me {
   padding: 20px 0;
   font-family: "Lato", sans-serif;
@@ -390,6 +306,90 @@ footer {
   #skills .timeline-heading p {
     text-transform: uppercase; }
 
+/* Menu NavBar */
+.menu-navbar {
+  background-color: #121d1f;
+  color: #fff;
+  text-transform: uppercase; }
+  .menu-navbar ul {
+    float: right;
+    list-style-type: none;
+    height: 60px; }
+    .menu-navbar ul li a {
+      text-decoration: none;
+      font-size: 15px;
+      color: #fff;
+      letter-spacing: 2px;
+      line-height: 30px;
+      font-weight: 200;
+      transition: all 0.3s ease 0s;
+      cursor: pointer; }
+      .menu-navbar ul li a:hover {
+        color: #ffcb0d;
+        background-color: #121d1f; }
+
+/* Botones */
+.styled-button {
+  color: #000;
+  background-color: transparent;
+  border-color: #000;
+  padding: 10px 20px;
+  margin: 0;
+  font-size: 16px;
+  border-radius: 0;
+  font-family: inherit;
+  transition: all 0.3s ease 0s; }
+  .styled-button:hover {
+    background: #000;
+    color: #fff; }
+
+footer {
+  position: relative; }
+
+.footer-site {
+  background-color: #121d1f;
+  padding: 50px 0 40px 0;
+  color: #fff; }
+  .footer-site .social .container {
+    text-align: center; }
+    .footer-site .social .container ul {
+      padding: 0;
+      list-style-type: none; }
+      .footer-site .social .container ul li {
+        display: inline-block;
+        margin: 0 20px; }
+        .footer-site .social .container ul li a i.fa {
+          font-size: 30px;
+          padding: 4px 5px;
+          color: #fff;
+          transition: all 0.5s; }
+          .footer-site .social .container ul li a i.fa:hover {
+            color: #ffcb0d; }
+    .footer-site .social .container p {
+      font-family: "Lato", sans-serif;
+      letter-spacing: 1px; }
+
+.color-changer {
+  position: absolute;
+  right: 20px;
+  font-family: "Lato", sans-serif;
+  bottom: 12px; }
+  .color-changer .pick-color {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    display: inline-block;
+    cursor: pointer; }
+  .color-changer .blue {
+    background-color: #7bc3d1; }
+  .color-changer .pink {
+    background-color: #FF8C69; }
+  .color-changer .yellow {
+    background-color: #ffcb0d; }
+
+.active-color {
+  border: 2px solid #fff; }
+
 .pink-color {
   background-color: #FF8C69 !important; }
 
@@ -416,5 +416,49 @@ footer {
 
 .yellow-color-footer:hover, .yellow-color-header:hover {
   color: #ffcb0d !important; }
+
+#gallery {
+  padding: 20px 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 200; }
+  #gallery .gallery-item {
+    margin: 15px 0;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
+    #gallery .gallery-item .hover-item {
+      height: 260px;
+      overflow: hidden;
+      position: relative; }
+      #gallery .gallery-item .hover-item .hover-text {
+        position: absolute;
+        text-align: center;
+        margin: 0 auto;
+        color: #ffffff;
+        background: rgba(0, 0, 0, 0.66);
+        padding: 33% 0 0 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: all 0.5s; }
+        #gallery .gallery-item .hover-item .hover-text h4 {
+          opacity: 0;
+          color: #fff;
+          font-weight: 400;
+          -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+          transition: all 0.3s; }
+          #gallery .gallery-item .hover-item .hover-text h4:hover {
+            opacity: 1; }
+        #gallery .gallery-item .hover-item .hover-text:hover {
+          opacity: 1; }
+    #gallery .gallery-item:hover {
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      transform: scale(1.1); }
 
 /*# sourceMappingURL=main.css.map */

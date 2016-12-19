@@ -16,15 +16,33 @@
     <link rel="shortcut icon" type="image/png" href="img/logo-ico.svg"/>
 
 </head>
-<body class="galeria-page">
+<body class="galeria-page" data-page="gallery">
 	<nav w3-include-html="header.html"></nav> 
 
-	<!-- Header -->
-	<header id="">
-	</header>
-
-	<!-- Sections -->
-	<section id="">
+	<!-- Section -->
+	<section id="gallery">
+		<div class="container">
+		    <div class="text-center center">
+		      	<h2>Mis trabajos</h2>
+		      	<hr>
+		    </div>
+	    	<div class="row">
+	    		<div class="items gallery-items">
+	    			<!-- <div class="col-sm-6 col-md-3 col-lg-3">
+			          	<div class="gallery-item">
+			            	<div class="hover-item">
+			            		<a href="" title="Trabajo 1">
+				              		<div class="hover-text">
+				                	<h4>Trabajo 1</h4>
+				                	<small>Web Design</small> </div>
+				              		<img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title"> 
+				              	</a> 
+			              	</div>
+			          	</div>
+			        </div> -->
+	    		</div>
+	    	</div>
+	    </div>
 	</section>
 
 	<!-- Footer -->
@@ -45,8 +63,11 @@
 <script>
 	w3IncludeHTML();
 </script>
-
+<script type="text/javascript">
+	$('.header-gallery').addClass("");
+</script>
 <!-- My js files -->
 <script type="text/javascript" src="js/actions.js"></script>
+<script type="text/javascript" src="js/gallery.js"></script>
 
 </html>

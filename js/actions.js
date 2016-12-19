@@ -13,6 +13,7 @@ $(document).ready(function(){
 
 
 	//Array fotos para slider de home
+	//Agregar title y alt
 	var arrayPhotos = ["img/libro.svg", "img/onda_vaga.png"];
 	var i = 0;
 	setInterval(function(){
@@ -66,6 +67,8 @@ $(document).ready(function(){
 			$(this).removeClass(color3+'-color-header');
 			$(this).addClass(selectedColor+'-color-header');
 		})
+		//Header onpage
+		applyHeaderColor(selectedColor, color2, color3)
 
 		// //Cv online
 		$('.timeline-image').removeClass(color2+"-color");
@@ -76,12 +79,31 @@ $(document).ready(function(){
 		$('.timeline-panel .subheading').removeClass(color3+"-color-text");
 		$('.timeline-panel .subheading').addClass(selectedColor+"-color-text");
 
-		// $('.subheading').removeClass(color2);
-		// $('.subheading').removeClass(color3);
-		// $('.subheading').addClass(selectedColor);
-
 		//Active color in footer
 		$('.pick-color').removeClass("active-color");
 		$('.'+selectedColor).addClass("active-color");
+	}
+
+	function applyHeaderColor(selectedColor, color2, color3){
+		var page = $(document.body).attr('data-page');
+		console.log(page)
+		switch(page){
+			case "gallery":
+			console.log("entro")
+				$('.header-gallery').removeClass(color2+"-color-text");
+				$('.header-gallery').removeClass(color3+"-color-text");
+				$('.header-gallery').addClass(selectedColor+"-color-text");
+				break;
+			case "contact":
+				$('.header-contact').removeClass(color2+"-color-text");
+				$('.header-contact').removeClass(color3+"-color-text");
+				$('.header-contact').addClass(selectedColor+"-color-text");
+				break;
+			case "cv":
+				$('.header-cv').removeClass(color2+"-color-text");
+				$('.header-cv').removeClass(color3+"-color-text");
+				$('.header-cv').addClass(selectedColor+"-color-text");
+				break; 
+		}
 	}
 });
