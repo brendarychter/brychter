@@ -504,14 +504,14 @@ footer {
       font-family: "Lato", sans-serif; }
     .layer-works .items-to-show .work-info {
       margin-left: 20px;
-      margin-right: 50px; }
+      margin-right: 40px; }
       .layer-works .items-to-show .work-info img {
-        width: 300px; }
+        width: 200px; }
       .layer-works .items-to-show .work-info p {
         text-transform: uppercase;
         font-size: 18px;
         font-weight: 100;
-        margin-left: 70px;
+        margin-left: 40px;
         text-align: center;
         padding-top: 10px; }
 

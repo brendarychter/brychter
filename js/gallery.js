@@ -38,8 +38,12 @@ $(document).ready(function(){
 	//Array con cada objeto para cada imagen (+- 3 imagenes y descripcion de cada uno) y descripcion general
 	var arrayThumbs = [
 		{	
-			"description": "Redise&ntilde;o de afiches para la pel&iacute;cula Black Swan",
+			"description": "Redise&ntilde;o de afiches para la pel&iacute;cula Black Swan</br> Dise&ntilde;o I",
 			"works": [{"name": "Tipogr&aacute;fico", "src": "img/gallery/thumbs/thumb_1.png"}, {"name": "Ilustraci&oacute;n", "src": "img/gallery/thumbs/thumb_1.png"}, {"name": "Fotogr&aacute;fico", "src": "img/gallery/thumbs/thumb_1.png"}]
+		},
+		{	
+			"description": "Mapping",
+			"works": [{"name": "Tipogr&aacute;fico", "src": "img/gallery/thumbs/thumb_2.png"}, {"name": "Ilustraci&oacute;n", "src": "img/gallery/thumbs/thumb_3.png"}, {"name": "Fotogr&aacute;fico", "src": "img/gallery/thumbs/thumb_4.png"}]
 		}
 	]
 
