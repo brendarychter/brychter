@@ -86,7 +86,6 @@ $(document).ready(function(){
 
 	function applyHeaderColor(selectedColor, color2, color3){
 		var page = $(document.body).attr('data-page');
-		console.log(page)
 		switch(page){
 			case "gallery":
 			console.log("entro")
