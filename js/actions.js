@@ -68,9 +68,13 @@ $(document).ready(function(){
 		})
 
 		// //Cv online
-		// $('.timeline-image').removeClass(color2);
-		// $('.timeline-image').removeClass(color3);
-		// $('.timeline-image').addClass(selectedColor);
+		$('.timeline-image').removeClass(color2+"-color");
+		$('.timeline-image').removeClass(color3+"-color");
+		$('.timeline-image').addClass(selectedColor+"-color");
+
+		$('.timeline-panel .subheading').removeClass(color2+"-color-text");
+		$('.timeline-panel .subheading').removeClass(color3+"-color-text");
+		$('.timeline-panel .subheading').addClass(selectedColor+"-color-text");
 
 		// $('.subheading').removeClass(color2);
 		// $('.subheading').removeClass(color3);

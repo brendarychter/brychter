@@ -1,9 +1,9 @@
 // Import files
+@import 'utils/_variables';
 @import '_home';
 @import '_contact';
 @import '_cv';
 @import '_gallery';
-@import '_variables';
 
 //Common styles across the web
 /* Menu NavBar */
@@ -119,7 +119,7 @@ footer{
 
 //CV
 #about-me{
-	padding: 50px 0;
+	padding: 20px 0;
     font-family: $font;
     font-weight: 200;
 
@@ -212,20 +212,55 @@ footer{
 		    font-size: 20px;
 		}
 	}
+	.timeline .timeline-inverted .timeline-panel {
+    	float: right;
+	    padding: 10px 100px 20px 20px;
+	    text-align: left;
+	}
 }
-
+#skills{
+	font-family: $font;
+	.section-title{
+		padding: 25px 0 45px 0;
+		h2{
+			line-height: 20px;
+		    margin: 0;
+		    color: #121d1f;
+		    font-weight: 200;
+		    margin-bottom: 30px;
+		    font-size: 20px;
+		    text-transform: uppercase;
+		}
+		hr{
+			width: 200px;
+		}
+	}
+	.timeline-heading{
+		p{
+			text-transform: uppercase;
+		}
+	}
+}
 
 //COLOR CHANGER
 .pink-color{
-	background-color: $color-1;
+	background-color: $color-1 !important;
 }
 .blue-color{
-	background-color: $color-2;
+	background-color: $color-2 !important;
 }
 .yellow-color{
-	background-color: $main-color;
+	background-color: $main-color !important;
 }
-
+.pink-color-text{
+	color: $color-1 !important;
+}
+.blue-color-text{
+	color: $color-2 !important;
+}
+.yellow-color-text{
+	color: $main-color !important;
+}
 .pink-color-footer, .pink-color-header{
 	&:hover{
 		color: $color-1 !important;

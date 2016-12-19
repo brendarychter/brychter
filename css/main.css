@@ -185,6 +185,7 @@
   .header-logo {
     margin: 50px; } }
 #contact {
+  padding: 20px 0;
   font-family: "Lato", sans-serif;
   letter-spacing: 1px; }
   #contact .container {
@@ -207,9 +208,6 @@
     padding-top: 250px;
     padding-bottom: 50px; }
 
-/* Common variables */
-/* Common variables */
-/* Common variables */
 /* Menu NavBar */
 .menu-navbar {
   background-color: #121d1f;
@@ -295,7 +293,7 @@ footer {
   border: 2px solid #fff; }
 
 #about-me {
-  padding: 50px 0;
+  padding: 20px 0;
   font-family: "Lato", sans-serif;
   font-weight: 200; }
   #about-me img {
@@ -370,15 +368,45 @@ footer {
     text-transform: none;
     color: #ffcb0d;
     font-size: 20px; }
+  #cv-online .timeline .timeline-inverted .timeline-panel {
+    float: right;
+    padding: 10px 100px 20px 20px;
+    text-align: left; }
+
+#skills {
+  font-family: "Lato", sans-serif; }
+  #skills .section-title {
+    padding: 25px 0 45px 0; }
+    #skills .section-title h2 {
+      line-height: 20px;
+      margin: 0;
+      color: #121d1f;
+      font-weight: 200;
+      margin-bottom: 30px;
+      font-size: 20px;
+      text-transform: uppercase; }
+    #skills .section-title hr {
+      width: 200px; }
+  #skills .timeline-heading p {
+    text-transform: uppercase; }
 
 .pink-color {
-  background-color: #FF8C69; }
+  background-color: #FF8C69 !important; }
 
 .blue-color {
-  background-color: #7bc3d1; }
+  background-color: #7bc3d1 !important; }
 
 .yellow-color {
-  background-color: #ffcb0d; }
+  background-color: #ffcb0d !important; }
+
+.pink-color-text {
+  color: #FF8C69 !important; }
+
+.blue-color-text {
+  color: #7bc3d1 !important; }
+
+.yellow-color-text {
+  color: #ffcb0d !important; }
 
 .pink-color-footer:hover, .pink-color-header:hover {
   color: #FF8C69 !important; }
