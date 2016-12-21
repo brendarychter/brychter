@@ -7,7 +7,6 @@
 	<title>Galer&iacute;a de trabajos - Brenda Rychter</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -30,23 +29,9 @@
 	<section id="gallery">
 		<div class="container">
 		    <div class="text-center center">
-		      	<h2>Mis trabajos</h2>
+		      	<h2>Portfolio</h2>
 		      	<hr>
 		    </div>
-			<!-- <div class="subjects">
-	          	<ul class="subjects-list">
-	            	<li><a href="#" data-filter="*" class="styled-button gallery-button gallery-selected" data-subject="all">Todas</a></li>
-	            	<li><a href="#" data-filter=".prog" class="styled-button gallery-button">Programaci&oacute;n</a></li>
-	            	<li><a href="#" data-filter=".foto" class="styled-button gallery-button">Fotograf&iacute;a</a></li>
-	            	<li><a href="#" data-filter=".arte" class="styled-button gallery-button">Arte Digital</a></li>
-	            	<li><a href="#" data-filter=".fase" class="styled-button gallery-button">FASE</a></li>
-	            	<li><a href="#" data-filter=".dsn" class="styled-button gallery-button" data-subject="dsn">Dise&ntilde;o</a></li>
-	            	<li><a href="#" data-filter=".audio" class="styled-button gallery-button">Audiovisuales</a></li>
-	            	<li><a href="#" data-filter=".3d" class="styled-button gallery-button">3D</a></li>
-	            	<li><a href="#" data-filter=".sem" class="styled-button gallery-button">Seminario</a></li>
-	          	</ul>
-		      	<div class="clearfix"></div>
-		    </div> -->
 	    	<div class="row">
 	    		<div class="items gallery-items">
 	    		</div>
@@ -58,26 +43,26 @@
 	<footer>
 		<div w3-include-html="footer.html"></div> 
 		<div class="color-changer">
-	        <div class="blue pick-color" color="blue"></div>
-	        <div class="pink pick-color" color="pink"></div>
-	        <div class="yellow pick-color" color="yellow"></div>
+	        <div class="blue pick-color" footer-color="blue"></div>
+	        <div class="pink pick-color" footer-color="pink"></div>
+	        <div class="yellow pick-color" footer-color="yellow"></div>
 	    </div>
 	</footer>
+		
+	<!-- Librerias externas -->
+	<script type="text/javascript" src="js/utils/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/utils/jquery.isotope.js"></script>
+	<!-- Para incluir partials -->
+	<script type="text/javascript" src="js/utils/w3data.js"></script>
+	<script>
+		w3IncludeHTML();
+	</script>
+	<script type="text/javascript">
+		$('.header-gallery').addClass("");
+	</script>
+	<!-- My js files -->
+	<script type="text/javascript" src="js/actions.js"></script>
+	<script type="text/javascript" src="js/gallery.js"></script>
 </body>
-
-<!-- Librerias externas -->
-<script type="text/javascript" src="js/utils/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="js/utils/jquery.isotope.js"></script>
-<!-- Para incluir partials -->
-<script type="text/javascript" src="js/utils/w3data.js"></script>
-<script>
-	w3IncludeHTML();
-</script>
-<script type="text/javascript">
-	$('.header-gallery').addClass("");
-</script>
-<!-- My js files -->
-<script type="text/javascript" src="js/actions.js"></script>
-<script type="text/javascript" src="js/gallery.js"></script>
 
 </html>

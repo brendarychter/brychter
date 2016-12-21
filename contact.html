@@ -7,7 +7,6 @@
 	<title>Contacto - Brenda Rychter</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -74,22 +73,21 @@
 	<footer>
 		<div w3-include-html="footer.html"></div> 
 		<div class="color-changer">
-	        <div class="blue pick-color" color="blue"></div>
-	        <div class="pink pick-color" color="pink"></div>
-	        <div class="yellow pick-color" color="yellow"></div>
+	        <div class="blue pick-color" footer-color="blue"></div>
+	        <div class="pink pick-color" footer-color="pink"></div>
+	        <div class="yellow pick-color" footer-color="yellow"></div>
 	    </div>
 	</footer>
+	<!-- Librerias externas -->
+	<script type="text/javascript" src="js/utils/jquery-3.1.1.min.js"></script>
+	<!-- Para incluir partials -->
+	<script type="text/javascript" src="js/utils/w3data.js"></script>
+	<script>
+		w3IncludeHTML();
+	</script>
+
+	<!-- My js files -->
+	<script type="text/javascript" src="js/actions.js"></script>
 </body>
-
-<!-- Librerias externas -->
-<script type="text/javascript" src="js/utils/jquery-3.1.1.min.js"></script>
-<!-- Para incluir partials -->
-<script type="text/javascript" src="js/utils/w3data.js"></script>
-<script>
-	w3IncludeHTML();
-</script>
-
-<!-- My js files -->
-<script type="text/javascript" src="js/actions.js"></script>
 
 </html>

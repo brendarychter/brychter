@@ -7,7 +7,6 @@
 	<title>Brenda Rychter - Dise&ntilde;adora multimedial</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -20,7 +19,7 @@
 	<!-- Header -->
 	<header id="header">
 		<div class="header-logo">
-			<img src="img/logo.svg" />
+			<img src="img/logo.svg" alt="Brenda Yael Rychter" title="Brenda Yael Rychter"/>
 		</div>
 	 	<div class="intro color-change">
 	    	<div class="container">
@@ -53,7 +52,7 @@
 						<a href="cv/BrendaRychter.pdf" class="btn btn-default btn-lg page-scroll styled-button download-cv" target="_blank"> Descarg&aacute; mi CV</a>
 					</div>
 					<a class="col-md-4 slider" data-content="Ver mis trabajos" href="galeria.html">
-						<img src="img/img_1.png" id="slider-images">
+						<img src="img/img_1.png" id="slider-images" alt="Trabajos" title="Mis trabajos">
 					</a>
 		      	</div>
 	    	</div>
@@ -81,22 +80,23 @@
 	<footer>
 		<div w3-include-html="footer.html"></div> 
 		<div class="color-changer">
-	        <div class="blue pick-color" color="blue"></div>
-	        <div class="pink pick-color" color="pink"></div>
-	        <div class="yellow pick-color" color="yellow"></div>
+	        <div class="blue pick-color" footer-color="blue"></div>
+	        <div class="pink pick-color" footer-color="pink"></div>
+	        <div class="yellow pick-color" footer-color="yellow"></div>
 	    </div>
 	</footer>
+	<!-- Librerias externas -->
+	<script type="text/javascript" src="js/utils/jquery-3.1.1.min.js"></script>
+	<!-- Para incluir partials -->
+	<script type="text/javascript" src="js/utils/w3data.js"></script>
+	<script>
+		w3IncludeHTML();
+	</script>
+
+	<!-- My js files -->
+	<script type="text/javascript" src="js/actions.js"></script>
 </body>
 
-<!-- Librerias externas -->
-<script type="text/javascript" src="js/utils/jquery-3.1.1.min.js"></script>
-<!-- Para incluir partials -->
-<script type="text/javascript" src="js/utils/w3data.js"></script>
-<script>
-	w3IncludeHTML();
-</script>
 
-<!-- My js files -->
-<script type="text/javascript" src="js/actions.js"></script>
 
 </html>

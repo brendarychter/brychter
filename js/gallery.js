@@ -58,44 +58,18 @@ $(document).ready(function(){
 	$('.work-item').on("click", function(){
 		$('.layer-works').show();
 		var work = Number($(this).attr("data-work"));
+		work = 0;
 		$('.items-to-show').empty();
 		var text = "<h2>"+arrayThumbs[work].description+"</h2>"
   		$('.items-to-show').append(text);
 		for (var n in arrayThumbs[work].works){
-			console.log(n)
 			var item = arrayThumbs[work].works[n]
   			var img = "<div class='col-sm-6 col-md-3 col-lg-3 work-info'><img src='"+item.src+"' alt='"+item.name+"' title='"+item.name+"'/><p>"+item.name+"</p></div>";
   			$('.items-to-show').append(img)
 		}
-
 	})
 
 	$('.layer-works').on("click", function(){
 		$(this).hide();
 	})
-	//Libreria para filtrar los elementos segun la materia
-	// var $container = $('.gallery-items');
-	//     $container.isotope({
-	//         filter: '*',
-	//         animationOptions: {
-	//             duration: 750,
-	//             easing: 'linear',
-	//             queue: false
-	//         }
-	//     });
-
- //      $('.subjects-list a').click(function() {
- //          $('.subjects-list .gallery-selected').removeClass('gallery-selected');
- //          $(this).addClass('gallery-selected');
- //          var selector = $(this).attr('data-filter');
- //          $container.isotope({
- //              filter: selector,
- //              animationOptions: {
- //                  duration: 750,
- //                  easing: 'linear',
- //                  queue: false
- //              }
- //          });
- //          return false;
- //      });
 });

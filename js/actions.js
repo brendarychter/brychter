@@ -25,7 +25,7 @@ $(document).ready(function(){
 
 
 	$('.pick-color').on('click', function(){
-		var color = $(this).attr('color');
+		var color = $(this).attr('footer-color');
 		localStorage.setItem("color", color);
 		
 		changeColor(color);
@@ -88,7 +88,6 @@ $(document).ready(function(){
 		var page = $(document.body).attr('data-page');
 		switch(page){
 			case "gallery":
-			console.log("entro")
 				$('.header-gallery').removeClass(color2+"-color-text");
 				$('.header-gallery').removeClass(color3+"-color-text");
 				$('.header-gallery').addClass(selectedColor+"-color-text");
