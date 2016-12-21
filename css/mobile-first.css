@@ -1,4 +1,7 @@
 /*Mobile first*/
+.intro .intro-text {
+	padding-bottom: 400px;
+}
 .menu-mobile {
 	margin: 0;
 	padding: 0;
