@@ -8,81 +8,76 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
+	<!-- STYLES -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+	<!-- END STYLES -->
 
-    <link rel="shortcut icon" type="image/png" href="img/logo-ico.svg"/>
+	<!-- ICON -->
+    <link rel="shortcut icon" type="image/png" href="img/logo-ico.png"/>
 
 </head>
 <body class="home-page">
 	<!-- Header -->
-	<header id="header">
-		<div class="header-logo">
-			<img src="img/logo.svg" alt="Brenda Yael Rychter" title="Brenda Yael Rychter"/>
-		</div>
-	 	<div class="intro color-change">
-	    	<div class="container">
-	      		<div class="row">
-		        	<div class="intro-text">
-			          	<h1>¡Hola! Soy <span class="name">Brenda Rychter</span></h1>
-			          	<p>Diseñadora multimedial & Front End Developer</p>
-			          	<a href="#main-section" class="btn btn-default btn-lg page-scroll styled-button what-i-do">Un poco m&aacute;s sobre m&iacute;</a> 
-		          	</div>
-		      	</div>
-	    	</div>
-	  	</div>
+	<header>
+	 	<article class="info-home home-style color-change">
+	 		<h1 class="header-logo">
+				<img src="img/logo.svg" alt="Brenda Yael Rychter" title="Brenda Yael Rychter"/>
+			</h1>
+        	<div class="intro-text">
+	          	<h2>¡Hola! Soy <span class="name">Brenda Rychter</span></h2>
+	          	<p>Diseñadora multimedial & Front End Developer</p>
+	          	<a href="#main-section" class="styled-button what-i-do">Un poco m&aacute;s sobre m&iacute;</a> 
+          	</div>
+	  	</article>
 	</header>
-
-	<!-- Sections -->
-	<section id="main-section">
-	 	<div class="main">
-	 		<!-- Menú -->
+	<!-- Main home -->
+	<main>
+		<!-- Sections home-->
+		<section id="main-section">
+	 		<!-- Navbar include -->
 			<nav w3-include-html="header.html"></nav> 
-
-	    	<div class="container">
-	      		<div class="row">
-					<div class="col-md-8 description">
-						<p>
-							23 a&ntilde;os, pr&oacute;ximamente <strong>Licenciada en Tecnolog&iacute;a Multimedial</strong> de la Universidad Maim&oacute;nides <br>
-							Cuento con 3 a&ntilde;os de experiencia como Desarrolladora Front End en <strong>Despegar.com</strong>
-						</p>
-						<a href="cv/BrendaRychter.pdf" class="btn btn-default btn-lg page-scroll styled-button download-cv" target="_blank"> Descarg&aacute; mi CV</a>
-					</div>
-					<a class="col-md-4 slider" data-content="Ver mis trabajos" href="galeria.html">
-						<img src="img/img_1.png" id="slider-images" alt="Trabajos" title="Mis trabajos">
-					</a>
-		      	</div>
-	    	</div>
-	  	</div>
-	</section>
-	<section id="video-section">
-		<div class="video">
-	    	<div class="container">
-	      		<div class="row">
-					<div class="col-md-12">
-						<p>
-							Tambi&eacute;n participo de <strong>Nefetz</strong>, un elenco de danza israel&iacute;
-						</p>
-						<a href="https://www.youtube.com/channel/UCAbEf-tqL35RkW-CcY7rsAQ" class="btn btn-default btn-lg page-scroll styled-button styled-button nefetz-channel" target="_blank"> Ver canal de Youtube</a>
-					</div>
-		      	</div>
-		      	<div class="row">
-					<iframe id="video-home" src="https://www.youtube.com/embed/6mBxW_jbBtY" frameborder="0"></iframe>
-		      	</div>
-	    	</div>
-	  	</div>
-	</section>
+			<article class="home-style my-description">
+				<div class="description">
+					<p>
+						23 a&ntilde;os, pr&oacute;ximamente <strong>Licenciada en Tecnolog&iacute;a Multimedial</strong> de la Universidad Maim&oacute;nides <br>
+						Cuento con 3 a&ntilde;os de experiencia como Desarrolladora Front End en <strong>Despegar.com</strong>
+					</p>
+					<a href="cv/BrendaRychter.pdf" class="styled-button download-cv" target="_blank"> Descarg&aacute; mi CV</a>
+				</div>
+				<a class="slider" data-content="Ver mis trabajos" href="galeria.html">
+					<img src="img/img_1.png" id="slider-images" alt="Trabajos" title="Mis trabajos">
+				</a>
+			</article>
+		</section>
+		<section id="video-section home-style">
+			<p>
+				Tambi&eacute;n participo de <strong>Nefetz</strong>, un elenco de danza israel&iacute;
+			</p>
+			<a href="https://www.youtube.com/channel/UCAbEf-tqL35RkW-CcY7rsAQ" class="btn btn-default btn-lg page-scroll styled-button styled-button nefetz-channel" target="_blank"> Ver canal de Youtube</a>
+			<iframe id="video-home" src="https://www.youtube.com/embed/6mBxW_jbBtY" frameborder="0"></iframe>
+		</section>
+	</main>
 
 	<!-- Footer -->
 	<footer>
-		<div w3-include-html="footer.html"></div> 
+	    <ul>
+	        <li><a href="https://www.facebook.com/brendarychter" target="_blank"><i class="fa fa-facebook color-change-footer"></i></a></li>
+	        <li><a href="https://www.github.com/brendarychter" target="_blank"><i class="fa fa-github color-change-footer"></i></a></li>
+	        <li><a href="https://www.instagram.com/brendarychter" target="_blank"><i class="fa fa-instagram color-change-footer"></i></a></li>
+	        <li><a href="https://ar.linkedin.com/in/brenda-rychter-97a55465" target="_blank"><i class="fa fa-linkedin color-change-footer"></i></a></li>
+	        <li><a href="https://medium.com/@brendarychter" target="_blank"><i class="fa fa-medium color-change-footer"></i></a></li>
+	    </ul>
+	    <p class="footer-company-name">Brenda Rychter &copy; 2016</p>
 		<div class="color-changer">
-	        <div class="blue pick-color" footer-color="blue"></div>
-	        <div class="pink pick-color" footer-color="pink"></div>
-	        <div class="yellow pick-color" footer-color="yellow"></div>
+	        <button class="blue pick-color" footer-color="blue"></button>
+	        <button class="pink pick-color" footer-color="pink"></button>
+	        <button class="yellow pick-color" footer-color="yellow"></button>
 	    </div>
-	</footer>
+	</footer> 
+
+    <!-- SCRIPTS -->
 	<!-- Librerias externas -->
 	<script type="text/javascript" src="js/utils/jquery-3.1.1.min.js"></script>
 	<!-- Para incluir partials -->
@@ -93,6 +88,7 @@
 
 	<!-- My js files -->
 	<script type="text/javascript" src="js/actions.js"></script>
+    <!-- END SCRIPTS -->
 </body>
 
 

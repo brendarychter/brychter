@@ -6,34 +6,14 @@
 @import '_gallery';
 
 //Common styles across the web
-/* Menu NavBar */
-.menu-navbar{
-	background-color: #121d1f;
-	color: #fff;
-	text-transform: uppercase;
-	ul{
-		float: right;
-		list-style-type: none;
-		height: 60px;
-		li{
-			a{
-				text-decoration: none;
-				font-size: 15px;
-				color: #fff;
-				letter-spacing: 2px;
-				line-height: 30px;
-				font-weight: 200;
-				transition: all 0.3s ease 0s;
-				cursor: pointer;
-				&:hover{
-					color: #ffcb0d;
-					background-color: #121d1f;
-				}
-			}
-		}
-	}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: $font;
+	text-decoration: none;
+	list-style-type: none;
+	border: 0;
 }
-
 /* Botones */
 .styled-button{
 	color: #000;
@@ -43,55 +23,46 @@
     margin: 0;
     font-size: 16px;
     border-radius: 0;
-    font-family: inherit;
     transition: all 0.3s ease 0s;
     &:hover{
     	background: #000;
     	color: #fff;
+    	text-decoration: none;
     }
 }
 // Footer
 footer{
 	position: relative;
-}
-.footer-site{
 	background-color: #121d1f;
 	padding: 50px 0 40px 0;
     color: #fff;
-
-	.social{
-		.container{
-			text-align: center;
-			ul{
-				padding: 0;
-				list-style-type: none;
-				li{
-					display: inline-block;
-	    			margin: 0 20px;
-	    			a{
-	    				i.fa{
-	    					font-size: 30px;
-						    padding: 4px 5px;
-						    color: #fff;
-						    transition: all 0.5s;
-						    &:hover{
-						    	color: $main-color;
-						    }
-	    				}
-	    			}
+    text-align: center;
+	ul{
+		padding: 0;
+		list-style-type: none;
+		li{
+			display: inline-block;
+			margin: 0 20px;
+			a{
+				i.fa{
+					font-size: 30px;
+				    padding: 4px 5px;
+				    color: #fff;
+				    transition: all 0.5s;
+				    &:hover{
+				    	color: $main-color;
+				    }
 				}
 			}
-			p{
-				font-family: $font;
-				letter-spacing: 1px;
-			}
 		}
+	}
+	p{
+		letter-spacing: 1px;
 	}
 }
 .color-changer{
 	position: absolute;
 	right: 20px;
-	font-family: $font;
 	bottom: 12px;
 	.pick-color{
 		width: 20px;
@@ -138,18 +109,21 @@ footer{
 .pink-color-footer, .pink-color-header{
 	&:hover{
 		color: $color-1 !important;
+		text-decoration: none;
 	}
 }
 
 .blue-color-footer, .blue-color-header{
 	&:hover{
 		color: $color-2 !important;
+		text-decoration: none;
 	}
 }
 
 .yellow-color-footer, .yellow-color-header{
 	&:hover{
 		color: $main-color !important;
+		text-decoration: none;
 	}
 }
 
@@ -157,7 +131,6 @@ footer{
 //Galeria
 #gallery{
 	padding: 20px 0;
-	font-family: $font;
     font-weight: 200;
 
     .subjects{
@@ -169,7 +142,6 @@ footer{
     			display: inline-block;
     			margin-left: 20px;
     			a{
-    				font-family: $font;
     				text-decoration: none;
     			}
     		}
@@ -254,10 +226,8 @@ footer{
     	padding: 100px;
     	text-align: center;
     	color: #fff;
-    	font-family: $font;
     	h2{
     		letter-spacing: 1px;
-    		font-family: $font;
     	}
     	.work-info{
     		margin-left: 20px;
@@ -273,6 +243,33 @@ footer{
 	    		text-align: center;
 	    		padding-top: 10px;
 	    	}
+    	}
+    }
+}
+nav{
+	padding-right: 15px;
+	background-color: #121d1f;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    height: 50px;
+    width: 100%;
+    ul{
+    	float: right;
+    	li{
+    		float: left;
+    		a{
+    			text-decoration: none;
+			    font-size: 15px;
+			    color: #fff;
+			    letter-spacing: 2px;
+			    line-height: 30px;
+			    font-weight: 200;
+			    transition: all 0.3s ease 0s;
+			    cursor: pointer;
+			    padding: 10px 15px;
+    			display: block;
+    		}
     	}
     }
 }
