@@ -108,7 +108,8 @@
 
 #video-section {
   color: #fff;
-  background-color: #000; }
+  background-color: #000;
+  padding-top: 50px; }
   #video-section p {
     font-size: 18px;
     font-family: "Lato", sans-serif;
