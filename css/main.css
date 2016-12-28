@@ -244,30 +244,32 @@
 
 #about-me {
   padding: 20px 0;
-  font-family: "Lato", sans-serif;
-  font-weight: 200; }
+  font-weight: 200;
+  text-align: center; }
   #about-me img {
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    display: inline-block; }
-  #about-me .about-download-cv {
-    margin-top: 20px; }
+    margin: 0 auto;
+    margin-bottom: 25px; }
+  #about-me .download-cv {
+    font-weight: normal; }
 
 #cv-online {
-  font-family: "Lato", sans-serif; }
-  #cv-online .section-title {
-    padding: 25px 0 45px 0; }
-    #cv-online .section-title h2 {
-      line-height: 20px;
-      margin: 0;
-      color: #121d1f;
-      font-weight: 200;
-      margin-bottom: 30px;
-      font-size: 20px;
-      text-transform: uppercase; }
-    #cv-online .section-title hr {
-      width: 200px; }
+  text-align: center; }
+  #cv-online h3 {
+    line-height: 20px;
+    margin: 0;
+    color: #121d1f;
+    font-weight: 200;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 25px 0 0; }
+  #cv-online hr {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px; }
   #cv-online .timeline {
     position: relative;
     padding: 0;
@@ -282,11 +284,11 @@
       margin-left: -1.5px;
       background-color: #eee;
       left: 50%; }
-  #cv-online .timeline > li {
+  #cv-online .timeline li {
     position: relative;
     margin-bottom: 100px;
     min-height: 170px; }
-  #cv-online .timeline > li .timeline-image {
+  #cv-online .timeline li .timeline-image {
     z-index: 100;
     position: absolute;
     border: 1px solid #eee;
@@ -298,47 +300,56 @@
     height: 150px;
     margin-left: -75px;
     background-color: #ffcb0d; }
-    #cv-online .timeline > li .timeline-image h4 {
+    #cv-online .timeline li .timeline-image h4 {
       text-transform: uppercase;
       font-size: 18px;
       margin-top: 40px;
       font-weight: 400; }
-  #cv-online .timeline > li .timeline-panel {
+  #cv-online .timeline li .timeline-panel {
     position: relative;
     padding: 0 20px 0 100px;
     text-align: right;
     float: left;
     width: 41%;
     padding: 10px 20px 20px 100px; }
-  #cv-online .timeline .timeline-heading h4 {
-    margin-top: 0;
-    text-transform: uppercase;
-    font-size: 16px; }
-  #cv-online .timeline .timeline-heading .subheading {
-    text-transform: none;
-    color: #ffcb0d;
-    font-size: 20px; }
+    #cv-online .timeline li .timeline-panel h5 {
+      margin-top: 0;
+      text-transform: uppercase;
+      font-size: 16px; }
+    #cv-online .timeline li .timeline-panel h6 {
+      text-transform: none;
+      color: #ffcb0d;
+      font-size: 20px; }
   #cv-online .timeline .timeline-inverted .timeline-panel {
     float: right;
     padding: 10px 100px 20px 20px;
     text-align: left; }
 
 #skills {
-  font-family: "Lato", sans-serif; }
-  #skills .section-title {
-    padding: 25px 0 45px 0; }
-    #skills .section-title h2 {
-      line-height: 20px;
-      margin: 0;
-      color: #121d1f;
-      font-weight: 200;
-      margin-bottom: 30px;
-      font-size: 20px;
-      text-transform: uppercase; }
-    #skills .section-title hr {
-      width: 200px; }
+  padding: 25px 0 45px 0; }
+  #skills h3 {
+    line-height: 20px;
+    margin: 0;
+    color: #121d1f;
+    font-weight: 200;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-transform: uppercase; }
+  #skills hr {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px; }
   #skills .timeline-heading p {
     text-transform: uppercase; }
+
+.section-style {
+  letter-spacing: 1px;
+  text-align: center;
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  overflow: hidden; }
 
 * {
   margin: 0;
