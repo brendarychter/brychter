@@ -227,10 +227,20 @@
     margin-bottom: 20px; }
 
 #success {
-  background-color: #ffcb0d; }
-  #success .intro-text-success {
-    padding-top: 250px;
-    padding-bottom: 50px; }
+  background-color: #ffcb0d;
+  padding: 250px 50px 85px 50px; }
+  #success h2 {
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    padding: 12px;
+    width: 85%;
+    background-color: #000;
+    color: #fff; }
+  #success p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-top: 20px; }
 
 #about-me {
   padding: 20px 0;
