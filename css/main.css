@@ -1,7 +1,4 @@
 /* Common variables */
-.home-page #home-navbar {
-  display: none; }
-
 .header-logo {
   position: absolute;
   right: 0;
@@ -198,9 +195,13 @@
   margin-left: auto; }
 
 #contact {
-  padding: 20px 0;
-  font-family: "Lato", sans-serif;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  text-align: center;
+  width: 100%;
+  padding: 15px 0;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  overflow: hidden; }
   #contact .container {
     margin-bottom: 20px; }
   #contact input, #contact textarea {
@@ -531,5 +532,20 @@ nav {
         cursor: pointer;
         padding: 10px 15px;
         display: block; }
+      nav ul li:hover {
+        text-decoration: none; }
+
+#home-navbar {
+  position: absolute;
+  left: 25px; }
+  #home-navbar a {
+    padding: 0; }
+    #home-navbar a h1 {
+      margin: 0; }
+      #home-navbar a h1 img {
+        width: 40px; }
+
+#home-page #home-navbar {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */

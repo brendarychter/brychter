@@ -269,7 +269,25 @@ nav{
 			    cursor: pointer;
 			    padding: 10px 15px;
     			display: block;
+    		}&:hover{
+    			text-decoration: none;
     		}
     	}
     }
+}
+#home-navbar{
+	position: absolute;
+    left: 25px;
+	a{
+		padding: 0;
+		h1{
+			margin: 0;
+			img{
+				width: 40px;
+			}
+		}
+	}
+}
+#home-page #home-navbar {
+    display: none;
 }
