@@ -1,14 +1,26 @@
 #contact{
+    #contact-data{
+    	width: 68%;
+    	overflow: hidden;
+    	margin: 0 auto;
+    	li{
+    		padding: 0 15px;
+    		float: left;
+    		width: 33%;
+    	}
+    }
+}
+.section-style{
 	letter-spacing: 1px;
 	text-align: center;
-	width: 100%;
-	padding: 15px 0;
+	width: 1170px;
+	padding: 0 15px;
     margin: 0 auto;
 	margin-bottom: 20px;
     overflow: hidden;
-	.container{
-		margin-bottom: 20px;
-	}	
+}
+#mail-section{
+	width: 650px;
 	input, textarea{
 		border-radius: 0;
 		border: 1px solid #000;
@@ -26,7 +38,6 @@
 		margin-bottom: 20px;
 	}
 }
-
 #success{
 	background-color: $main-color;
 	.intro-text-success{

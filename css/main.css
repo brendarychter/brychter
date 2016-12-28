@@ -194,26 +194,36 @@
   margin-right: auto;
   margin-left: auto; }
 
-#contact {
+#contact #contact-data {
+  width: 68%;
+  overflow: hidden;
+  margin: 0 auto; }
+  #contact #contact-data li {
+    padding: 0 15px;
+    float: left;
+    width: 33%; }
+
+.section-style {
   letter-spacing: 1px;
   text-align: center;
-  width: 100%;
-  padding: 15px 0;
+  width: 1170px;
+  padding: 0 15px;
   margin: 0 auto;
   margin-bottom: 20px;
   overflow: hidden; }
-  #contact .container {
-    margin-bottom: 20px; }
-  #contact input, #contact textarea {
+
+#mail-section {
+  width: 650px; }
+  #mail-section input, #mail-section textarea {
     border-radius: 0;
     border: 1px solid #000; }
-  #contact textarea {
+  #mail-section textarea {
     resize: none; }
-  #contact .contact-data {
+  #mail-section .contact-data {
     margin-top: 20px; }
-  #contact .map-section {
+  #mail-section .map-section {
     margin-bottom: 10px; }
-  #contact h3 {
+  #mail-section h3 {
     margin-bottom: 20px; }
 
 #success {
