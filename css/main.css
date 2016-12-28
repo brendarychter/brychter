@@ -74,9 +74,7 @@
       -webkit-border-radius: 50px;
       border-radius: 50%;
       cursor: pointer;
-      margin-top: 250px;
-      padding-bottom: 150px;
-      margin-left: 15px; }
+      margin-top: 250px; }
     #main-section .slider:before {
       content: attr(data-content);
       color: #fff;
@@ -90,7 +88,7 @@
       font-family: inherit;
       bottom: 194px;
       cursor: pointer;
-      left: 86px;
+      left: 72px;
       position: absolute; }
     #main-section .slider:hover:after, #main-section .slider:hover:before {
       opacity: 1; }

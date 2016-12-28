@@ -86,8 +86,6 @@
 			border-radius: 50%;
     		cursor: pointer;
     		margin-top: 250px;
-    		padding-bottom: 150px;
-    		margin-left: 15px;
 		}
 		&:before {
 		    content: attr(data-content);
@@ -102,7 +100,7 @@
 		    font-family: inherit;
 		    bottom: 194px;
 		    cursor: pointer;
-		    left: 86px;
+		    left: 72px;
 		    position: absolute;
 		}
 		&:hover:after, &:hover:before {
