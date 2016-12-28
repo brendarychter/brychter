@@ -129,10 +129,16 @@ footer{
 
 
 //Galeria
+#portfolio{
+	width: 68%;
+   	overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+}
 #gallery{
-	padding: 20px 0;
+	margin: 0 auto;
     font-weight: 200;
-
+    width: 1170px;
     .subjects{
     	padding-bottom: 30px;
     	text-align: center;
@@ -156,10 +162,8 @@ footer{
     	}
     }
     .work-item{
-    	cursor: pointer;
-    }
-    .gallery-item{
 	    margin: 15px 0;
+	    cursor: pointer;
 	    -webkit-transition: all 0.5s ease-out;
 	    -moz-transition: all 0.5s ease-out;
 	    -ms-transition: all 0.5s ease-out;
@@ -194,7 +198,7 @@ footer{
 	    .hover-item:hover .hover-text {
 		    opacity: 1;
 		}
-		.hover-item .hover-text>h4 {
+		.hover-item .hover-text h3 {
 		    opacity: 0;
 		    color: #fff;
 		    font-weight: 400;
@@ -202,7 +206,7 @@ footer{
 		    transform: translateY(100%);
 		    transition: all 0.3s;
 		}
-		.hover-item:hover .hover-text>h4 {
+		.hover-item:hover .hover-text h3 {
 		    opacity: 1;
 		    -webkit-backface-visibility: hidden;
 		    -webkit-transform: translateY(0);

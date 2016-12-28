@@ -50,7 +50,7 @@ $(document).ready(function(){
 	//Agregar cada item al contenedor
 	for (var i in arrayWorks){
 		var item2 = arrayWorks[i];
-		var thumb = "<div class='col-sm-6 col-md-3 col-lg-3 work-item' data-work='"+arrayWorks[i].id+"'><div class='gallery-item'><div class='hover-item'><div title='"+arrayWorks[i].name+"'><div class='hover-text'><h4>"+arrayWorks[i].name+"</h4><small>"+arrayWorks[i].subject+"</small> </div><img src='"+arrayWorks[i].image+"' class='img-responsive img-thumb' title='"+arrayWorks[i].name+"' alt='"+arrayWorks[i].name+"'> </div> </div></div></div>";
+		var thumb = "<figure class='col-md-3 work-item' data-work='"+arrayWorks[i].id+"'><figcaption class='hover-item'><div title='"+arrayWorks[i].name+"'><div class='hover-text'><h3>"+arrayWorks[i].name+"</h3><small>"+arrayWorks[i].subject+"</small> </div><img src='"+arrayWorks[i].image+"' class='img-responsive img-thumb' title='"+arrayWorks[i].name+"' alt='"+arrayWorks[i].name+"'> </div> </figcaption></figure>";
 		$('.gallery-items').append(thumb);
 	}
 

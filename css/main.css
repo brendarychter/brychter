@@ -446,9 +446,16 @@ footer {
   color: #ffcb0d !important;
   text-decoration: none; }
 
+#portfolio {
+  width: 68%;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center; }
+
 #gallery {
-  padding: 20px 0;
-  font-weight: 200; }
+  margin: 0 auto;
+  font-weight: 200;
+  width: 1170px; }
   #gallery .subjects {
     padding-bottom: 30px;
     text-align: center; }
@@ -466,19 +473,18 @@ footer {
         background-color: #000;
         color: #fff; }
   #gallery .work-item {
-    cursor: pointer; }
-  #gallery .gallery-item {
     margin: 15px 0;
+    cursor: pointer;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
     -ms-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out; }
-    #gallery .gallery-item .hover-item {
+    #gallery .work-item .hover-item {
       height: 260px;
       overflow: hidden;
       position: relative; }
-      #gallery .gallery-item .hover-item .hover-text {
+      #gallery .work-item .hover-item .hover-text {
         position: absolute;
         text-align: center;
         margin: 0 auto;
@@ -489,22 +495,22 @@ footer {
         width: 100%;
         opacity: 0;
         transition: all 0.5s; }
-    #gallery .gallery-item:hover {
+    #gallery .work-item:hover {
       -webkit-transform: scale(1.1);
       -moz-transform: scale(1.1);
       -ms-transform: scale(1.1);
       -o-transform: scale(1.1);
       transform: scale(1.1); }
-    #gallery .gallery-item .hover-item:hover .hover-text {
+    #gallery .work-item .hover-item:hover .hover-text {
       opacity: 1; }
-    #gallery .gallery-item .hover-item .hover-text > h4 {
+    #gallery .work-item .hover-item .hover-text h3 {
       opacity: 0;
       color: #fff;
       font-weight: 400;
       -webkit-transform: translateY(100%);
       transform: translateY(100%);
       transition: all 0.3s; }
-    #gallery .gallery-item .hover-item:hover .hover-text > h4 {
+    #gallery .work-item .hover-item:hover .hover-text h3 {
       opacity: 1;
       -webkit-backface-visibility: hidden;
       -webkit-transform: translateY(0);
