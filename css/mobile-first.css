@@ -1,5 +1,11 @@
 /*Mobile first*/
-.intro .intro-text {
+#mobile-first{
+	height: 100%;
+	background-color: #ffcb0d;
+	padding-top: 150px;
+}
+
+.intro-text {
 	padding-bottom: 400px;
 }
 .menu-mobile {
@@ -24,7 +30,9 @@
 	background: #ffcb0d;
 }
 
-/*Si es mayor al ancho del dispositivo mobile, se aplican estilos de escritorio*/
+/*Si es mayor al ancho del dispositivo mobile, se aplican estilos de escritorio
+Es decir, desde un ancho mínimo de 768px, toma estos estilos
+*/
 @media (min-width: 768px) {
 	.menu-mobile {
 	    background: #000;
@@ -35,7 +43,6 @@
 		display: inline-block;
 	}
 }
-
 
 /*Desktop first*/
 .menu-desktop {
