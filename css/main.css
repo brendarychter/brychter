@@ -43,10 +43,9 @@
     font-family: "Lato", sans-serif;
     line-height: 30px;
     max-width: 75%;
-    padding-top: 300px;
-    padding-bottom: 200px;
     float: left;
-    width: 66%; }
+    width: 60%;
+    padding: 300px 15px 200px 50px; }
     #main-section .description p {
       margin-bottom: 22px; }
   #main-section .slider {
@@ -104,7 +103,8 @@
 #video-section {
   color: #fff;
   background-color: #000;
-  padding-top: 50px; }
+  padding-top: 50px;
+  padding-left: 50px; }
   #video-section p {
     font-size: 18px;
     font-family: "Lato", sans-serif;
@@ -145,8 +145,7 @@
     text-align: left; }
     .info-home .intro-text {
       max-width: 75%;
-      padding-top: 300px;
-      padding-bottom: 200px; }
+      padding: 300px 15px 200px 50px; }
       .info-home .intro-text p {
         font-size: 20px;
         margin-bottom: 40px;
@@ -158,8 +157,7 @@
     text-align: left; }
     .info-home .intro-text {
       max-width: 90%;
-      padding-top: 300px;
-      padding-bottom: 200px; }
+      padding: 300px 15px 200px 50px; }
       .info-home .intro-text p {
         font-size: 20px;
         margin-bottom: 40px;
@@ -177,8 +175,7 @@
     text-align: left; }
     .info-home .intro-text {
       max-width: 75%;
-      padding-top: 300px;
-      padding-bottom: 200px; }
+      padding: 300px 15px 200px 50px; }
       .info-home .intro-text p {
         font-size: 20px;
         margin-bottom: 40px;
@@ -187,8 +184,6 @@
   .header-logo {
     margin: 50px; } }
 .home-style {
-  padding-right: 15px;
-  padding-left: 50px;
   margin-right: auto;
   margin-left: auto; }
 
@@ -204,8 +199,9 @@
 .section-style {
   letter-spacing: 1px;
   text-align: center;
-  width: 1170px;
-  padding: 0 15px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 50px;
   margin: 0 auto;
   margin-bottom: 20px;
   overflow: hidden; }
@@ -343,8 +339,9 @@
 .section-style {
   letter-spacing: 1px;
   text-align: center;
-  width: 1170px;
-  padding: 0 15px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 50px;
   margin: 0 auto;
   margin-bottom: 20px;
   overflow: hidden; }
@@ -380,8 +377,7 @@ footer {
   text-align: center; }
   footer ul {
     padding: 0;
-    list-style-type: none;
-    margin-bottom: 10px; }
+    list-style-type: none; }
     footer ul li {
       display: inline-block;
       margin: 0 20px; }
@@ -454,7 +450,9 @@ footer {
 #gallery {
   margin: 0 auto;
   font-weight: 200;
-  width: 1170px; }
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; }
   #gallery .subjects {
     padding-bottom: 30px;
     text-align: center; }
@@ -479,41 +477,6 @@ footer {
     -ms-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out; }
-    #gallery .work-item .hover-item {
-      height: 260px;
-      overflow: hidden;
-      position: relative; }
-      #gallery .work-item .hover-item .hover-text {
-        position: absolute;
-        text-align: center;
-        margin: 0 auto;
-        color: #ffffff;
-        background: rgba(0, 0, 0, 0.66);
-        padding: 33% 0 0 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: all 0.5s; }
-    #gallery .work-item:hover {
-      -webkit-transform: scale(1.1);
-      -moz-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      -o-transform: scale(1.1);
-      transform: scale(1.1); }
-    #gallery .work-item .hover-item:hover .hover-text {
-      opacity: 1; }
-    #gallery .work-item .hover-item .hover-text h3 {
-      opacity: 0;
-      color: #fff;
-      font-weight: 400;
-      -webkit-transform: translateY(100%);
-      transform: translateY(100%);
-      transition: all 0.3s; }
-    #gallery .work-item .hover-item:hover .hover-text h3 {
-      opacity: 1;
-      -webkit-backface-visibility: hidden;
-      -webkit-transform: translateY(0);
-      transform: translateY(0); }
 
 .layer-works {
   display: none;
@@ -546,7 +509,6 @@ footer {
         padding-top: 10px; }
 
 nav {
-  padding-right: 15px;
   background-color: #121d1f;
   color: #fff;
   text-transform: uppercase;

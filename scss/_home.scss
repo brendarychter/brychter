@@ -51,10 +51,9 @@
 	    font-family: $font;
 	    line-height: 30px;
 	    max-width: 75%;
-	    padding-top: 300px;
-	    padding-bottom: 200px;
 	    float: left;
-    	width: 66%;
+    	width: 60%;
+    	padding: 300px 15px 200px 50px;
 	    p{
 	    	margin-bottom: 22px;
 	    }
@@ -123,6 +122,7 @@
 	color: #fff;
 	background-color: #000;
 	padding-top: 50px;
+	padding-left: 50px;
 	p{
 		font-size: 18px;
 		font-family: $font;
@@ -172,8 +172,7 @@
 	    text-align: left;
 	    .intro-text {
 		    max-width: 75%;
-		    padding-top: 300px;
-    		padding-bottom: 200px;
+    		padding: 300px 15px 200px 50px;
     		p{
     			font-size: 20px;
 			    margin-bottom: 40px;
@@ -190,8 +189,7 @@
 	    text-align: left;
 	    .intro-text {
 		    max-width: 90%;
-		    padding-top: 300px;
-    		padding-bottom: 200px;
+		    padding: 300px 15px 200px 50px;
     		p{
     			font-size: 20px;
 			    margin-bottom: 40px;
@@ -216,8 +214,7 @@
 	    text-align: left;
 	    .intro-text {
 		    max-width: 75%;
-		    padding-top: 300px;
-    		padding-bottom: 200px;
+		    padding: 300px 15px 200px 50px;
     		p{
     			font-size: 20px;
 			    margin-bottom: 40px;
@@ -235,8 +232,8 @@
 
 
 .home-style{
-	padding-right: 15px;
-    padding-left: 50px;
+	// padding-right: 15px;
+ //    padding-left: 50px;
     margin-right: auto;
     margin-left: auto;
 }

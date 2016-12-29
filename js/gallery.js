@@ -39,7 +39,7 @@ $(document).ready(function(){
 	var arrayThumbs = [
 		{	
 			"description": "Redise&ntilde;o de afiches para la pel&iacute;cula Black Swan</br> Dise&ntilde;o I",
-			"works": [{"name": "Tipogr&aacute;fico", "src": "img/gallery/thumbs/thumb_1.png"}, {"name": "Ilustraci&oacute;n", "src": "img/gallery/thumbs/thumb_1.png"}, {"name": "Fotogr&aacute;fico", "src": "img/gallery/thumbs/thumb_1.png"}]
+			"works": [{"name": "Tipogr&aacute;fico", "src": "img/gallery/thumbs/thumb_2.png"}, {"name": "Ilustraci&oacute;n", "src": "img/gallery/thumbs/thumb_2.png"}, {"name": "Fotogr&aacute;fico", "src": "img/gallery/thumbs/thumb_2.png"}]
 		},
 		{	
 			"description": "Mapping",
@@ -50,7 +50,8 @@ $(document).ready(function(){
 	//Agregar cada item al contenedor
 	for (var i in arrayWorks){
 		var item2 = arrayWorks[i];
-		var thumb = "<figure class='col-md-3 col-lg-3 work-item' data-work='"+arrayWorks[i].id+"'><figcaption class='hover-item'><div title='"+arrayWorks[i].name+"'><div class='hover-text'><h3>"+arrayWorks[i].name+"</h3><small>"+arrayWorks[i].subject+"</small> </div><img src='"+arrayWorks[i].image+"' class='img-responsive img-thumb' title='"+arrayWorks[i].name+"' alt='"+arrayWorks[i].name+"'> </div> </figcaption></figure>";
+		//<figcaption class='hover-item'><h3>"+arrayWorks[i].name+"</h3><small>"+arrayWorks[i].subject+"</small></figcaption>
+		var thumb = "<figure class='col-md-3 col-lg-3 work-item' data-work='"+arrayWorks[i].id+"'><img src='"+arrayWorks[i].image+"' class='img-responsive img-thumb' title='"+arrayWorks[i].name+"' alt='"+arrayWorks[i].name+"' /></figure>";
 		$('.gallery-items').append(thumb);
 	}
 
@@ -64,7 +65,7 @@ $(document).ready(function(){
   		$('.items-to-show').append(text);
 		for (var n in arrayThumbs[work].works){
 			var item = arrayThumbs[work].works[n]
-  			var img = "<div class='col-sm-6 col-md-3 col-lg-3 work-info'><img src='"+item.src+"' alt='"+item.name+"' title='"+item.name+"'/><p>"+item.name+"</p></div>";
+  			var img = "<figure class='col-sm-6 col-md-3 col-lg-3 work-info'><img src='"+item.src+"' alt='"+item.name+"' title='"+item.name+"'/><p>"+item.name+"</p></figure>";
   			$('.items-to-show').append(img)
 		}
 	})
