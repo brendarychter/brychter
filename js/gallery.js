@@ -50,11 +50,11 @@ $(document).ready(function(){
 	//Agregar cada item al contenedor
 	for (var i in arrayWorks){
 		var item2 = arrayWorks[i];
-		var thumb = "<figure class='col-md-3 col-lg-3 work-item' data-work='"+arrayWorks[i].id+"'><figcaption class='hover-item'><div title='"+arrayWorks[i].name+"'><div class='hover-text'><h3>"+arrayWorks[i].name+"</h3><small>"+arrayWorks[i].subject+"</small> </div><img src='"+arrayWorks[i].image+"' class='img-responsive img-thumb' title='"+arrayWorks[i].name+"' alt='"+arrayWorks[i].name+"'> </div> </figcaption></figure>";
+		var thumb = "<figure class='col-md-4 col-sm-12 col-lg-3 work-item' data-work='"+arrayWorks[i].id+"'><figcaption class='hover-item'><div title='"+arrayWorks[i].name+"'><div class='hover-text'><h3>"+arrayWorks[i].name+"</h3><small>"+arrayWorks[i].subject+"</small> </div><img src='"+arrayWorks[i].image+"' class='img-responsive img-thumb' title='"+arrayWorks[i].name+"' alt='"+arrayWorks[i].name+"'> </div> </figcaption></figure>";
 		$('.gallery-items').append(thumb);
 	}
 
-	//Al clickear cada item, mostrar en el overlay unicamente los que son
+/*	//Al clickear cada item, mostrar en el overlay unicamente los que son
 	$('.work-item').on("click", function(){
 		$('.layer-works').show();
 		var work = Number($(this).attr("data-work"));
@@ -67,7 +67,7 @@ $(document).ready(function(){
   			var img = "<div class='col-sm-6 col-md-3 col-lg-3 work-info'><img src='"+item.src+"' alt='"+item.name+"' title='"+item.name+"'/><p>"+item.name+"</p></div>";
   			$('.items-to-show').append(img)
 		}
-	})
+	})*/
 
 	$('.layer-works').on("click", function(){
 		$(this).hide();
