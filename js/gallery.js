@@ -51,7 +51,7 @@ $(document).ready(function(){
 	for (var i in arrayWorks){
 		var item2 = arrayWorks[i];
 		//<figcaption class='hover-item'><h3>"+arrayWorks[i].name+"</h3><small>"+arrayWorks[i].subject+"</small></figcaption>
-		var thumb = "<figure class='col-sm-3 col-md-3 col-lg-3 work-item' data-work='"+arrayWorks[i].id+"'><img src='"+arrayWorks[i].image+"' class='img-responsive img-thumb' title='"+arrayWorks[i].name+"' alt='"+arrayWorks[i].name+"' /></figure>";
+		var thumb = "<figure class='col col-sm-4 col-md-3 col-lg-3 work-item' data-work='"+arrayWorks[i].id+"'><img src='"+arrayWorks[i].image+"' class='img-responsive img-thumb' title='"+arrayWorks[i].name+"' alt='"+arrayWorks[i].name+"' /></figure>";
 		$('.gallery-items').append(thumb);
 	}
 
