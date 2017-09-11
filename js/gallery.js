@@ -51,24 +51,24 @@ $(document).ready(function(){
 	for (var i in arrayWorks){
 		var item2 = arrayWorks[i];
 		//<figcaption class='hover-item'><h3>"+arrayWorks[i].name+"</h3><small>"+arrayWorks[i].subject+"</small></figcaption>
-		var thumb = "<figure class='col-md-3 col-lg-3 work-item' data-work='"+arrayWorks[i].id+"'><img src='"+arrayWorks[i].image+"' class='img-responsive img-thumb' title='"+arrayWorks[i].name+"' alt='"+arrayWorks[i].name+"' /></figure>";
+		var thumb = "<figure class='col-sm-3 col-md-3 col-lg-3 work-item' data-work='"+arrayWorks[i].id+"'><img src='"+arrayWorks[i].image+"' class='img-responsive img-thumb' title='"+arrayWorks[i].name+"' alt='"+arrayWorks[i].name+"' /></figure>";
 		$('.gallery-items').append(thumb);
 	}
 
 	//Al clickear cada item, mostrar en el overlay unicamente los que son
-	$('.work-item').on("click", function(){
-		$('.layer-works').show();
-		var work = Number($(this).attr("data-work"));
-		work = 0;
-		$('.items-to-show').empty();
-		var text = "<h2>"+arrayThumbs[work].description+"</h2>"
-  		$('.items-to-show').append(text);
-		for (var n in arrayThumbs[work].works){
-			var item = arrayThumbs[work].works[n]
-  			var img = "<figure class='col-sm-6 col-md-3 col-lg-3 work-info'><img src='"+item.src+"' alt='"+item.name+"' title='"+item.name+"'/><p>"+item.name+"</p></figure>";
-  			$('.items-to-show').append(img)
-		}
-	})
+	// $('.work-item').on("click", function(){
+	// 	$('.layer-works').show();
+	// 	var work = Number($(this).attr("data-work"));
+	// 	work = 0;
+	// 	$('.items-to-show').empty();
+	// 	var text = "<h2>"+arrayThumbs[work].description+"</h2>"
+ //  		$('.items-to-show').append(text);
+	// 	for (var n in arrayThumbs[work].works){
+	// 		var item = arrayThumbs[work].works[n]
+ //  			var img = "<figure class='col-sm-6 col-md-3 col-lg-3 work-info'><img src='"+item.src+"' alt='"+item.name+"' title='"+item.name+"'/><p>"+item.name+"</p></figure>";
+ //  			$('.items-to-show').append(img)
+	// 	}
+	// })
 
 	$('.layer-works').on("click", function(){
 		$(this).hide();

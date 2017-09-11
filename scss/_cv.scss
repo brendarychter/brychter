@@ -16,6 +16,7 @@
 }
 #cv-online{
 	text-align: center;
+	padding: 0;
 	h3{
 		line-height: 20px;
 	    margin: 0;
@@ -131,4 +132,34 @@
     margin: 0 auto;
     margin-bottom: 20px;
     overflow: hidden;
+}
+@media(min-width: 1px) and (max-width: 767px){
+	#cv-online{
+		.timeline{
+			li{
+				margin-top: 60px;
+				.timeline-image{
+					position: inherit;
+					margin: 0 auto;
+					margin-bottom: 10px;
+					left: 0;
+				}
+				.timeline-panel{
+	    			padding: 0; 
+	    			text-align: center; 
+	    			width: 100%; 
+	    			padding: 0; 
+				}
+			}
+			.timeline-inverted{
+				.timeline-panel{
+	   				padding: 20px; 
+	     			text-align: center;
+				}
+			}
+			&:before{
+				display: none;
+			}
+		}
+	}
 }
