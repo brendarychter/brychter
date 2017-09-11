@@ -157,10 +157,12 @@
     #main-section .slider:after {
       margin-top: 0;
       width: 200px;
-      height: 200px; }
+      height: 200px;
+      display: none; }
     #main-section .slider:before {
       font-size: 13px;
-      left: 90px; }
+      left: 90px;
+      display: none; }
     #main-section .slider img {
       width: 200px;
       height: 200px; }

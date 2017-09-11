@@ -192,10 +192,12 @@
 				margin-top: 0;
 				width: 200px;
 	    		height: 200px;
+	    		display: none;
 			}
 			&:before{
 				font-size: 13px;
-				left: 90px
+				left: 90px;
+	    		display: none;
 			}
 			img{
 				width: 200px;
