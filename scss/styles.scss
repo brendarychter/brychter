@@ -1,0 +1,51 @@
+//Common styles across the web
+*{
+	margin: 0;
+	padding: 0;
+}
+$font: 'Lato', sans-serif;
+$main-color: #ffcb0d;
+$logo-header: 150px;
+$color-1: #FF8C69;
+$color-2: #7bc3d1;
+
+body{
+	font-family: $font;
+
+	header{
+		article{
+			height: 100vh;
+			display: table;
+			width: 100%;
+			text-align: center;
+			background-color: $main-color;
+			position: relative;
+			.intro-container{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				
+				.intro-circle{
+					border-radius: 50%;
+					vertical-align: top;
+					background: #000;
+					margin-bottom: 8%;
+					@media (min-width: 1px) and (max-width: 1024px){
+						width: 300px;
+						height: 300px;
+					}
+					@media (min-width: 1025px){
+						width: 350px;
+						height: 350px;
+					}
+				}
+				.intro-texto{
+
+				}
+			}
+		}
+	}
+
+}
+

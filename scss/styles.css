@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Lato", sans-serif; }
+  body header article {
+    height: 100vh;
+    display: table;
+    width: 100%;
+    text-align: center;
+    background-color: #ffcb0d;
+    position: relative; }
+    body header article .intro-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      body header article .intro-container .intro-circle {
+        border-radius: 50%;
+        vertical-align: top;
+        background: #000;
+        margin-bottom: 8%; }
+        @media (min-width: 1px) and (max-width: 1024px) {
+          body header article .intro-container .intro-circle {
+            width: 300px;
+            height: 300px; } }
+        @media (min-width: 1025px) {
+          body header article .intro-container .intro-circle {
+            width: 350px;
+            height: 350px; } }
+
+/*# sourceMappingURL=styles.css.map */
