@@ -5,57 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Brenda Rychter - Dise&ntilde;adora multimedial</title>
-    <meta name="description" content="Portfolio personal de Brenda Rychter">
+    <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- STYLES -->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="scss/styles.css">
+    <link rel="stylesheet" type="text/css" href="scss/main.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
     <!-- END STYLES -->
 
     <!-- ICON TAB-->
     <link rel="shortcut icon" type="image/png" href="img/logo-ico.png"/>
 
-    <!-- SCRIPTS -->
-    <!-- Librerias externas -->
-    <script type="text/javascript" src="js/utils/jquery-3.1.1.min.js"></script>
-
-    <!-- My js files -->
-    <script type="text/javascript" src="js/actions.js"></script>
-    <!-- END SCRIPTS -->
-
 </head>
-<body>
+<body id="home-page">
+
     <!-- Header -->
     <header>
-        <article class="info-home home-style color-change">
-            <h1 class="header-logo">
-                <img src="img/logo.svg" alt="Brenda Yael Rychter" title="Brenda Yael Rychter"/>
-            </h1>
-            <div class="intro-text">
+        <article class="info-home">
+            <div class="intro-container">
+                <div class="intro-circle">
+                    
+                </div>
+                <h1>Hola!</h1>
+            </div>
+<!--             <div class="intro-text">
                 <h2>¡Hola! Soy <span class="name">Brenda Rychter</span></h2>
                 <p>Diseñadora multimedial & Front End Developer</p>
-                <a href="#main-section" class="styled-button what-i-do">Un poco m&aacute;s sobre m&iacute;</a>
-            </div>
+                <a href="#main-section" class="styled-button what-i-do">Un poco m&aacute;s sobre m&iacute;</a> 
+            </div> -->
         </article>
     </header>
+    <!-- End Header -->
+
 
     <!-- Main home -->
     <main>
-        <section class="description-programming">
-            <aside>
-
-            </aside>
-            <article>
-
-            </article>
-        </section>
         <!-- Sections home-->
         <section id="main-section">
-            <!-- Navbar -->
-            <nav w3-include-html="header.html"></nav>
             <article class="home-style my-description">
                 <div class="description">
                     <p>
@@ -88,9 +76,21 @@
             <li><a href="https://medium.com/@brendarychter" target="_blank"><i class="fa fa-medium color-change-footer"></i></a></li>
         </ul>
         <p class="footer-company-name">Brenda Rychter &copy; 2017</p>
-    </footer>
+    </footer> 
 
-    </body>
+    <!-- SCRIPTS -->
+    <!-- Librerias externas -->
+    <script type="text/javascript" src="js/utils/jquery-3.1.1.min.js"></script>
+    <!-- Para incluir partials -->
+    <script type="text/javascript" src="js/utils/w3data.js"></script>
+    <script>
+        w3IncludeHTML();
+    </script>
+
+    <!-- My js files -->
+    <script type="text/javascript" src="js/actions.js"></script>
+    <!-- END SCRIPTS -->
+</body>
 
 
 

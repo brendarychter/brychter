@@ -9,7 +9,7 @@
 	}
 }
 .info-home{
-	display: table;
+/* 	display: table;
 	width: 100%;
 	height: auto;
 	padding: 100px 0;
@@ -17,7 +17,7 @@
 	color: #fff;
 	background-color: $main-color;
 	font-family: $font;
-	
+	 */
 	.intro-text{
 		p{
 			font-family: inherit;
@@ -150,7 +150,7 @@
 /* Resolutions */
 
 @media (min-width: 1px) and (max-width: 767px){
-	.info-home {
+/* 	.info-home {
 
 	    .intro-text {
     		p{
@@ -163,7 +163,7 @@
 		    margin-bottom: 20px;
 		}
 
-	}
+	} */
 	.header-logo{
 		right: 25px;
 		margin: 3px;
@@ -222,9 +222,9 @@
 }
 @media (min-width: 768px) and (max-width: 1023px){
 	.info-home {
-	    height: 100%;
+/* 	    height: 100%;
 	    padding: 0;
-	    text-align: left;
+	    text-align: left; */
 	    .intro-text {
 		    max-width: 75%;
     		padding: 300px 15px 200px 50px;
@@ -239,9 +239,9 @@
 }
 @media (min-width: 1024px) and (max-width: 1279px){
 	.info-home {
-	    height: 100%;
+/* 	    height: 100%;
 	    padding: 0;
-	    text-align: left;
+	    text-align: left; */
 	    .intro-text {
 		    max-width: 90%;
 		    padding: 300px 15px 200px 50px;
@@ -264,9 +264,9 @@
 }
 @media (min-width: 1280px){
 	.info-home {
-	    height: 100%;
+/* 	    height: 100%;
 	    padding: 0;
-	    text-align: left;
+	    text-align: left; */
 	    .intro-text {
 		    max-width: 75%;
 		    padding: 300px 15px 200px 50px;
