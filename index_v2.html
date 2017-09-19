@@ -17,7 +17,13 @@
 
     <!-- ICON TAB-->
     <link rel="shortcut icon" type="image/png" href="img/logo-ico.png"/>
+    <!-- SCRIPTS -->
+    <!-- Librerias externas -->
+    <script type="text/javascript" src="js/utils/jquery-3.1.1.min.js"></script>
 
+    <!-- My js files -->
+    <script type="text/javascript" src="js/actions.js"></script>
+    <!-- END SCRIPTS -->
 </head>
 <body id="home-page">
 
@@ -25,47 +31,52 @@
     <header>
         <article class="info-home">
             <div class="intro-container">
-                <div class="intro-circle">
-                    
-                </div>
-                <h1>Hola!</h1>
-            </div>
-<!--             <div class="intro-text">
-                <h2>¡Hola! Soy <span class="name">Brenda Rychter</span></h2>
+                <div class="intro-circle"></div>
+                <h1>¡Hola!</h1><h2> Soy <span class="name">Brenda Rychter</span></h2>
                 <p>Diseñadora multimedial & Front End Developer</p>
                 <a href="#main-section" class="styled-button what-i-do">Un poco m&aacute;s sobre m&iacute;</a> 
-            </div> -->
+            </div>
         </article>
+        <nav class="nav">
+            <ul>
+              <li><a href="#">Sobre m&iacute;</a></li>
+              <li><a href="#">Programaci&oacute;n</a></li>
+              <li><a href="#">Dise&ntilde;o</a></li>
+              <li><a href="#">Audiovisual</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
     <!-- End Header -->
 
+    <!-- Main Section -->
+    <main id="main-section">
+        <!-- Section Info-->
+        <section>
+            <aside>
 
-    <!-- Main home -->
-    <main>
-        <!-- Sections home-->
-        <section id="main-section">
-            <article class="home-style my-description">
-                <div class="description">
-                    <p>
-                        23 a&ntilde;os, pr&oacute;ximamente <strong>Licenciada en Tecnolog&iacute;a Multimedial</strong> de la <strong>Universidad Maim&oacute;nides</strong> <br>
-                        Cuento con 4 a&ntilde;os de experiencia como Desarrolladora Front End en <strong>Despegar.com</strong>
-                    </p>
-                    <a href="cv/BrendaRychter.pdf" class="styled-button download-cv" target="_blank"> Descarg&aacute; mi CV</a>
-                </div>
-                <a class="slider" data-content="Ver mis trabajos" href="galeria.html">
-                    <img src="img/img_1.png" id="slider-images" alt="Trabajos" title="Mis trabajos">
-                </a>
+            </aside>
+            <article>
+                <img src="img/brenda_rychter.jpg" class="img-responsive" alt="Brenda Yael Rychter" title="Brenda Yael Rychter" />
+                <p>23 a&ntilde;os, pr&oacute;ximamente Licenciada en Tecnolog&iacute;a Multimedial de la Universidad Maim&oacute;nides 
+                Cuento con 4 a&ntilde;os de experiencia como Desarrolladora Front End en Despegar.com</p>
             </article>
         </section>
-        <section id="video-section" class="home-style">
-            <p>
-                Tambi&eacute;n participo de <strong>Nefetz</strong>, un elenco de danza israel&iacute;
-            </p>
-            <a href="https://www.youtube.com/channel/UCAbEf-tqL35RkW-CcY7rsAQ" class="btn btn-default btn-lg page-scroll styled-button styled-button nefetz-channel" target="_blank"> Ver canal de Youtube</a>
-            <iframe id="video-home" src="https://www.youtube.com/embed/6mBxW_jbBtY" frameborder="0"></iframe>
-        </section>
-    </main>
+        <!-- End Section Info-->
 
+        <!-- Section Contact-->
+        <section>
+            <aside class="contact-aside">
+
+            </aside>
+            <article class="contact-article">
+            </article>
+        </section>
+        <!-- End Section Contact -->
+    </main>
+    <!-- End Main Section -->
+
+    
     <!-- Footer -->
     <footer>
         <ul>
@@ -77,21 +88,8 @@
         </ul>
         <p class="footer-company-name">Brenda Rychter &copy; 2017</p>
     </footer> 
+    <!-- End Footer -->
 
-    <!-- SCRIPTS -->
-    <!-- Librerias externas -->
-    <script type="text/javascript" src="js/utils/jquery-3.1.1.min.js"></script>
-    <!-- Para incluir partials -->
-    <script type="text/javascript" src="js/utils/w3data.js"></script>
-    <script>
-        w3IncludeHTML();
-    </script>
-
-    <!-- My js files -->
-    <script type="text/javascript" src="js/actions.js"></script>
-    <!-- END SCRIPTS -->
+    
 </body>
-
-
-
 </html>

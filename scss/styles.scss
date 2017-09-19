@@ -4,13 +4,56 @@
 	padding: 0;
 }
 $font: 'Lato', sans-serif;
+
+ @font-face{
+	font-family: 'OstrichSansBlack';
+	src: url(../fonts/webfonts/ostrich-sans-black.woff) format('woff');
+}
+@font-face{
+	font-family: 'OstrichSansBold';
+	src: url(../fonts/webfonts/ostrich-sans-bold.woff) format('woff');
+}
+@font-face{
+	font-family: 'OstrichSansDashed';
+	src: url(../fonts/webfonts/ostrich-sans-dashed.woff) format('woff');
+}
+@font-face{
+	font-family: 'OstrichSansInlineItalic';
+	src: url(../fonts/webfonts/ostrich-sans-inline-italic.woff) format('woff');
+}
+@font-face{
+	font-family: 'OstrichSansInlineRegular';
+	src: url(../fonts/webfonts/ostrich-sans-inline-regular.woff) format('woff');
+}
+@font-face{
+	font-family: 'OstrichSansLight';
+	src: url(../fonts/webfonts/ostrich-sans-light.woff) format('woff');
+}
+@font-face{
+	font-family: 'OstrichSansRegular';
+	src: url(../fonts/webfonts/ostrich-sans-regular.woff) format('woff');
+}
+@font-face{
+	font-family: 'OstrichSansRounded';
+	src: url(../fonts/webfonts/ostrich-sans-rounded.woff) format('woff');
+}
+
+
+@font-face{
+	font-family: 'RalewayBlack';
+	src: url(../fonts/raleway/Raleway-Black.woff) format('woff');
+}
+@font-face{
+	font-family: 'RalewayLight';
+	src: url(../fonts/raleway/Raleway-Light.woff) format('woff');
+}
 $main-color: #ffcb0d;
 $logo-header: 150px;
 $color-1: #FF8C69;
 $color-2: #7bc3d1;
 
 body{
-	font-family: $font;
+	font-family: 'Ostrich';
 
 	header{
 		article{
@@ -40,12 +83,84 @@ body{
 						height: 350px;
 					}
 				}
-				.intro-texto{
-
+				h1{
+					font-family: 'Open Sans', sans-serif;
+					//font-family: 'OstrichSansBold';
+					font-size: 50px;
+					letter-spacing: 2px;
+					text-transform: uppercase;
+				}
+				p{
+					margin-bottom: 20px;
 				}
 			}
 		}
 	}
+	nav{
+		background-color: #121d1f;
+	    color: #fff;
+	    text-transform: uppercase;
+	    display: block;
+	    height: 50px;
+	    width: 100%;
+	    ul{
+	    	li{
+	    		float: left;
+	    		a{
+	    			text-decoration: none;
+				    font-size: 15px;
+				    color: #fff;
+				    letter-spacing: 2px;
+				    line-height: 30px;
+				    font-weight: 200;
+				    transition: all 0.3s ease 0s;
+				    cursor: pointer;
+				    padding: 10px 15px;
+	    			display: block;
+	    		}:hover{
+		    		color: #ffcb0d;
+					text-decoration: none;
+				}
+	    	}
+	    }
+	}
+	main{
+		section{
+			height: 100vh;
+			display: -webkit-flex;
+    		display: flex;
+    		text-align: center;
+			aside{
+				flex: 1;
+				width: 50vw;
+				background-color: #222;
+    			padding: 5%;
+			}
+			article{
+    			padding: 5%;
+				flex: 1;
+				width: 50vw;
+				background-color: #ddd;
+				img{
+					border-radius: 50%;
+				    width: 200px;
+				    height: 200px;
+				    margin: 0 auto;
+			    	margin-bottom: 25px;
+				}
+			}
 
+			.contact-article{
+				background-color: #fff;
+			}
+			.contact-aside{
+				background-color: #111;
+			}
+
+			@media (min-width: 1px) and (max-width: 768px){
+				//flex uno arriba del otro
+			}
+		}
+	}
 }
 

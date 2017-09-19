@@ -2,8 +2,38 @@
   margin: 0;
   padding: 0; }
 
+@font-face {
+  font-family: 'OstrichSansBlack';
+  src: url(../fonts/webfonts/ostrich-sans-black.woff) format("woff"); }
+@font-face {
+  font-family: 'OstrichSansBold';
+  src: url(../fonts/webfonts/ostrich-sans-bold.woff) format("woff"); }
+@font-face {
+  font-family: 'OstrichSansDashed';
+  src: url(../fonts/webfonts/ostrich-sans-dashed.woff) format("woff"); }
+@font-face {
+  font-family: 'OstrichSansInlineItalic';
+  src: url(../fonts/webfonts/ostrich-sans-inline-italic.woff) format("woff"); }
+@font-face {
+  font-family: 'OstrichSansInlineRegular';
+  src: url(../fonts/webfonts/ostrich-sans-inline-regular.woff) format("woff"); }
+@font-face {
+  font-family: 'OstrichSansLight';
+  src: url(../fonts/webfonts/ostrich-sans-light.woff) format("woff"); }
+@font-face {
+  font-family: 'OstrichSansRegular';
+  src: url(../fonts/webfonts/ostrich-sans-regular.woff) format("woff"); }
+@font-face {
+  font-family: 'OstrichSansRounded';
+  src: url(../fonts/webfonts/ostrich-sans-rounded.woff) format("woff"); }
+@font-face {
+  font-family: 'RalewayBlack';
+  src: url(../fonts/raleway/Raleway-Black.woff) format("woff"); }
+@font-face {
+  font-family: 'RalewayLight';
+  src: url(../fonts/raleway/Raleway-Light.woff) format("woff"); }
 body {
-  font-family: "Lato", sans-serif; }
+  font-family: 'Ostrich'; }
   body header article {
     height: 100vh;
     display: table;
@@ -29,5 +59,60 @@ body {
           body header article .intro-container .intro-circle {
             width: 350px;
             height: 350px; } }
+      body header article .intro-container h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 50px;
+        letter-spacing: 2px;
+        text-transform: uppercase; }
+      body header article .intro-container p {
+        margin-bottom: 20px; }
+  body nav {
+    background-color: #121d1f;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    height: 50px;
+    width: 100%; }
+    body nav ul li {
+      float: left; }
+      body nav ul li a {
+        text-decoration: none;
+        font-size: 15px;
+        color: #fff;
+        letter-spacing: 2px;
+        line-height: 30px;
+        font-weight: 200;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        padding: 10px 15px;
+        display: block; }
+      body nav ul li :hover {
+        color: #ffcb0d;
+        text-decoration: none; }
+  body main section {
+    height: 100vh;
+    display: -webkit-flex;
+    display: flex;
+    text-align: center; }
+    body main section aside {
+      flex: 1;
+      width: 50vw;
+      background-color: #222;
+      padding: 5%; }
+    body main section article {
+      padding: 5%;
+      flex: 1;
+      width: 50vw;
+      background-color: #ddd; }
+      body main section article img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        margin-bottom: 25px; }
+    body main section .contact-article {
+      background-color: #fff; }
+    body main section .contact-aside {
+      background-color: #111; }
 
 /*# sourceMappingURL=styles.css.map */

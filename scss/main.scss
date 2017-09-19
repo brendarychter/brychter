@@ -248,35 +248,6 @@ footer{
     	}
     }
 }
-nav{
-	background-color: #121d1f;
-    color: #fff;
-    text-transform: uppercase;
-    display: block;
-    height: 50px;
-    width: 100%;
-    ul{
-    	float: right;
-    	li{
-    		float: left;
-    		a{
-    			text-decoration: none;
-			    font-size: 15px;
-			    color: #fff;
-			    letter-spacing: 2px;
-			    line-height: 30px;
-			    font-weight: 200;
-			    transition: all 0.3s ease 0s;
-			    cursor: pointer;
-			    padding: 10px 15px;
-    			display: block;
-    		}:hover{
-	    		color: #ffcb0d;
-				text-decoration: none;
-			}
-    	}
-    }
-}
 @media (min-width: 1px) and (max-width: 767px){
 	nav{
 		ul{
