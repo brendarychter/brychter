@@ -1,7 +1,4 @@
-* {
-  margin: 0;
-  padding: 0; }
-
+/* OSTRICH */
 @font-face {
   font-family: 'OstrichSansBlack';
   src: url(../fonts/webfonts/ostrich-sans-black.woff) format("woff"); }
@@ -26,12 +23,48 @@
 @font-face {
   font-family: 'OstrichSansRounded';
   src: url(../fonts/webfonts/ostrich-sans-rounded.woff) format("woff"); }
+/* RALEWAY */
 @font-face {
   font-family: 'RalewayBlack';
   src: url(../fonts/raleway/Raleway-Black.woff) format("woff"); }
 @font-face {
   font-family: 'RalewayLight';
   src: url(../fonts/raleway/Raleway-Light.woff) format("woff"); }
+/* OPEN SANS */
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url(../fonts/Open_Sans/OpenSans-Bold.woff) format("woff"); }
+@font-face {
+  font-family: 'OpenSansBoldItalic';
+  src: url(../fonts/Open_Sans/OpenSans-BoldItalic.woff) format("woff"); }
+@font-face {
+  font-family: 'OpenSansExtraBold';
+  src: url(../fonts/Open_Sans/OpenSans-ExtraBold.woff) format("woff"); }
+@font-face {
+  font-family: 'OpenSansExtraBoldItalic';
+  src: url(../fonts/Open_Sans/OpenSans-ExtraBoldItalic.woff) format("woff"); }
+@font-face {
+  font-family: 'OpenSansItalic';
+  src: url(../fonts/Open_Sans/OpenSans-Italic.woff) format("woff"); }
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url(../fonts/Open_Sans/OpenSans-Light.woff) format("woff"); }
+@font-face {
+  font-family: 'OpenSansLightItalic';
+  src: url(../fonts/Open_Sans/OpenSans-LightItalic.woff) format("woff"); }
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url(../fonts/Open_Sans/OpenSans-Regular.woff) format("woff"); }
+@font-face {
+  font-family: 'OpenSansSemiBold';
+  src: url(../fonts/Open_Sans/OpenSans-SemiBold.woff) format("woff"); }
+@font-face {
+  font-family: 'OpenSansSemiBoldItalic';
+  src: url(../fonts/Open_Sans/OpenSans-SemiBoldItalic.woff) format("woff"); }
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
   font-family: 'Ostrich'; }
   body header article {
@@ -95,14 +128,10 @@ body {
     display: flex;
     text-align: center; }
     body main section aside {
-      flex: 1;
-      width: 50vw;
       background-color: #222;
       padding: 5%; }
     body main section article {
       padding: 5%;
-      flex: 1;
-      width: 50vw;
       background-color: #ddd; }
       body main section article img {
         border-radius: 50%;
@@ -114,5 +143,20 @@ body {
       background-color: #fff; }
     body main section .contact-aside {
       background-color: #111; }
+  @media (min-width: 1px) and (max-width: 768px) {
+    body main section {
+      display: block;
+      height: 100vh; }
+      body main section article, body main section aside {
+        display: block; }
+      body main section aside {
+        height: 30vh; }
+      body main section article {
+        height: 70vh; } }
+  @media (min-width: 769px) {
+    body main section article, body main section aside {
+      width: 50vw;
+      height: 100vh;
+      flex: 1; } }
 
 /*# sourceMappingURL=styles.css.map */

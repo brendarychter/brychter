@@ -1,3 +1,5 @@
+@import '_fonts';
+
 //Common styles across the web
 *{
 	margin: 0;
@@ -5,48 +7,7 @@
 }
 $font: 'Lato', sans-serif;
 
- @font-face{
-	font-family: 'OstrichSansBlack';
-	src: url(../fonts/webfonts/ostrich-sans-black.woff) format('woff');
-}
-@font-face{
-	font-family: 'OstrichSansBold';
-	src: url(../fonts/webfonts/ostrich-sans-bold.woff) format('woff');
-}
-@font-face{
-	font-family: 'OstrichSansDashed';
-	src: url(../fonts/webfonts/ostrich-sans-dashed.woff) format('woff');
-}
-@font-face{
-	font-family: 'OstrichSansInlineItalic';
-	src: url(../fonts/webfonts/ostrich-sans-inline-italic.woff) format('woff');
-}
-@font-face{
-	font-family: 'OstrichSansInlineRegular';
-	src: url(../fonts/webfonts/ostrich-sans-inline-regular.woff) format('woff');
-}
-@font-face{
-	font-family: 'OstrichSansLight';
-	src: url(../fonts/webfonts/ostrich-sans-light.woff) format('woff');
-}
-@font-face{
-	font-family: 'OstrichSansRegular';
-	src: url(../fonts/webfonts/ostrich-sans-regular.woff) format('woff');
-}
-@font-face{
-	font-family: 'OstrichSansRounded';
-	src: url(../fonts/webfonts/ostrich-sans-rounded.woff) format('woff');
-}
 
-
-@font-face{
-	font-family: 'RalewayBlack';
-	src: url(../fonts/raleway/Raleway-Black.woff) format('woff');
-}
-@font-face{
-	font-family: 'RalewayLight';
-	src: url(../fonts/raleway/Raleway-Light.woff) format('woff');
-}
 $main-color: #ffcb0d;
 $logo-header: 150px;
 $color-1: #FF8C69;
@@ -131,15 +92,11 @@ body{
     		display: flex;
     		text-align: center;
 			aside{
-				flex: 1;
-				width: 50vw;
 				background-color: #222;
     			padding: 5%;
 			}
 			article{
     			padding: 5%;
-				flex: 1;
-				width: 50vw;
 				background-color: #ddd;
 				img{
 					border-radius: 50%;
@@ -149,7 +106,6 @@ body{
 			    	margin-bottom: 25px;
 				}
 			}
-
 			.contact-article{
 				background-color: #fff;
 			}
@@ -157,8 +113,29 @@ body{
 				background-color: #111;
 			}
 
-			@media (min-width: 1px) and (max-width: 768px){
-				//flex uno arriba del otro
+		}
+		@media (min-width: 1px) and (max-width: 768px){
+			section{
+				display: block;
+				height: 100vh;
+				article, aside{
+					display: block;
+				}
+				aside{
+					height: 30vh;
+				}
+				article{
+					height: 70vh;
+				}
+			}
+		}
+		@media (min-width: 769px){
+			section{
+				article, aside{
+					width: 50vw;
+					height: 100vh;
+					flex: 1;
+				}
 			}
 		}
 	}
