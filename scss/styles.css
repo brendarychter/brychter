@@ -127,11 +127,11 @@ body {
     display: -webkit-flex;
     display: flex;
     text-align: center; }
-    body main section aside {
-      background-color: #222;
+    body main section aside, body main section article {
       padding: 5%; }
+    body main section aside {
+      background-color: #222; }
     body main section article {
-      padding: 5%;
       background-color: #ddd; }
       body main section article img {
         border-radius: 50%;
@@ -143,6 +143,12 @@ body {
       background-color: #fff; }
     body main section .contact-aside {
       background-color: #111; }
+    body main section section {
+      width: 50vw;
+      flex: 1;
+      /* article{
+      	width: 25vw;
+      } */ }
   @media (min-width: 1px) and (max-width: 768px) {
     body main section {
       display: block;
@@ -156,7 +162,6 @@ body {
   @media (min-width: 769px) {
     body main section article, body main section aside {
       width: 50vw;
-      height: 100vh;
       flex: 1; } }
 
 /*# sourceMappingURL=styles.css.map */

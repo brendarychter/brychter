@@ -7,7 +7,6 @@
 }
 $font: 'Lato', sans-serif;
 
-
 $main-color: #ffcb0d;
 $logo-header: 150px;
 $color-1: #FF8C69;
@@ -91,12 +90,14 @@ body{
 			display: -webkit-flex;
     		display: flex;
     		text-align: center;
+    		aside, article{
+    			padding: 5%;
+    			
+    		}
 			aside{
 				background-color: #222;
-    			padding: 5%;
 			}
 			article{
-    			padding: 5%;
 				background-color: #ddd;
 				img{
 					border-radius: 50%;
@@ -112,7 +113,13 @@ body{
 			.contact-aside{
 				background-color: #111;
 			}
-
+			section{
+				width: 50vw;
+				flex: 1;
+				/* article{
+					width: 25vw;
+				} */
+			}
 		}
 		@media (min-width: 1px) and (max-width: 768px){
 			section{
@@ -133,7 +140,7 @@ body{
 			section{
 				article, aside{
 					width: 50vw;
-					height: 100vh;
+					//height: 100vh;
 					flex: 1;
 				}
 			}
