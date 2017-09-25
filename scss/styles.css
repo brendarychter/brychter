@@ -133,16 +133,16 @@ body {
       background-color: #222; }
     body main section article {
       background-color: #ddd; }
-      body main section article img {
-        border-radius: 50%;
-        width: 200px;
-        height: 200px;
-        margin: 0 auto;
-        margin-bottom: 25px; }
     body main section .contact-article {
       background-color: #fff; }
     body main section .contact-aside {
       background-color: #111; }
+  body main section.cv-section article img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 25px; }
   body main section.work-section aside {
     background-color: #666; }
   body main section.work-section .work-content {
@@ -155,6 +155,10 @@ body {
       background-color: #aaa;
       width: 100%;
       height: 50vh; }
+      body main section.work-section .work-content article figure img {
+        width: 100%;
+        height: 50vh;
+        overflow: hidden; }
   @media (min-width: 1px) and (max-width: 768px) {
     body main section {
       display: block;
