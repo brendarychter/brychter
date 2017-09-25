@@ -112,12 +112,21 @@ body{
 			.contact-aside{
 				background-color: #111;
 			}
+		}
+		section.work-section{
+			aside{
+				background-color: #666;
+			}
 			.work-content{
 				width: 50vw;
 				flex: 1;
+				display: block;
 				article{
 					padding: 0;
-					width: 0;
+					display: block;
+					background-color: #aaa;
+					width: 100%;
+					height: 50vh;
 				}
 			}
 		}
