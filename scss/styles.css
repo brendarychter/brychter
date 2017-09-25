@@ -143,12 +143,12 @@ body {
       background-color: #fff; }
     body main section .contact-aside {
       background-color: #111; }
-    body main section section {
+    body main section .work-content {
       width: 50vw;
-      flex: 1;
-      /* article{
-      	width: 25vw;
-      } */ }
+      flex: 1; }
+      body main section .work-content article {
+        padding: 0;
+        width: 0; }
   @media (min-width: 1px) and (max-width: 768px) {
     body main section {
       display: block;

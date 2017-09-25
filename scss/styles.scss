@@ -92,7 +92,6 @@ body{
     		text-align: center;
     		aside, article{
     			padding: 5%;
-    			
     		}
 			aside{
 				background-color: #222;
@@ -113,12 +112,13 @@ body{
 			.contact-aside{
 				background-color: #111;
 			}
-			section{
+			.work-content{
 				width: 50vw;
 				flex: 1;
-				/* article{
-					width: 25vw;
-				} */
+				article{
+					padding: 0;
+					width: 0;
+				}
 			}
 		}
 		@media (min-width: 1px) and (max-width: 768px){
