@@ -1,15 +1,4 @@
-#contact{
-    #contact-data{
-    	width: 68%;
-    	overflow: hidden;
-    	margin: 0 auto;
-    	li{
-    		padding: 0 15px;
-    		float: left;
-    		width: 33%;
-    	}
-    }
-}
+/* 
 .section-style{
 	letter-spacing: 1px;
 	text-align: center;
@@ -19,7 +8,7 @@
     margin: 0 auto;
 	margin-bottom: 20px;
     overflow: hidden;
-}
+} */
 #map-section{
 	width: 650px;
 }
@@ -28,24 +17,7 @@
 	height: 400px;
 }
 #mail-section{
-	width: 650px;
-	margin-bottom: 30px;
-	input, textarea{
-		border-radius: 0;
-		border: 1px solid #000;
-	}
-	textarea{
-		resize: none;
-	}
-	.contact-data{
-		margin-top: 20px;
-	}
-	.map-section{
-		margin-bottom: 10px;
-	}
-	h3{
-		margin-bottom: 20px;
-	}
+	
 }
 #success{
 	background-color: $main-color;
