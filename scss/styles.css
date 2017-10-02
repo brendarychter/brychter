@@ -114,7 +114,7 @@ body {
     text-align: center;
     width: 100%;
     position: absolute;
-    bottom: 10%; }
+    bottom: 7%; }
     body nav ul li {
       display: inline;
       padding-left: 10px; }
@@ -217,18 +217,23 @@ body {
       margin: 0 auto;
       margin-bottom: 30px; }
       body main article.c-a ul.contact-data li {
-        float: left;
-        width: 33%; }
+        /* float: left;
+        width: 33%; */
+        display: inline-block;
+        margin: 0 40px; }
         body main article.c-a ul.contact-data li p {
           padding-top: 15px; }
-    @media (min-width: 1px) and (max-width: 1024px) {
+    @media (min-width: 321px) and (max-width: 1024px) {
       body main article.c-a ul.contact-data {
         width: 100%; }
         body main article.c-a ul.contact-data li {
           padding-bottom: 15px;
-          width: 100%; }
+          /* width: 100%; */ }
           body main article.c-a ul.contact-data li p {
             font-size: 13px; } }
+    @media (min-width: 1px) and (max-width: 320px) {
+      body main article.c-a ul.contact-data li {
+        width: 100%; } }
     body main article.c-a form.mail-section {
       margin-top: 30px;
       letter-spacing: 1px;

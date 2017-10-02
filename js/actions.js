@@ -1,9 +1,10 @@
 $(document).ready(function(){
 
 	//Scroll with animation home
-	$('.what-i-do').on('click', function(){
+	$('.item-nav').on('click', function(){
+		var section = $(this).children("a").attr("href");
 		$('html, body').animate({
-	        scrollTop: $("#main-section").offset().top
+	        scrollTop: $(section).offset().top
 	    }, 1000);
 	})
 

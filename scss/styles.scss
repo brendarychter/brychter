@@ -72,7 +72,7 @@ body{
 		    text-align:center;
 		    width: 100%;
 		    position: absolute;
-		    bottom: 10%;
+		    bottom: 7%;
 	    	li{
 	    		display:inline;
 	    		padding-left: 10px;
@@ -218,22 +218,31 @@ body{
 		    	margin: 0 auto;
 		    	margin-bottom: 30px;
 		    	li{
-		    		float: left;
-		    		width: 33%;
+		    		/* float: left;
+		    		width: 33%; */
+		    		display: inline-block;
+		    		margin: 0 40px;
 		    		p{
 		    			padding-top: 15px;
 		    		}
 		    	}
 		    }
-		    @media (min-width: 1px) and (max-width: 1024px){
+		    @media (min-width: 321px) and (max-width: 1024px){
 				ul.contact-data {
 					width: 100%;
 					li{
 						padding-bottom: 15px;
-						width: 100%;
+						/* width: 100%; */
 						p{
 							font-size: 13px;
 						}
+					}
+				}
+			}
+		    @media (min-width: 1px) and (max-width: 320px){
+		    	ul.contact-data {
+					li{
+						width: 100%;
 					}
 				}
 			}
