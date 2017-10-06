@@ -32,18 +32,12 @@
         <article class="info-home">
             <div class="intro-container">
                 <div class="intro-circle"></div>
-                <h1>¡Hola!</h1><h2> Soy <span class="name">Brenda Rychter</span></h2>
+                <h1>¡Hola!</h1>
+                <h2> Soy <span class="name">Brenda Rychter</span></h2>
                 <p>Diseñadora multimedial & Front End Developer</p>
             </div>
-            <nav>
-                <ul>
-                  <li class="item-nav"><a href="#about-me-section">Sobre m&iacute;</a></li>
-                  <li>-</li>
-                  <li class="item-nav"><a href="#works-section">Trabajos</a></li>
-                  <li>-</li>
-                  <li class="item-nav"><a href="#contact-section">Contacto</a></li>
-                </ul>
-            </nav>
+            <nav w3-include-html="header-v2.html"></nav> 
+
         </article>
         
     </header>
@@ -181,5 +175,13 @@
         
     </main>
     <!-- End Main Section -->
+
+    <!-- Start Include Partials -->
+    <script type="text/javascript" src="js/utils/w3data.js"></script>
+    <script>
+        w3IncludeHTML();
+    </script>
+    <!-- End Include Partials -->
+
 </body>
 </html>
