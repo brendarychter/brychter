@@ -9,7 +9,7 @@
     <meta name="author" content="">
 
     <!-- STYLES -->
-    <link rel="stylesheet" type="text/css" href="scss/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="scss/main.css">
     <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
@@ -23,6 +23,9 @@
 
     <!-- My js files -->
     <script type="text/javascript" src="js/actions.js"></script>
+
+    <!-- Particles -->
+    <script type="text/javascript" src="js/utils/particles.js"></script>
     <!-- END SCRIPTS -->
 </head>
 <body id="home-page">
@@ -31,10 +34,10 @@
     <header>
         <article class="info-home">
             <div class="intro-container">
-                <div class="intro-circle"></div>
+                <div class="intro-circle" id="particles-js"></div>
                 <h1>¡Hola!</h1>
                 <h2> Soy <span class="name">Brenda Rychter</span></h2>
-                <p>Diseñadora multimedial & Front End Developer</p>
+                <p>Dise&ntilde;adora multimedial &amp; Front End Developer</p>
             </div>
             <nav w3-include-html="header-v2.html"></nav> 
 
@@ -48,21 +51,30 @@
         <!-- Section Info-->
         <section class="cv-section" id="about-me-section">
             <aside>
-
+                <div class="intro-container">
+                    <div class="intro-circle" id="particles-js"></div>
+                </div>
+                <nav w3-include-html="header-v2.html"></nav> 
             </aside>
             <article>
                 <img src="img/brenda_rychter.jpg" class="img-responsive" alt="Brenda Yael Rychter" title="Brenda Yael Rychter" />
-                <p>Tengo 23 a&ntilde;os. pr&oacute;ximamente Licenciada en Tecnolog&iacute;a Multimedial de la Universidad Maim&oacute;nides</p> 
+                <p>Tengo 23 a&ntilde;os, soy de Buenos Aires, Argentina.
+                <p> Estoy pr&oacute;xima a recibirme Licenciada en Tecnolog&iacute;a Multimedial de la Universidad Maim&oacute;nides</p> 
                 <p>Cuento con 4 a&ntilde;os de experiencia como Desarrolladora Front End en Despegar.com</p>
-                <p>
+                <p>Tambi&eacute;n participo de dos elencos coreogr&aacute;ficos de danzas israel&iacute;s en las comunidades Kadima y Hacoaj</p><!-- 
+                <p>Tengo conocimientos de tecnolog&iacute;as front end, como Angular, AngularJS, HTML5, CSS3</p> -->
+                <p>Te invito a que conozcas mi portfolio de trabajos realizados para distintas materias de la facultad</p>
             </article>
         </section>
         <!-- End Section Info-->
 
         <!-- Section Programming-->
         <section class="work-section" id="works-section">
-            <aside style="padding: 0; background-color:#ccc">
-
+            <aside style="padding: 0; background-color:#404040">
+                <div class="intro-container">
+                    <div class="intro-circle"></div>
+                </div>
+                <nav w3-include-html="header-v2.html"></nav> 
             </aside>
             <section class="work-content">
                 <article>
@@ -84,7 +96,10 @@
         <!-- Section Design-->
         <section class="work-section">
             <aside style="padding: 0; background-color:#777;">
-
+                <div class="intro-container">
+                    <div class="intro-circle"></div>
+                </div>
+                <nav w3-include-html="header-v2.html"></nav> 
             </aside>
             <section class="work-content">
                 <article>
@@ -104,8 +119,11 @@
 
         <!-- Section Fotography and Audiovisual-->
         <section class="work-section">
-            <aside style="padding: 0; background-color:#bbb;">
-
+            <aside style="padding: 0; background-color:#4a4a4a;">
+                <div class="intro-container">
+                    <div class="intro-circle"></div>
+                </div>
+                <nav w3-include-html="header-v2.html"></nav> 
             </aside>
             <section class="work-content">
                 <article>
@@ -125,21 +143,24 @@
 
         <!-- Section Contact-->
         <section id="contact-section">
-            <aside class="contact-aside">
-
+            <aside class="contact-aside" style="background-color: #292929;">
+                <div class="intro-container">
+                    <div class="intro-circle"></div>
+                </div>
+                <nav w3-include-html="header-v2.html"></nav> 
             </aside>
             <article style="position: relative;" class="c-a">
                 <div class="contract-article">
                     <ul class="contact-data">
-                        <li>
+                        <!-- <li>
                             <i class="fa fa-map-marker fa-2x"></i>
-                            <p>CABA</p>
-                        </li><!-- 
+                            <p>Buenos Aires, Argentina</p>
+                        </li> -->
                         <li>
                             <i class="fa fa-envelope-o fa-2x"></i>
                             <p>brendarychter@gmail.com</p>
                         </li>
- -->
+
                         <li>
                             <i class="fa fa-whatsapp fa-2x"></i>
                             <p> +54 156 522 0958</p>

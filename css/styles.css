@@ -1,0 +1,365 @@
+/* OSTRICH */
+@font-face {
+  font-family: 'OstrichSansBlack';
+  src: url(../fonts/webfonts/ostrich-sans-black.woff) format("woff"); }
+@font-face {
+  font-family: 'OstrichSansBold';
+  src: url(../fonts/webfonts/ostrich-sans-bold.woff) format("woff"); }
+@font-face {
+  font-family: 'OstrichSansDashed';
+  src: url(../fonts/webfonts/ostrich-sans-dashed.woff) format("woff"); }
+@font-face {
+  font-family: 'OstrichSansInlineItalic';
+  src: url(../fonts/webfonts/ostrich-sans-inline-italic.woff) format("woff"); }
+@font-face {
+  font-family: 'OstrichSansInlineRegular';
+  src: url(../fonts/webfonts/ostrich-sans-inline-regular.woff) format("woff"); }
+@font-face {
+  font-family: 'OstrichSansLight';
+  src: url(../fonts/webfonts/ostrich-sans-light.woff) format("woff"); }
+@font-face {
+  font-family: 'OstrichSansRegular';
+  src: url(../fonts/webfonts/ostrich-sans-regular.woff) format("woff"); }
+@font-face {
+  font-family: 'OstrichSansRounded';
+  src: url(../fonts/webfonts/ostrich-sans-rounded.woff) format("woff"); }
+/* RALEWAY */
+@font-face {
+  font-family: 'RalewayBlack';
+  src: url(../fonts/raleway/Raleway-Black.woff) format("woff"); }
+@font-face {
+  font-family: 'RalewayLight';
+  src: url(../fonts/raleway/Raleway-Light.woff) format("woff"); }
+/* OPEN SANS */
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url(../fonts/Open_Sans/OpenSans-Bold.woff) format("woff"); }
+@font-face {
+  font-family: 'OpenSansBoldItalic';
+  src: url(../fonts/Open_Sans/OpenSans-BoldItalic.woff) format("woff"); }
+@font-face {
+  font-family: 'OpenSansExtraBold';
+  src: url(../fonts/Open_Sans/OpenSans-ExtraBold.woff) format("woff"); }
+@font-face {
+  font-family: 'OpenSansExtraBoldItalic';
+  src: url(../fonts/Open_Sans/OpenSans-ExtraBoldItalic.woff) format("woff"); }
+@font-face {
+  font-family: 'OpenSansItalic';
+  src: url(../fonts/Open_Sans/OpenSans-Italic.woff) format("woff"); }
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url(../fonts/Open_Sans/OpenSans-Light.woff) format("woff"); }
+@font-face {
+  font-family: 'OpenSansLightItalic';
+  src: url(../fonts/Open_Sans/OpenSans-LightItalic.woff) format("woff"); }
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url(../fonts/Open_Sans/OpenSans-Regular.woff) format("woff"); }
+@font-face {
+  font-family: 'OpenSansSemiBold';
+  src: url(../fonts/Open_Sans/OpenSans-SemiBold.woff) format("woff"); }
+@font-face {
+  font-family: 'OpenSansSemiBoldItalic';
+  src: url(../fonts/Open_Sans/OpenSans-SemiBoldItalic.woff) format("woff"); }
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  border: 0;
+  font-family: "Lato", sans-serif; }
+
+body {
+  font-family: 'Ostrich'; }
+  body canvas {
+    border-radius: 50%; }
+  body header article {
+    height: 100vh;
+    display: table;
+    width: 100%;
+    text-align: center;
+    background-color: #f5ca34;
+    position: relative; }
+    body header article .intro-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      body header article .intro-container .intro-circle {
+        border-radius: 50%;
+        vertical-align: top;
+        background: #000;
+        margin-bottom: 3%; }
+        @media (min-width: 1px) and (max-width: 400px) {
+          body header article .intro-container .intro-circle {
+            width: 300px;
+            height: 300px; } }
+        @media (min-width: 401px) and (max-width: 1024px) {
+          body header article .intro-container .intro-circle {
+            width: 300px;
+            height: 300px; } }
+        @media (min-width: 1025px) {
+          body header article .intro-container .intro-circle {
+            width: 350px;
+            height: 350px; } }
+      body header article .intro-container h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 50px;
+        letter-spacing: 2px;
+        text-transform: uppercase; }
+      body header article .intro-container h2 {
+        line-height: 45px; }
+      body header article .intro-container p {
+        margin-bottom: 20px; }
+  body nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 10%; }
+    body nav ul li {
+      display: inline;
+      padding-left: 10px; }
+      body nav ul li a {
+        display: inline-block;
+        padding-bottom: 10px;
+        text-decoration: none;
+        font-size: 15px;
+        color: #222;
+        letter-spacing: 2px;
+        line-height: 10px;
+        font-weight: 200;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative; }
+      body nav ul li :hover {
+        color: #fff;
+        text-decoration: none; }
+    body nav ul li.item-nav > a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #fff;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s; }
+    body nav ul li.item-nav > a:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1); }
+    body nav ul ul {
+      bottom: -22px; }
+      body nav ul ul li {
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 13px;
+        padding-left: 5px; }
+  @media (min-width: 1px) and (max-width: 400px) {
+    body nav ul li {
+      padding-left: 5px; }
+      body nav ul li a {
+        font-size: 12px; } }
+  body main section aside {
+    position: relative;
+    text-align: center; }
+    body main section aside nav ul ul {
+      bottom: -22px; }
+      body main section aside nav ul ul li {
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 13px;
+        padding-left: 5px; }
+    @media (min-width: 1px) and (max-width: 600px) {
+      body main section aside nav ul {
+        bottom: 20%; } }
+    body main section aside .intro-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      body main section aside .intro-container .intro-circle {
+        border-radius: 50%;
+        vertical-align: top;
+        background: #000;
+        margin-bottom: 8%; }
+        @media (min-width: 1px) and (max-width: 400px) {
+          body main section aside .intro-container .intro-circle {
+            width: 100px;
+            height: 100px; } }
+        @media (min-width: 401px) and (max-width: 1024px) {
+          body main section aside .intro-container .intro-circle {
+            width: 100px;
+            height: 100px; } }
+        @media (min-width: 1025px) {
+          body main section aside .intro-container .intro-circle {
+            width: 220px;
+            height: 220px; } }
+      body main section aside .intro-container h1 {
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 2px;
+        color: #fff;
+        text-transform: uppercase; }
+    @media (min-width: 1px) and (max-width: 600px) {
+      body main section aside .intro-container {
+        margin-top: -25px; } }
+  body main #about-me-section nav ul li, body main #about-me-section nav ul li a {
+    color: #fff;
+    font-weight: 100; }
+  body main #about-me-section nav ul .about-li a {
+    font-weight: bold; }
+  body main .work-section nav ul li, body main .work-section nav ul li a {
+    color: #fff;
+    font-weight: 100; }
+  body main .work-section nav ul .works-li a {
+    font-weight: bold; }
+  body main #contact-section nav ul li, body main #contact-section nav ul li a {
+    color: #fff;
+    font-weight: 100; }
+  body main #contact-section nav ul .contact-li a {
+    font-weight: bold; }
+  body main section {
+    height: 100vh;
+    display: -webkit-flex;
+    display: flex;
+    text-align: center;
+    /*aside, article{
+    	padding: 5%;
+    }*/ }
+    body main section aside {
+      background-color: #222; }
+    body main section article {
+      background-color: #ddd; }
+    body main section .contact-article {
+      background-color: #fff; }
+    body main section .contact-aside {
+      background-color: #111; }
+  body main section.cv-section article img {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    margin: 30px; }
+  body main section.cv-section article p {
+    padding: 0 70px; }
+  body main section.work-section aside {
+    background-color: #666; }
+  body main section.work-section .work-content {
+    width: 50vw;
+    flex: 1;
+    display: block; }
+    body main section.work-section .work-content article {
+      padding: 0;
+      display: block;
+      background-color: #eee;
+      width: 100%;
+      height: 50vh; }
+      body main section.work-section .work-content article figure img {
+        width: 100%;
+        height: 50vh;
+        overflow: hidden; }
+  @media (min-width: 1px) and (max-width: 768px) {
+    body main section {
+      display: block;
+      height: 100vh; }
+      body main section article, body main section aside {
+        display: block; }
+      body main section aside {
+        height: 30vh; }
+      body main section article {
+        height: 70vh; } }
+  @media (min-width: 769px) {
+    body main section article, body main section aside {
+      width: 50vw;
+      flex: 1; } }
+  body main article.c-a {
+    background-color: #fffffd; }
+    body main article.c-a .contract-article {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%; }
+    body main article.c-a ul.contact-data {
+      width: 100%;
+      overflow: hidden;
+      margin: 0 auto;
+      margin-bottom: 30px; }
+      body main article.c-a ul.contact-data li {
+        /* float: left;
+        width: 33%; */
+        display: inline-block;
+        margin-bottom: 30px;
+        width: 100%; }
+        body main article.c-a ul.contact-data li p {
+          padding-top: 5px; }
+    @media (min-width: 321px) and (max-width: 1024px) {
+      body main article.c-a ul.contact-data {
+        width: 100%; }
+        body main article.c-a ul.contact-data li {
+          padding-bottom: 15px; }
+          body main article.c-a ul.contact-data li p {
+            font-size: 13px; } }
+    @media (min-width: 1px) and (max-width: 320px) {
+      body main article.c-a ul.contact-data li {
+        width: 100%; } }
+    body main article.c-a form.mail-section {
+      margin-top: 30px;
+      letter-spacing: 1px;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 70px;
+      overflow: hidden; }
+      body main article.c-a form.mail-section input, body main article.c-a form.mail-section textarea {
+        border-radius: 0;
+        border: 1px solid #000;
+        width: 75%;
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 16px; }
+      body main article.c-a form.mail-section textarea {
+        resize: none; }
+    body main article.c-a footer {
+      color: #000;
+      text-align: center; }
+      body main article.c-a footer ul {
+        padding: 0;
+        list-style-type: none; }
+        body main article.c-a footer ul li {
+          display: inline-block;
+          margin: 0 20px;
+          cursor: pointer; }
+          body main article.c-a footer ul li a i.fa {
+            font-size: 35px;
+            padding: 4px 5px;
+            color: #000;
+            transition: all 0.5s; }
+            body main article.c-a footer ul li a i.fa:hover {
+              color: #f5ca34; }
+      body main article.c-a footer p {
+        letter-spacing: 1px;
+        margin-top: 15px; }
+  body main .styled-button {
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 16px;
+    border-radius: 0;
+    transition: all 0.3s ease 0s;
+    cursor: pointer; }
+    body main .styled-button:hover {
+      background: #000;
+      color: #fff;
+      text-decoration: none; }
+
+/*# sourceMappingURL=styles.css.map */
