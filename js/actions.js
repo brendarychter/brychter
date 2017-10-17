@@ -1,13 +1,14 @@
 $(document).ready(function(){
 
 	//Scroll with animation home
-	$('.item-nav').on('click', function(){
+	$('li').on('click', function(){
+		console.log("hola")
 		var section = $(this).children("a").attr("href");
+		console.log(section);
 		$('html, body').animate({
 	        scrollTop: $(section).offset().top
 	    }, 1000);
 	})
-
 
 	/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 	particlesJS.load('particles-js', 'js/utils/particles.json', function() {

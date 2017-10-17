@@ -159,10 +159,11 @@ body {
     body nav ul ul {
       bottom: -22px; }
       body nav ul ul li {
-        text-transform: uppercase;
-        font-weight: 200;
-        font-size: 13px;
         padding-left: 5px; }
+        body nav ul ul li a {
+          text-transform: uppercase;
+          font-weight: 200;
+          font-size: 12px; }
   @media (min-width: 1px) and (max-width: 400px) {
     body nav ul li {
       padding-left: 5px; }
@@ -171,16 +172,18 @@ body {
   body main section aside {
     position: relative;
     text-align: center; }
-    body main section aside nav ul ul {
-      bottom: -22px; }
-      body main section aside nav ul ul li {
-        text-transform: uppercase;
-        font-weight: 200;
-        font-size: 13px;
-        padding-left: 5px; }
-    @media (min-width: 1px) and (max-width: 600px) {
-      body main section aside nav ul {
-        bottom: 20%; } }
+    body main section aside nav ul {
+      bottom: 16%; }
+      body main section aside nav ul ul {
+        bottom: -35px; }
+        body main section aside nav ul ul li a {
+          text-transform: uppercase;
+          font-weight: 200;
+          font-size: 12px;
+          padding-left: 5px; }
+      @media (min-width: 1px) and (max-width: 600px) {
+        body main section aside nav ul {
+          bottom: 20%; } }
     body main section aside .intro-container {
       position: absolute;
       top: 50%;
@@ -246,9 +249,20 @@ body {
     border-radius: 50%;
     width: 130px;
     height: 130px;
-    margin: 30px; }
+    margin: 60px 0px 42px; }
+  @media (min-width: 1px) and (max-width: 600px) {
+    body main section.cv-section article img {
+      margin: 0;
+      margin-top: 15px; } }
   body main section.cv-section article p {
-    padding: 0 70px; }
+    padding: 15px 70px;
+    font-weight: 300;
+    line-height: 22px; }
+    body main section.cv-section article p span {
+      font-weight: 400;
+      background-color: #f5ca34;
+      padding: 0 3px;
+      opacity: 0.8; }
   body main section.work-section aside {
     background-color: #666; }
   body main section.work-section .work-content {
@@ -295,21 +309,24 @@ body {
       body main article.c-a ul.contact-data li {
         /* float: left;
         width: 33%; */
+        width: 100%;
         display: inline-block;
-        margin-bottom: 30px;
-        width: 100%; }
+        margin-bottom: 20px; }
         body main article.c-a ul.contact-data li p {
           padding-top: 5px; }
-    @media (min-width: 321px) and (max-width: 1024px) {
+    @media (min-width: 601px) and (max-width: 1024px) {
       body main article.c-a ul.contact-data {
         width: 100%; }
         body main article.c-a ul.contact-data li {
-          padding-bottom: 15px; }
+          width: 100%;
+          padding-bottom: 15px;
+          margin-bottom: 30px; }
           body main article.c-a ul.contact-data li p {
             font-size: 13px; } }
-    @media (min-width: 1px) and (max-width: 320px) {
+    @media (min-width: 1px) and (max-width: 600px) {
       body main article.c-a ul.contact-data li {
-        width: 100%; } }
+        width: 100%;
+        margin-bottom: 10px; } }
     body main article.c-a form.mail-section {
       margin-top: 30px;
       letter-spacing: 1px;
@@ -327,6 +344,9 @@ body {
         font-size: 16px; }
       body main article.c-a form.mail-section textarea {
         resize: none; }
+    @media (min-width: 1px) and (max-width: 600px) {
+      body main article.c-a form.mail-section {
+        margin-bottom: 40px; } }
     body main article.c-a footer {
       color: #000;
       text-align: center; }
@@ -335,7 +355,7 @@ body {
         list-style-type: none; }
         body main article.c-a footer ul li {
           display: inline-block;
-          margin: 0 20px;
+          margin: 0 16px;
           cursor: pointer; }
           body main article.c-a footer ul li a i.fa {
             font-size: 35px;
@@ -344,6 +364,11 @@ body {
             transition: all 0.5s; }
             body main article.c-a footer ul li a i.fa:hover {
               color: #f5ca34; }
+        @media (min-width: 1px) and (max-width: 600px) {
+          body main article.c-a footer ul li {
+            margin: 0 7px; }
+            body main article.c-a footer ul li a i.fa {
+              font-size: 28px; } }
       body main article.c-a footer p {
         letter-spacing: 1px;
         margin-top: 15px; }
@@ -361,5 +386,138 @@ body {
       background: #000;
       color: #fff;
       text-decoration: none; }
+
+.grid {
+  position: relative;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  max-width: 1000px;
+  list-style: none;
+  text-align: center; }
+
+/* Common style */
+.grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 360px;
+  width: 48%;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer; }
+
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8; }
+
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none; }
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0; }
+
+.grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300; }
+
+.grid figure h2 span {
+  font-weight: 800; }
+
+.grid figure h2,
+.grid figure p {
+  margin: 0; }
+
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%; }
+
+/*---------------*/
+/***** Sarah *****/
+/*---------------*/
+figure.effect-sarah {
+  background: #42b078; }
+
+figure.effect-sarah img {
+  max-width: none;
+  width: -webkit-calc(100% + 20px);
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+figure.effect-sarah:hover img {
+  opacity: 0.4;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+figure.effect-sarah figcaption {
+  text-align: left; }
+
+figure.effect-sarah h2 {
+  position: relative;
+  overflow: hidden;
+  padding: 0.5em 0; }
+
+figure.effect-sarah h2::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0); }
+
+figure.effect-sarah:hover h2::after {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+figure.effect-sarah p {
+  padding: 1em 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0); }
+
+figure.effect-sarah:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
 
 /*# sourceMappingURL=styles.css.map */
