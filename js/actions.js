@@ -15,6 +15,19 @@ $(document).ready(function(){
 	  	console.log('callback - particles.js config loaded');
 	});
 
+	loadParticlesCanvas('particles-js-header');
+    loadParticlesCanvas('particles-js-cv');
+    loadParticlesCanvas('particles-js-programming');
+    loadParticlesCanvas('particles-js-design');
+    loadParticlesCanvas('particles-js-audiovisual');
+    loadParticlesCanvas('particles-js-contact');
+	function loadParticlesCanvas(id){
+        /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+        particlesJS.load(id, 'js/utils/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+	}
+	
 	var color = "";
 	changeColor(color);
 
