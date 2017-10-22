@@ -15,6 +15,7 @@ $(document).ready(function(){
 	  	console.log('callback - particles.js config loaded');
 	});
 
+	//cambiar speed o algo mientras se está en la sección
 	loadParticlesCanvas('particles-js-header');
     loadParticlesCanvas('particles-js-cv');
     loadParticlesCanvas('particles-js-programming');
