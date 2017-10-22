@@ -249,11 +249,15 @@ body {
     border-radius: 50%;
     width: 130px;
     height: 130px;
-    margin: 60px 0px 42px; }
-  @media (min-width: 1px) and (max-width: 600px) {
+    margin: 60px 0px 20px; }
+  @media (min-width: 1px) and (max-width: 320px) {
     body main section.cv-section article img {
       margin: 0;
-      margin-top: 15px; } }
+      margin-top: 20px; } }
+  @media (min-width: 321px) and (max-width: 768px) {
+    body main section.cv-section article img {
+      margin: 0;
+      margin-top: 25px; } }
   body main section.cv-section article p {
     padding: 15px 70px;
     font-weight: 300;
@@ -263,6 +267,21 @@ body {
       background-color: #f5ca34;
       padding: 3px 3px;
       opacity: 0.8; }
+  body main section.cv-section article p:last-of-type {
+    margin-bottom: 20px; }
+  @media (min-width: 1px) and (max-width: 600px) {
+    body main section.cv-section article p {
+      padding: 10px 30px; }
+    body main section.cv-section article p:last-of-type {
+      margin-bottom: 10px; }
+    body main section.cv-section article p, body main section.cv-section article a {
+      font-size: 13px; } }
+  @media (min-width: 320px) and (max-width: 600px) {
+    body main section.cv-section article p {
+      padding: 10px 50px; } }
+  @media (min-width: 601px) and (max-width: 768px) {
+    body main section.cv-section article p {
+      padding: 10px 50px; } }
   body main section.work-section aside {
     background-color: #666; }
   body main section.work-section .work-content {
