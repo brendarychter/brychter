@@ -61,6 +61,10 @@
 @font-face {
   font-family: 'OpenSansSemiBoldItalic';
   src: url(../fonts/Open_Sans/OpenSans-SemiBoldItalic.woff) format("woff"); }
+/* NICKANLEY */
+@font-face {
+  font-family: 'NickAnley';
+  src: url(../fonts/Nickainley-Normal.woff) format("woff"); }
 * {
   margin: 0;
   padding: 0;
@@ -86,18 +90,21 @@ body {
       left: 50%;
       transform: translate(-50%, -50%); }
       body header article .intro-container .intro-circle {
+        width: 300px;
+        height: 300px; }
+      body header article .intro-container .intro-circle {
         border-radius: 50%;
         vertical-align: top;
         background: #000;
         margin-bottom: 3%; }
         @media (min-width: 1px) and (max-width: 400px) {
           body header article .intro-container .intro-circle {
-            width: 300px;
-            height: 300px; } }
+            width: 200px;
+            height: 200px; } }
         @media (min-width: 401px) and (max-width: 1024px) {
           body header article .intro-container .intro-circle {
-            width: 300px;
-            height: 300px; } }
+            width: 350px;
+            height: 350px; } }
         @media (min-width: 1025px) {
           body header article .intro-container .intro-circle {
             width: 350px;
@@ -109,6 +116,10 @@ body {
         text-transform: uppercase; }
       body header article .intro-container h2 {
         line-height: 45px; }
+      @media (min-width: 1px) and (max-width: 400px) {
+        body header article .intro-container h2 {
+          line-height: 45px;
+          font-size: 22px; } }
       body header article .intro-container p {
         margin-bottom: 20px; }
   body nav ul {
@@ -173,7 +184,7 @@ body {
     position: relative;
     text-align: center; }
     body main section aside nav ul {
-      bottom: 16%; }
+      bottom: 11%; }
       body main section aside nav ul ul {
         bottom: -35px; }
         body main section aside nav ul ul li a {
@@ -192,25 +203,39 @@ body {
       body main section aside .intro-container .intro-circle {
         border-radius: 50%;
         vertical-align: top;
-        background: #000;
-        margin-bottom: 8%; }
-        @media (min-width: 1px) and (max-width: 400px) {
+        background: #f5ca34; }
+        @media (min-width: 1px) and (max-width: 768px) {
           body main section aside .intro-container .intro-circle {
             width: 100px;
             height: 100px; } }
-        @media (min-width: 401px) and (max-width: 1024px) {
+        @media (min-width: 769px) and (max-width: 1024px) {
           body main section aside .intro-container .intro-circle {
-            width: 100px;
-            height: 100px; } }
+            width: 220px;
+            height: 220px; } }
         @media (min-width: 1025px) {
           body main section aside .intro-container .intro-circle {
             width: 220px;
             height: 220px; } }
-      body main section aside .intro-container h1 {
-        font-family: 'Open Sans', sans-serif;
-        letter-spacing: 2px;
-        color: #fff;
-        text-transform: uppercase; }
+        body main section aside .intro-container .intro-circle h2 {
+          font-family: 'NickAnley';
+          color: #000;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 60px;
+          cursor: default;
+          line-height: 60px; }
+        body main section aside .intro-container .intro-circle h2.text-oversize-1 {
+          font-size: 40px;
+          line-height: 40px; }
+        body main section aside .intro-container .intro-circle h2.text-oversize-2 {
+          font-size: 48px;
+          line-height: 48px; }
+        @media (min-width: 1px) and (max-width: 767px) {
+          body main section aside .intro-container .intro-circle h2 {
+            font-size: 25px;
+            line-height: 25px; } }
     @media (min-width: 1px) and (max-width: 600px) {
       body main section aside .intro-container {
         margin-top: -25px; } }
@@ -457,14 +482,14 @@ body {
   font-size: 0;
   opacity: 0; }
 
-.grid figure h2 {
+.grid figure h3 {
   word-spacing: -0.15em;
   font-weight: 300; }
 
-.grid figure h2 span {
+.grid figure h3 span {
   font-weight: 800; }
 
-.grid figure h2,
+.grid figure h3,
 .grid figure p {
   margin: 0; }
 
@@ -501,12 +526,12 @@ figure.effect-chico figcaption::before {
   transform: scale(1.1); }
 
 figure.effect-chico figcaption::before,
-figure.effect-chico h2, figure.effect-chico p {
+figure.effect-chico h3, figure.effect-chico p {
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s; }
 
-figure.effect-chico h2 {
+figure.effect-chico h3 {
   padding: 20% 0 20px 0; }
 
 figure.effect-chico p {
@@ -516,7 +541,7 @@ figure.effect-chico p {
   transform: scale(1.5); }
 
 figure.effect-chico:hover figcaption::before,
-figure.effect-chico:hover h2, figure.effect-chico:hover p {
+figure.effect-chico:hover h3, figure.effect-chico:hover p {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1); }

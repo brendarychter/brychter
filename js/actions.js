@@ -10,8 +10,9 @@ $(document).ready(function(){
 	    }, 1000);
 	})
 
+	//cambiar para landing y secciones. 2 json distintos
 	/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-	particlesJS.load('particles-js', 'js/utils/particles.json', function() {
+	particlesJS.load('particles-js', 'js/utils/particles_landing.json', function() {
 	  	console.log('callback - particles.js config loaded');
 	});
 

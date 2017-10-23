@@ -35,19 +35,22 @@ body{
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
-				
+				.intro-circle{
+					width: 300px;
+					height: 300px;
+				}
 				.intro-circle{
 					border-radius: 50%;
 					vertical-align: top;
 					background: #000;
 					margin-bottom: 3%;
 					@media (min-width: 1px) and (max-width: 400px){
-						width: 300px;
-						height: 300px;
+						width: 200px;
+						height: 200px;
 					}
 					@media (min-width: 401px) and (max-width: 1024px){
-						width: 300px;
-						height: 300px;
+						width: 350px;
+						height: 350px;
 					}
 					@media (min-width: 1025px){
 						width: 350px;
@@ -63,10 +66,15 @@ body{
 				}
 				h2{
 					line-height: 45px;
-					.name{
+				}
 
+				@media (min-width: 1px) and (max-width: 400px){
+					h2{
+						line-height: 45px;
+						font-size: 22px;
 					}
 				}
+				
 				p{
 					margin-bottom: 20px;
 				}
@@ -158,7 +166,7 @@ body{
 				text-align: center;
 				nav{
 					ul{
-						bottom: 16%;
+						bottom: 11%;
 						ul{
 							bottom: -35px;
 							li a{
@@ -182,26 +190,46 @@ body{
 					.intro-circle{
 						border-radius: 50%;
 						vertical-align: top;
-						background: #000;
-						margin-bottom: 8%;
-						@media (min-width: 1px) and (max-width: 400px){
+						background: #f5ca34;
+						// margin-bottom: 8%;
+						@media (min-width: 1px) and (max-width: 768px){
 							width: 100px;
 							height: 100px;
 						}
-						@media (min-width: 401px) and (max-width: 1024px){
-							width: 100px;
-							height: 100px;
+						@media (min-width: 769px) and (max-width: 1024px){
+							width: 220px;
+							height: 220px;
 						}
 						@media (min-width: 1025px){
 							width: 220px;
 							height: 220px;
 						}
-					}
-					h1{
-						font-family: 'Open Sans', sans-serif;
-						letter-spacing: 2px;
-						color: #fff;
-						text-transform: uppercase;
+
+						h2{
+							font-family: 'NickAnley';
+							color: #000;
+							position: absolute;
+						    top: 50%;
+						    left: 50%;
+						    transform: translate(-50%, -50%);
+						    font-size: 60px;
+						    cursor: default;
+						    line-height: 60px;
+						}
+						h2.text-oversize-1{
+							font-size: 40px;
+							line-height: 40px;
+						}
+						h2.text-oversize-2{
+							font-size: 48px;
+							line-height: 48px;
+						}
+						@media (min-width: 1px) and (max-width: 767px){
+							h2{
+								font-size: 25px;
+								line-height: 25px;
+							}
+						}
 					}
 				}
 				@media (min-width: 1px) and (max-width: 600px){
@@ -576,16 +604,16 @@ body{
 	opacity: 0;
 }
 
-.grid figure h2 {
+.grid figure h3 {
 	word-spacing: -0.15em;
 	font-weight: 300;
 }
 
-.grid figure h2 span {
+.grid figure h3 span {
 	font-weight: 800;
 }
 
-.grid figure h2,
+.grid figure h3,
 .grid figure p {
 	margin: 0;
 }
@@ -630,13 +658,13 @@ figure.effect-chico figcaption::before {
 }
 
 figure.effect-chico figcaption::before,
-figure.effect-chico h2, figure.effect-chico p {
+figure.effect-chico h3, figure.effect-chico p {
 	opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 }
 
-figure.effect-chico h2 {
+figure.effect-chico h3 {
 	padding: 20% 0 20px 0;
 }
 
@@ -648,7 +676,7 @@ figure.effect-chico p {
 }
 
 figure.effect-chico:hover figcaption::before,
-figure.effect-chico:hover h2, figure.effect-chico:hover p {
+figure.effect-chico:hover h3, figure.effect-chico:hover p {
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
