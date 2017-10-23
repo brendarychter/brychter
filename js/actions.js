@@ -20,6 +20,7 @@ $(document).ready(function(){
 	loadParticlesCanvas('particles-js-header');
     loadParticlesCanvas('particles-js-cv');
     loadParticlesCanvas('particles-js-programming');
+    loadParticlesCanvas('particles-js-art');
     loadParticlesCanvas('particles-js-design');
     loadParticlesCanvas('particles-js-audiovisual');
     loadParticlesCanvas('particles-js-contact');
