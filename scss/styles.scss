@@ -93,6 +93,8 @@ body{
 	    	li{
 	    		display:inline;
 	    		padding-left: 10px;
+
+			
 	    		a{
 	    			display:inline-block;
     				padding-bottom:10px;
@@ -112,6 +114,7 @@ body{
 		    		color: #fff;
 					text-decoration: none;
 				}
+				
 	    	}
 	    	li.item-nav > a:before {
 				content: "";
@@ -127,6 +130,7 @@ body{
 				-webkit-transition: all 0.3s ease-in-out 0s;
 				transition: all 0.3s ease-in-out 0s;
 			}
+
 			li.item-nav > a:hover:before {
 				visibility: visible;
 				-webkit-transform: scaleX(1);

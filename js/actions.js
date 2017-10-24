@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	//Scroll with animation home
-	$('li').on('click', function(){
+	$('nav ul li').on('click', function(){
 		console.log("hola")
 		var section = $(this).children("a").attr("href");
 		console.log(section);
