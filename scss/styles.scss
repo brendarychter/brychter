@@ -36,7 +36,7 @@ body{
 	    	position: absolute;
 	    	list-style: none;
 		    margin: 0;
-		    padding: 16px 0;
+		    padding: 10px 0;
 		    text-align: center;
 				transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 		    width: 100%;
@@ -95,6 +95,23 @@ body{
 				visibility: visible;
 				-webkit-transform: scaleX(1);
 				transform: scaleX(1);
+			}
+			ul{
+				li{
+					font-size: 12px;
+
+					a{
+						font-size: 12px;
+					}
+				}
+			}
+
+			//not working
+			.sub-menu:hover{
+				#works-li{
+					color: #fff;
+    				text-decoration: none;
+				}
 			}
 	    }
 	}
@@ -409,10 +426,10 @@ body{
 					display: block;
 				}
 				aside{
-					height: 30vh;
+					height: 25vh;
 				}
 				article{
-					height: 70vh;
+					height: 75vh;
 					//height: 100vh;
 				}
 			}
@@ -709,5 +726,19 @@ figure.effect-chico:hover h3, figure.effect-chico:hover p {
 		float: none;
 		margin: 10px auto;
 		width: 100%;
+	}
+}
+
+
+
+@media (min-width: 1px) and (max-width: 768px){
+	main nav{
+		bottom: 20%;
+	}
+	.work-content{
+		width: 100% !important;
+		figure{
+			margin-top: 0;
+		}
 	}
 }

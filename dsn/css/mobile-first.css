@@ -1,0 +1,85 @@
+/*Mobile first*/
+#mobile-first{
+	height: 100%;
+	background-color: #ffcb0d;
+	padding-top: 150px;
+}
+
+.intro-text {
+	padding-bottom: 400px;
+}
+.menu-mobile {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menu-mobile li {
+	margin-bottom: 3px;  
+}
+
+.menu-mobile li a {
+	display: block;
+	background: #000;
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}
+.menu-mobile li a:hover {
+	background: #ffcb0d;
+}
+
+/*Si es mayor al ancho del dispositivo mobile, se aplican estilos de escritorio
+Es decir, desde un ancho mínimo de 768px, toma estos estilos
+*/
+@media (min-width: 768px) {
+	.menu-mobile {
+	    background: #000;
+	    text-align: center;
+	}
+  	.menu-mobile li {
+		margin-bottom: 0;
+		display: inline-block;
+	}
+}
+
+/*Desktop first*/
+.menu-desktop {
+  	margin-top: 10px;
+  	padding: 0;
+  	list-style: none;
+  	background: #000;
+  	text-align: center;
+}
+
+.menu-desktop li {
+	display: inline-block;
+}
+
+.menu-desktop li a {
+  	display: block;
+  	background: #000;
+  	text-decoration: none;
+  	color: #fff;
+  	text-align: center;
+  	padding: 10px;
+}
+.menu-desktop li a:hover {
+    background: #ffcb0d;
+}
+
+
+/*El diseño se adapta cuando el dispositivo es menor a 768*/
+@media (max-width: 768px) {
+  	.menu-desktop {
+    	background: none;
+  	}
+    .menu-desktop li {
+      	margin-bottom: 3px;  
+      	display: block;
+    }
+}
+
+
+

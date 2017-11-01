@@ -1,0 +1,165 @@
+//CV
+#about-me{
+	padding: 20px 0;
+    font-weight: 200;
+    text-align: center;
+    img{
+    	border-radius: 50%;
+	    width: 200px;
+	    height: 200px;
+	    margin: 0 auto;
+    	margin-bottom: 25px;
+    }
+    .download-cv{
+    	font-weight: normal;
+    }
+}
+#cv-online{
+	text-align: center;
+	padding: 0;
+	h3{
+		line-height: 20px;
+	    margin: 0;
+	    color: #121d1f;
+	    font-weight: 200;
+	    margin-bottom: 30px;
+	    font-size: 20px;
+	    text-transform: uppercase;
+		padding: 25px 0 0;
+	}
+	hr{
+		width: 200px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	.timeline{
+		position: relative;
+	    padding: 0;
+	    list-style: none;
+
+	    &:before{
+	    	content: "";
+		    position: absolute;
+		    top: 0;
+		    bottom: 22px;
+		    left: 40px;
+		    width: 2px;
+		    margin-left: -1.5px;
+		    background-color: #eee;
+		    left: 50%;
+	    }
+	}
+	.timeline li {
+	    position: relative;
+	    margin-bottom: 100px;
+	    min-height: 170px;
+	}
+	.timeline li .timeline-image {
+	    z-index: 100;
+	    position: absolute;
+	    border: 1px solid #eee;
+	    border-radius: 100%;
+	    text-align: center;
+	    background: #fff;
+	    left: 50%;
+	    width: 150px;
+	    height: 150px;
+	    margin-left: -75px;
+	    background-color: #ffcb0d;
+	    h4{
+	    	text-transform: uppercase;
+	    	font-size: 18px;
+    		margin-top: 40px;
+    		font-weight: 400;
+	    }
+	}
+
+	.timeline li .timeline-panel {
+	    position: relative;
+	    padding: 0 20px 0 100px;
+	    text-align: right;
+	    float: left;
+    	width: 41%;
+    	padding: 10px 20px 20px 100px;
+
+    	h5{
+		    margin-top: 0;
+		    text-transform: uppercase;
+		    font-size: 16px;
+		} 
+
+		h6{
+		    text-transform: none;
+		    color: $main-color;
+		    font-size: 20px;
+		}
+
+	}
+	.timeline .timeline-inverted .timeline-panel {
+    	float: right;
+	    padding: 10px 100px 20px 20px;
+	    text-align: left;
+	}
+}
+#skills{
+	padding: 25px 0 45px 0;
+	h3{
+		line-height: 20px;
+	    margin: 0;
+	    color: #121d1f;
+	    font-weight: 200;
+	    margin-bottom: 30px;
+	    font-size: 20px;
+	    text-transform: uppercase;
+	}
+	hr{
+		width: 200px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	.timeline-heading{
+		p{
+			text-transform: uppercase;
+		}
+	}
+}
+/* .section-style{
+	letter-spacing: 1px;
+    text-align: center;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 50px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+} */
+@media(min-width: 1px) and (max-width: 767px){
+	#cv-online{
+		.timeline{
+			li{
+				margin-top: 60px;
+				.timeline-image{
+					position: inherit;
+					margin: 0 auto;
+					margin-bottom: 10px;
+					left: 0;
+				}
+				.timeline-panel{
+	    			padding: 0; 
+	    			text-align: center; 
+	    			width: 100%; 
+	    			padding: 0; 
+				}
+			}
+			.timeline-inverted{
+				.timeline-panel{
+	   				padding: 20px; 
+	     			text-align: center;
+				}
+			}
+			&:before{
+				display: none;
+			}
+		}
+	}
+}
