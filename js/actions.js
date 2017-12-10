@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+
+	// $('#first').fadeIn(3000, function(){
+	// 	$('#first').fadeOut(1000, function(){
+
+	$("#svg_1").fadeOut();
+	//$('#svg_1').empty();
 	//Scroll with animation home
 	$('nav ul li').on('click', function(){
 		console.log("hola")

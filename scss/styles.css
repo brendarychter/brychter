@@ -1,4 +1,53 @@
 /* OSTRICH */
+
+#svg_animation svg{
+  width: 70%;
+  vertical-align: top;
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes offset{
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+
+#border, #c, #dots, #s_x5F_1, #s_x5F_2{
+  animation: offset 3s linear alternate infinite;
+}
+
+#border{
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation-delay: 1s;
+}
+
+#c{
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation-delay: 1s;
+}
+
+#s_x5F_1{
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation-delay: 1s;
+}
+
+#s_x5F_2{
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation-delay: 1s;
+}
+
+#dots{
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation-delay: 1s;
+}
+
 @font-face {
   font-family: 'OstrichSansBlack';
   src: url(../fonts/webfonts/ostrich-sans-black.woff) format("woff"); }
