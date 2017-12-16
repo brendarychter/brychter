@@ -3,9 +3,19 @@ $(document).ready(function(){
 
 	// $('#first').fadeIn(3000, function(){
 	// 	$('#first').fadeOut(1000, function(){
+	var arraySvg = [$("#svg_0"), $("#svg_1"), $("#svg_2")];
+	var a = 0;
+	setInterval(function(){
+    	$("#svg_"+a).fadeOut();
+    	if (a == arraySvg.length-1){
+			a = 0;
+		}else{
+			a++;
+		}
+    	$("#svg_"+a).fadeIn();
+    	
+	}, 6700);
 
-	// $("#svg_1").fadeOut();
-	//$('#svg_1').empty();
 	//Scroll with animation home
 	$('nav ul li').on('click', function(){
 		console.log("hola")
@@ -15,6 +25,23 @@ $(document).ready(function(){
 	        scrollTop: $(section).offset().top
 	    }, 1000);
 	})
+
+
+	// $("#send-form").on("click", function(event){
+	// 	event.preventDefault()
+	// 	console.log($("#formMailValid").validate());
+	// });
+
+	$("#formMailValid").submit(function(e){
+        e.preventDefault();
+        console.log("hola")
+        $("#name").val('');
+        $("#email").val('');
+        $("#message").val('');
+        $("#success-contact").fadeIn(1000, function(){
+        	$("#success-contact").fadeOut(4000);
+        });
+    });
 
 	//cambiar para landing y secciones. 2 json distintos
 	/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */

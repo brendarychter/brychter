@@ -348,17 +348,17 @@ body {
       background-color: #fff; }
     body main section .contact-aside {
       background-color: #111; }
-  body main section.cv-section article img {
+  body main section.cv-section article img.img-brenda {
     border-radius: 50%;
     width: 130px;
     height: 130px;
     margin: 75px 0px 20px; }
   @media (min-width: 1px) and (max-width: 320px) {
-    body main section.cv-section article img {
+    body main section.cv-section article img.img-brenda {
       margin: 0;
       margin-top: 20px; } }
   @media (min-width: 321px) and (max-width: 768px) {
-    body main section.cv-section article img {
+    body main section.cv-section article img.img-brenda {
       margin: 0;
       margin-top: 25px; } }
   body main section.cv-section article p {
@@ -377,7 +377,7 @@ body {
     body main section.cv-section article p {
       padding: 10px 30px; }
     body main section.cv-section article p:last-of-type {
-      margin-bottom: 10px; }
+      margin-bottom: 15px; }
     body main section.cv-section article p, body main section.cv-section article a {
       font-size: 13px; } }
   @media (min-width: 320px) and (max-width: 600px) {
@@ -612,7 +612,7 @@ figure.effect-chico h3, figure.effect-chico p {
   transition: opacity 0.35s, transform 0.35s; }
 
 figure.effect-chico h3 {
-  padding: 20% 0 20px 0; }
+  padding: 18% 0 20px 0; }
 
 figure.effect-chico p {
   margin: 0 auto;
@@ -643,7 +643,8 @@ figure.effect-chico:hover h3, figure.effect-chico:hover p {
   .work-content {
     width: 100% !important; }
     .work-content figure {
-      margin-top: 0; } }
+      margin-top: 0;
+      height: 72vh; } }
 .grid-audiovisual{
   height: 33.4%;
 }
@@ -653,13 +654,24 @@ figure.effect-chico:hover h3, figure.effect-chico:hover p {
   float: left;
   display: inline-block;
 }
+.img-br{
+  position: absolute;
+  margin-top: 185px;
+  margin-left: -105px;
+}
 body main section.work-section .work-content article, body main section.work-section .work-content{
   height: 100vh;
 }
-
+.grid-prog .prog-figure h3{
+    font-size: 30px;
+    padding: 30% 0 20px 0;
+}
 @media (min-width: 1px) and (max-width: 768px){
   body main article.c-a ul.contact-data{
     margin-bottom: 10px;
+  }
+  .img-br{
+    margin-top: 135px;
   }
   body main article.c-a form.mail-section{
     margin-bottom: 20px;
@@ -674,7 +686,7 @@ body main section.work-section .work-content article, body main section.work-sec
     margin-top: -20px;
   }
   figure.effect-chico h3 {
-    padding: 13% 0 20px 0;
+    padding: 14% 0 20px 0;
   }
   body main section aside .intro-container{
     margin-top: -25px;
@@ -695,11 +707,64 @@ body main section.work-section .work-content article, body main section.work-sec
     top: 27%;
   }
   body main section.cv-section article p{
-    padding-top: 5px;
+    padding-top: 15px;
     line-height: 20px;
+    padding-bottom: 5px;
+  }
+  body main article.c-a ul.contact-data li p{
+    font-size: 13px;
+  }
+  figure.effect-chico h3{
+    padding: 50% 25px 20px 25px;
+    font-size: 15px;
+  }
+  .grid-audiovisual figure.effect-chico h3{
+    padding: 25% 25px 20px 25px;
+    font-size: 15px;
+  }
+  .grid-prog figure.effect-chico h3{
+    padding: 50% 25px 20px 25px;
+    font-size: 25px;
   }
 }
 @media (min-width: 400px) and (max-width: 768px){
+
+  body main section.cv-section article img{
+    margin-top: 80px;
+  }
+  body main section.cv-section article p{
+    font-size: 14px;
+  }
+  body main section.cv-section article p{
+    padding: 16px 50px;
+  }
+  body main section.cv-section article p{
+    line-height: 20px;
+  }
+  body main article.c-a ul.contact-data li p{
+    font-size: 20px;
+  }
+  body main section aside .intro-container{
+    margin-top: -40px;
+  }
+  body header article .intro-container h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  body header article .intro-container p{
+    font-size: 17px;
+  }
+  figure.effect-chico h3{
+    padding: 35% 25px 20px 25px;
+  }
+/*  body nav ul li.item-nav a{
+    font-size: 18px;
+  }*/
+}
+/*# sourceMappingURL=styles.css.map */
+
+@media (min-width: 768px) and (max-width: 1024px){
+
   body main section aside .intro-container .intro-circle{
     width: 150px;
     height: 150px;
@@ -714,20 +779,60 @@ body main section.work-section .work-content article, body main section.work-sec
   body main section aside .intro-container .intro-circle h2.text-oversize-1{
     font-size: 26px;
   }
-  body main section.cv-section article img{
-    margin-top: 80px;
-  }
   body main section.cv-section article p{
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 30px;
   }
-  body main section.cv-section article p{
-    padding: 18px 50px;
+  body main section.cv-section article img.img-brenda{
+    margin-top: 75px;
   }
-  body main article.c-a ul.contact-data li p{
-    font-size: 20px;
+  body main section.cv-section article img.img-br{
+    margin-top: 185px;
   }
-  body main section aside .intro-container{
-    margin-top: -40px;
+  figure.effect-chico h3{
+    padding: 12% 0 20px 0;
   }
 }
-/*# sourceMappingURL=styles.css.map */
+@media (min-width: 1024px){
+  body main article.c-a ul.contact-data li p{
+    font-size: 17px;
+  }
+
+  .grid-design figure.effect-chico h3{
+      padding: 45% 0 20px 0;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 1px){
+  body main section.cv-section article img{
+    margin-top: 135px;
+  }
+}
+.prog-figure{
+   height: 100vh;
+   width: 100%;
+}
+#success-contact{
+  display: none;
+}
+/*SVG ANIMATION*/
+
+#userLaptop, #circleLaptop, #laptopUser, #circleCamera3, #circleCamera2, #circleCamera1, #lineCamera, #phoneScreen, #phoneCircle, #phoneLine{
+  animation: offset 3s linear alternate infinite;
+}
+
+#circleLaptop, #laptopUser, #circleCamera3, #circleCamera2, #circleCamera1, #phoneScreen, #phoneCircle{
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation-delay: 1s;
+}
+
+#lineCamera, #phoneLine, #userLaptop{
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation-delay: 1s;
+}
+
+#svg_1, #svg_2{
+  display: none;
+}
