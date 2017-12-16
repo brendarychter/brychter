@@ -43,8 +43,8 @@
 }
 
 #dots{
-  stroke-dasharray: 200;
-  stroke-dashoffset: 200;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
   animation-delay: 1s;
 }
 
@@ -131,7 +131,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    width: 100%;
+    width: 95%;
     position: absolute;
     bottom: 10%; }
     body nav .sub-menu {
@@ -145,6 +145,12 @@ body {
       text-align: center;
       transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
       width: 100%; }
+       @media (min-width: 1px) and (max-width: 400px) {
+        body nav .sub-menu {
+          padding: 3px 0;
+
+        }
+       }
     body nav ul {
       position: relative; }
       body nav ul li {
@@ -164,7 +170,9 @@ body {
           cursor: pointer;
           font-weight: bold;
           text-transform: uppercase;
-          position: relative; }
+          position: relative;
+           padding: 9px;
+           }
         body nav ul li a:hover {
           color: #fff;
           text-decoration: none; }
@@ -175,30 +183,25 @@ body {
         z-index: 1;
         transform: translateY(0%);
         transition-delay: 0s, 0s, 0.3s; }
-      body nav ul li.item-nav > a:before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #fff;
-        visibility: hidden;
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        -webkit-transition: all 0.3s ease-in-out 0s;
-        transition: all 0.3s ease-in-out 0s; }
-      body nav ul li.item-nav > a:hover:before {
-        visibility: visible;
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1); }
+      body nav ul li.item-nav > a:hover{
+        background-color: rgba(0,0,0,0.9);
+          }
       body nav ul ul li {
         font-size: 12px; }
         body nav ul ul li a {
-          font-size: 12px; }
+          font-size: 11px;
+          font-weight: 400;
+          line-height: 8px; 
+          padding: 7px;}
+          body nav ul ul li a:hover{
+            background-color: rgba(0,0,0,0.1);
+          }
       body nav ul .sub-menu:hover #works-li {
         color: #fff;
         text-decoration: none; }
+  body header nav{
+    width: 100%;
+  }
   body header article {
     height: 100vh;
     display: table;
@@ -334,7 +337,7 @@ body {
     color: #fff;
     font-weight: 300; }
   body main #contact-section nav ul .contact-li a {
-    font-weight: bold; }
+    font-weight: 800; }
   body main section {
     height: 100vh;
     display: -webkit-flex;
@@ -344,7 +347,7 @@ body {
     	padding: 5%;
     }*/ }
     body main section aside {
-      background-color: #222; }
+      background-color: #252525; }
     body main section article {
       background-color: #ddd; }
     body main section .contact-article {
@@ -355,7 +358,7 @@ body {
     border-radius: 50%;
     width: 130px;
     height: 130px;
-    margin: 60px 0px 20px; }
+    margin: 75px 0px 20px; }
   @media (min-width: 1px) and (max-width: 320px) {
     body main section.cv-section article img {
       margin: 0;
@@ -367,11 +370,12 @@ body {
   body main section.cv-section article p {
     padding: 15px 70px;
     font-weight: 300;
-    line-height: 22px; }
+    line-height: 26px; 
+    font-size: 18px;}
     body main section.cv-section article p span {
       font-weight: 400;
       background-color: #f5ca34;
-      padding: 3px 3px;
+      padding: 4px 7px;
       opacity: 0.8; }
   body main section.cv-section article p:last-of-type {
     margin-bottom: 20px; }
@@ -410,7 +414,8 @@ body {
       body main section article, body main section aside {
         display: block; }
       body main section aside {
-        height: 25vh; }
+        height: 25vh;
+        padding: 15px; }
       body main section article {
         height: 75vh; } }
   @media (min-width: 769px) {
@@ -646,4 +651,27 @@ figure.effect-chico:hover h3, figure.effect-chico:hover p {
     .work-content figure {
       margin-top: 0; } }
 
+@media (min-width: 1px) and (max-width: 768px){
+  body main article.c-a ul.contact-data{
+    margin-bottom: 10px;
+  }
+  body main article.c-a form.mail-section{
+    margin-bottom: 20px;
+  }
+  body main article.c-a form.mail-section input, body main article.c-a form.mail-section textarea, body main .styled-button{
+    font-size: 13px;
+  }
+}
+.grid{
+  height: 33.4%;
+}
+@media (min-width: 1px) and (max-width: 400px){
+  #svg_animation svg{
+    top: 27%;
+  }
+  body main section.cv-section article p{
+    padding-top: 5px;
+    line-height: 20px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
