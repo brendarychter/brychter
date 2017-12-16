@@ -145,12 +145,6 @@ body {
       text-align: center;
       transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
       width: 100%; }
-       @media (min-width: 1px) and (max-width: 400px) {
-        body nav .sub-menu {
-          padding: 3px 0;
-
-        }
-       }
     body nav ul {
       position: relative; }
       body nav ul li {
@@ -650,6 +644,18 @@ figure.effect-chico:hover h3, figure.effect-chico:hover p {
     width: 100% !important; }
     .work-content figure {
       margin-top: 0; } }
+.grid-audiovisual{
+  height: 33.4%;
+}
+.grid-design{
+  width: 50%;
+  height: 50%;
+  float: left;
+  display: inline-block;
+}
+body main section.work-section .work-content article, body main section.work-section .work-content{
+  height: 100vh;
+}
 
 @media (min-width: 1px) and (max-width: 768px){
   body main article.c-a ul.contact-data{
@@ -661,10 +667,29 @@ figure.effect-chico:hover h3, figure.effect-chico:hover p {
   body main article.c-a form.mail-section input, body main article.c-a form.mail-section textarea, body main .styled-button{
     font-size: 13px;
   }
+  .grid-audiovisual{
+    height: 24%;
+  }
+  .grid-audiovisual figure img{
+    margin-top: -20px;
+  }
+  figure.effect-chico h3 {
+    padding: 13% 0 20px 0;
+  }
+  body main section aside .intro-container{
+    margin-top: -25px;
+  }
+  body nav .sub-menu {
+    padding: 3px 0;
+  }
+  .grid-design{
+    height: 48.4%;
+  }
+  body main section.work-section .work-content article, body main section.work-section .work-content{
+    height: 75vh;
+  }
 }
-.grid{
-  height: 33.4%;
-}
+
 @media (min-width: 1px) and (max-width: 400px){
   #svg_animation svg{
     top: 27%;
@@ -672,6 +697,37 @@ figure.effect-chico:hover h3, figure.effect-chico:hover p {
   body main section.cv-section article p{
     padding-top: 5px;
     line-height: 20px;
+  }
+}
+@media (min-width: 400px) and (max-width: 768px){
+  body main section aside .intro-container .intro-circle{
+    width: 150px;
+    height: 150px;
+  }
+  body main section aside .intro-container .intro-circle h2{
+    font-size: 40px;
+    line-height: 40px;
+  }
+  body main section aside .intro-container .intro-circle h2.text-oversize-2{
+    font-size: 32px;
+  }
+  body main section aside .intro-container .intro-circle h2.text-oversize-1{
+    font-size: 26px;
+  }
+  body main section.cv-section article img{
+    margin-top: 80px;
+  }
+  body main section.cv-section article p{
+    font-size: 20px;
+  }
+  body main section.cv-section article p{
+    padding: 18px 50px;
+  }
+  body main article.c-a ul.contact-data li p{
+    font-size: 20px;
+  }
+  body main section aside .intro-container{
+    margin-top: -40px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
