@@ -1,92 +1,501 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Brenda Rychter - Dise&ntilde;adora multimedial</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+    <title>Brenda Rychter - Dise&ntilde;adora multimedial</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	<!-- STYLES -->
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
-	<!-- END STYLES -->
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="scss/styles.css">
+    <link rel="stylesheet" type="text/css" href="scss/main.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+    <!-- END STYLES -->
 
-	<!-- ICON TAB-->
-    <link rel="shortcut icon" type="image/png" href="img/logo-ico.png"/>
+    <!-- ICON TAB-->
+    <link rel="shortcut icon" type="image/png" href="img/logo-ico-1.png"/>
+    <!-- SCRIPTS -->
+    <!-- Librerias externas -->
+    <script type="text/javascript" src="js/utils/jquery-3.1.1.min.js"></script>
+
+    <!-- My js files -->
+    <script type="text/javascript" src="js/actions.js"></script>
+
+    <!-- Particles -->
+    <script type="text/javascript" src="js/utils/particles.js"></script>
+    <!-- END SCRIPTS -->
+    <link rel="stylesheet" type="text/css" href="scss/styles_v2.css">
 
 </head>
 <body id="home-page">
-	<!-- Header -->
-	<header>
-	 	<article class="info-home home-style">
-	 		<h1 class="header-logo">
-				<img src="img/logo.svg" alt="Brenda Yael Rychter" title="Brenda Yael Rychter"/>
-			</h1>
-        	<div class="intro-text">
-	          	<h2>¡Hola! Soy <span class="name">Brenda Rychter</span></h2>
-	          	<p>Diseñadora multimedial & Front End Developer</p>
-	          	<a href="#main-section" class="styled-button what-i-do">Un poco m&aacute;s sobre m&iacute;</a> 
-          	</div>
-	  	</article>
-	</header>
-	<!-- Main home -->
-	<main>
-		<!-- Sections home-->
-		<section id="main-section">
-	 		<!-- Navbar -->
-			<nav w3-include-html="header.html"></nav> 
-			<article class="home-style my-description">
-				<div class="description">
-					<p>
-						23 a&ntilde;os, pr&oacute;ximamente <strong>Licenciada en Tecnolog&iacute;a Multimedial</strong> de la <strong>Universidad Maim&oacute;nides</strong> <br>
-						Cuento con 4 a&ntilde;os de experiencia como Desarrolladora Front End en <strong>Despegar.com</strong>
-					</p>
-					<a href="cv/BrendaRychter.pdf" class="styled-button download-cv" target="_blank"> Descarg&aacute; mi CV</a>
-				</div>
-				<a class="slider" data-content="Ver mis trabajos" href="galeria.html">
-					<img src="img/img_1.png" id="slider-images" alt="Trabajos" title="Mis trabajos">
-				</a>
-			</article>
-		</section>
-		<section id="video-section" class="home-style">
-			<p>
-				Tambi&eacute;n participo de <strong>Nefetz</strong>, un elenco de danza israel&iacute;
-			</p>
-			<a href="https://www.youtube.com/channel/UCAbEf-tqL35RkW-CcY7rsAQ" class="btn btn-default btn-lg page-scroll styled-button styled-button nefetz-channel" target="_blank"> Ver canal de Youtube</a>
-			<iframe id="video-home" src="https://www.youtube.com/embed/6mBxW_jbBtY" frameborder="0"></iframe>
-		</section>
-	</main>
+    <!-- Header -->
+    <header>
+        <article class="info-home">
+            <div class="intro-container">
+                <div class="intro-circle" id="particles-js"></div>
+                <div id="svg_animation">
+                   <svg version="1.1" id="svg_0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                         y="0px" width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                        <g id="circleLaptop">
+                            <path fill="none" stroke="#FDFDFE" stroke-width="12" stroke-miterlimit="10" d="M257.7,389.4
+                            c-11.3,0-20.5,9.2-20.5,20.5c0,11.3,9.2,20.5,20.5,20.5c11.3,0,20.5-9.2,20.5-20.5C278.3,398.6,269.1,389.4,257.7,389.4z"/>
+                        </g>
+                        <g id="userLaptop">
+                            <g id="user_x5F_laptop">
+                                <g>
+                                    <g>
+                                        <g>
+                                            <path fill="none" stroke="#FDFDFE" stroke-width="12" stroke-miterlimit="10" d="M334.2,260c16.4-15,26-34.9,26-55.7v-88.8
+                                                c0-44.9-42.5-81.4-94.9-81.4h-17.5c-52.3,0-94.9,36.5-94.9,81.4v88.8c0,16.5,6,32.5,16.7,45.8c2.7,3.4,5.8,6.7,9.1,9.7
+                                                C129.5,268,34.6,294,34.6,374.6v96.2c0,4.1,3.3,7.4,7.4,7.4h422.4c7.8,0,14.2-6.4,14.2-14.2v-89.4
+                                                C478.6,294.5,383.5,268.2,334.2,260z"/>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <path fill="none" stroke="#FDFDFE" stroke-width="12" stroke-miterlimit="10" d="M342.1,251.8c-24.3,27.7-69.2,29.2-85.5,29.2
+                                c0,0-64.9,3.5-86.9-30.8"/>
+                        </g>
+                        <g id="laptopUser">
+                            <path fill="none" stroke="#FDFDFE" stroke-width="12" stroke-miterlimit="10" d="M367.6,466.4c0,6.6-5.4,12-12,12h-198c-6.6,0-12-5.4-12-12v-124c0-6.6,5.4-12,12-12h198c6.6,0,12,5.4,12,12V466.4z"/>
+                        </g>
+                    </svg>
+                    <svg version="1.1" id="svg_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                         y="0px" width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                            <g id="lineCamera">
+                                <g>
+                                    <path fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="10" d="M446.5,150.7H331.3l-11.8-32
+                                        c-3.5-9.4-12.5-15.8-22.6-15.8h-82c-10,0-19.1,6.3-22.6,15.8l-11.8,32h-21.1h-18.1v-12.6c0-10.1-8.2-18.4-18.4-18.4H96.1
+                                        c-10.1,0-18.4,8.2-18.4,18.4v12.6H65.5c-15.6,0-28.2,12.7-28.2,28.2v233.4c0,15.6,12.7,28.2,28.2,28.2h381
+                                        c15.6,0,28.3-12.7,28.3-28.2V178.9C474.8,163.4,462.1,150.7,446.5,150.7z M473.7,377c0,6.6-3.7,12-8.2,12h-29
+                                        c-4.5,0-8.2-5.4-8.2-12V214.3c0-6.6,3.7-12,8.2-12h29c4.5,0,8.2,5.4,8.2,12V377z M83.7,377c0,6.6-3.8,12-8.4,12H45.5
+                                        c-4.6,0-8.4-5.4-8.4-12V214.3c0-6.6,3.8-12,8.4-12h29.8c4.6,0,8.4,5.4,8.4,12V377z M71,150.7h336.5"/>
+                                </g>
+                            </g>
+                            <g>
+                                <g id="circleCamera1">
+                                    <g>
+                                        <path fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="10" d="M256,207.3c-48.7,0-88.4,39.6-88.4,88.4
+                                            c0,48.7,39.6,88.4,88.4,88.4c48.7,0,88.4-39.6,88.4-88.4C344.4,246.9,304.7,207.3,256,207.3z"/>
+                                    </g>
+                                </g>
+                                <g id="circleCamera2">
+                                    <g>
+                                        <path fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="10" d="M256,231.4c-35.4,0-64.3,28.8-64.3,64.3
+                                            c0,35.5,28.8,64.3,64.3,64.3c35.5,0,64.3-28.8,64.3-64.3C320.3,260.2,291.5,231.4,256,231.4z"/>
+                                    </g>
+                                </g>
+                                <g id="circleCamera3">
+                                    <g>
+                                        <path fill="none" stroke="#FFFFFF" stroke-width="12" stroke-miterlimit="10" d="M246.8,254.7c-17.5,0-31.8,14.3-31.8,31.8
+                                            c0,4.3,3.5,7.8,7.8,7.8c4.3,0,7.8-3.5,7.8-7.8c0-9,7.3-16.2,16.2-16.2c4.3,0,7.8-3.5,7.8-7.8S251.1,254.7,246.8,254.7z"/>
+                                    </g>
+                                </g>
+                            </g>
+                    </svg>
 
-	<!-- Footer -->
-	<footer>
-	    <ul>
-	        <li><a href="https://www.facebook.com/brendarychter" target="_blank"><i class="fa fa-facebook color-change-footer"></i></a></li>
-	        <li><a href="https://www.github.com/brendarychter" target="_blank"><i class="fa fa-github color-change-footer"></i></a></li>
-	        <li><a href="https://www.instagram.com/brendarychter" target="_blank"><i class="fa fa-instagram color-change-footer"></i></a></li>
-	        <li><a href="https://ar.linkedin.com/in/brenda-rychter-97a55465" target="_blank"><i class="fa fa-linkedin color-change-footer"></i></a></li>
-	        <li><a href="https://medium.com/@brendarychter" target="_blank"><i class="fa fa-medium color-change-footer"></i></a></li>
-	    </ul>
-	    <p class="footer-company-name">Brenda Rychter &copy; 2017</p>
-	</footer> 
+                <svg version="1.1" id="svg_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                     y="0px" width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                    <g id="phoneScreen">
+                        <g>
+                            <g>
+                                <path fill="none" stroke="#FFFFFF" stroke-width="13.132" stroke-miterlimit="10" d="M244.5,56.8c-4.3,0-7.7,3.5-7.7,7.7
+                                    c0,4.3,3.5,7.7,7.7,7.7h30.9c4.3,0,7.7-3.5,7.7-7.7c0-4.3-3.5-7.7-7.7-7.7H244.5z"/>
+                                <path fill="none" stroke="#FFFFFF" stroke-width="13.132" stroke-miterlimit="10" d="M328.2,165c2,0,4-0.8,5.5-2.3
+                                    c3-3,3-7.9,0-10.9l-15.5-15.5c-3-3-7.9-3-10.9,0c-3,3-3,7.9,0,10.9l15.5,15.5C324.3,164.3,326.2,165,328.2,165z"/>
+                                <path fill="none" stroke="#FFFFFF" stroke-width="13.132" stroke-miterlimit="10" d="M260.9,136.4c-3,3-3,7.9,0,10.9l61.9,61.9
+                                    c1.5,1.5,3.5,2.3,5.5,2.3c2,0,4-0.8,5.5-2.3c3-3,3-7.9,0-10.9l-61.9-61.9C268.8,133.3,263.9,133.3,260.9,136.4z"/>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="phoneLine">
+                        <path id="phoneLine" fill="none" stroke="#FFFFFF" stroke-width="13.132" stroke-miterlimit="10" d="M382.4,64.5
+                            c0-19.9-18.8-38.7-38.7-38.7H173.6c-19.9,0-38.7,18.8-38.7,38.7v338c0,0.4,0,0.8,0.1,1.1c-0.1,0.4-0.1,0.8-0.1,1.1v46.4
+                            c0,19.9,18.8,38.7,38.7,38.7h170.1c19.9,0,38.7-18.8,38.7-38.7V107.9c0.1-3.8,0.2-7.4,0.2-10.7C382.8,85.4,382.4,65.3,382.4,64.5z
+                             M134.9,102.3h247.8 M134.9,412h247.8"/>
+                     </g>
+                    <g id="phoneCircle">
+                        <g>
+                            <path fill="none" stroke="#FFFFFF" stroke-width="13.132" stroke-miterlimit="10" d="M258.8,434.7c-8.4,0-15.3,6.9-15.3,15.3
+                                c0,8.4,6.9,15.3,15.3,15.3c8.4,0,15.3-6.9,15.3-15.3C274.1,441.6,267.2,434.7,258.8,434.7z"/>
+                        </g>
+                    </g>
+                </svg>
+                </div>
+                <h1>¡Hola!</h1>
+                <h2> Soy <span class="name">Brenda Rychter</span></h2>
+                <p>Front End Developer &amp; Multimedial Designer</p>
+            </div>
+            <nav>
+                
+                <ul>
+                    <li class="item-nav about-li"><a href="#about-me-section">Sobre m&iacute;</a></li>
+                    <li>-</li>
+                    <li class="item-nav works-li">
+                        <a id="works-li">Trabajos</a>
+                        <ul class="sub-menu">
+                            <li class="subitem-nav">
+                                <a href="#works-section">Programaci&oacute;n</a>
+                            </li>
+                            <li>/</li>
+                            <li class="subitem-nav">
+                                <a href="#design-section">Dise&ntilde;o</a>
+                            </li>
+                            <li>/</li>
+                            <li class="subitem-nav">
+                                <a href="#audiovisual-section">Audiovisual</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>-</li>
+                    <li class="item-nav contact-li"><a href="#contact-section">Contacto</a></li>
+                </ul></nav> 
+        </article>
+        
+    </header>
+    <!-- End Header -->
 
-    <!-- SCRIPTS -->
-	<!-- Librerias externas -->
-	<script type="text/javascript" src="js/utils/jquery-3.1.1.min.js"></script>
-	<!-- Para incluir partials -->
-	<script type="text/javascript" src="js/utils/w3data.js"></script>
-	<script>
-		w3IncludeHTML();
-	</script>
+    <!-- Main Section -->
+    <main id="main-section">
+        <!-- Section Info-->
+        <section class="cv-section" id="about-me-section">
+            <aside>
+                <div class="intro-container">
+                    <div class="intro-circle" id="particles-js-header">
+                        <h2>Sobre m&iacute;</h2>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="item-nav about-li"><a href="#about-me-section">Sobre m&iacute;</a></li>
+                        <li>-</li>
+                        <li class="item-nav works-li">
+                            <a id="works-li">Trabajos</a>
+                            <ul class="sub-menu">
+                                <li class="subitem-nav">
+                                    <a href="#works-section">Programaci&oacute;n</a>
+                                </li>
+                                <li>/</li>
+                                <li class="subitem-nav">
+                                    <a href="#design-section">Dise&ntilde;o</a>
+                                </li>
+                                <li>/</li>
+                                <li class="subitem-nav">
+                                    <a href="#audiovisual-section">Audiovisual</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>-</li>
+                        <li class="item-nav contact-li"><a href="#contact-section">Contacto</a></li>
+                    </ul>
+                </nav> 
+            </aside>
+            <article>
+                <img src="img/brenda_rychter.jpg" class="img-responsive img-brenda" alt="Brenda Yael Rychter" title="Brenda Yael Rychter" />
+                <img src="img/br.svg" class="img-br" alt="Brenda Yael Rychter" title="Brenda Yael Rychter"/>
+                <p>Tengo 24 a&ntilde;os, soy de Buenos Aires, Argentina
+                <p> Estoy pr&oacute;xima a recibirme de </br><span>Licenciada en Tecnolog&iacute;a Multimedial en la Universidad Maim&oacute;nides</span></p> 
+                <p>Cuento con 4 a&ntilde;os de experiencia como</br><span>Desarrolladora Front End en Despegar.com</span></p>
+                <p>Tambi&eacute;n participo de dos elencos coreogr&aacute;ficos de danzas israel&iacute;es en las comunidades Kadima y Hacoaj</p><!-- 
+                <p>Tengo conocimientos de tecnolog&iacute;as front end, como Angular, AngularJS, HTML5, CSS3</p> -->
+                <a href="https://ar.linkedin.com/in/brenda-rychter-97a55465" class="styled-button download-cv" target="_blank" style="margin-top: 10px;"> Conoc&eacute; mi CV</a>
+            </article>
+        </section>
+        <!-- End Section Info-->
 
-	<!-- My js files -->
-	<script type="text/javascript" src="js/actions.js"></script>
-    <!-- END SCRIPTS -->
+        <!-- Section Programming-->
+        <section class="work-section" id="works-section">
+            <aside style="background-color:#404040">
+                <div class="intro-container">
+                    <div class="intro-circle" id="particles-js-cv">
+                        <h2 class="text-oversize-1">Programaci&oacute;n</h2>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="item-nav about-li"><a href="#about-me-section">Sobre m&iacute;</a></li>
+                        <li>-</li>
+                        <li class="item-nav works-li">
+                            <a id="works-li">Trabajos</a>
+                            <ul class="sub-menu">
+                                <li class="subitem-nav">
+                                    <a href="#works-section">Programaci&oacute;n</a>
+                                </li>
+                                <li>/</li>
+                                <li class="subitem-nav">
+                                    <a href="#design-section">Dise&ntilde;o</a>
+                                </li>
+                                <li>/</li>
+                                <li class="subitem-nav">
+                                    <a href="#audiovisual-section">Audiovisual</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>-</li>
+                        <li class="item-nav contact-li"><a href="#contact-section">Contacto</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <section class="work-content">
+                <article>
+                    <div class="grid grid-prog">
+                        <figure class="effect-chico prog-figure">
+                            <img src="img/blink_1.jpg" alt="Blink App" title="Blink App">
+                            <figcaption>
+                                <h3>Blink <span>App</span></h3>
+                                <!-- <p>Es una herramienta para crear los grupos e interactuar con tus amigos: pod&eacute;s organizar eventos y reuniones, administrar gastos, registrar eventos </p> -->
+                                <a href="http://www.blinkapp.com.ar" target="_blank"></a>
+                            </figcaption>   
+                        </figure>
+
+                    </div>
+                </article>
+            </section>
+        </section>
+        <!-- End Section Programming-->
+
+        <!-- Section Design-->
+        <section class="work-section" id="design-section">
+            <aside style="background-color:#777;">
+                <div class="intro-container">
+                    <div class="intro-circle" id="particles-js-design">
+                        <h2>Dise&ntilde;o</h2>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="item-nav about-li"><a href="#about-me-section">Sobre m&iacute;</a></li>
+                        <li>-</li>
+                        <li class="item-nav works-li">
+                            <a id="works-li">Trabajos</a>
+                            <ul class="sub-menu">
+                                <li class="subitem-nav">
+                                    <a href="#works-section">Programaci&oacute;n</a>
+                                </li>
+                                <li>/</li>
+                                <li class="subitem-nav">
+                                    <a href="#design-section">Dise&ntilde;o</a>
+                                </li>
+                                <li>/</li>
+                                <!-- <li class="subitem-nav">
+                                    <a href="#art-section">Arte digital</a>
+                                </li>
+                                <li>/</li> -->
+                                <li class="subitem-nav">
+                                    <a href="#audiovisual-section">Audiovisual</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>-</li>
+                        <li class="item-nav contact-li"><a href="#contact-section">Contacto</a></li>
+                    </ul>
+                </nav> 
+            </aside>
+            <section class="work-content">
+                <article id="design-content">
+                    <div class="grid grid-design">
+                        <figure class="effect-chico" style="width: 100%">
+                            <img src="img/esponja_2.jpg" alt="Proyecto esponja" title="Proyecto esponja">
+                            <figcaption>
+                                <h3>Proyecto <span>Esponja</span></h3>
+                                <a href="https://www.behance.net/gallery/59950525/Proyecto-esponja" target="_blank"></a>
+                                <!-- <p>Propuesta sonora interactiva en el evento Fase 8 en el Centro Cultural Recoleta - a&ntilde;o 2016 -</p> -->
+                            </figcaption>   
+                        </figure>
+                    </div>
+                    <div class="grid grid-design">
+                        <figure class="effect-chico" style="width: 100%">
+                            <img src="img/2.jpg" alt="Konex App" title="Konex App">
+                            <figcaption>
+                                <h3>Konex <span>App</span></h3>
+                                <a href="https://www.behance.net/gallery/59949231/App-mobile-Ciudad-Cultural-Konex" target="_blank"></a>
+                                <!-- <p>Aplicaci&oacute;n mobile para Ciudad Cultural Konex - dise&ntilde;o y programaci&oacute;n -</p> -->
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                    <div class="grid grid-design">
+                        <figure class="effect-chico" style="width: 100%">
+                            <img src="img/gallery/thumbs/thumb_11.png" alt="Vertevo" title="Vertevo">
+                            <figcaption>
+                                <h3>Ver <span>teveo</span></h3>
+                                <a href="https://youtu.be/jmXjUdEjMhQ" target="_blank"></a>
+                                <!-- <p>Trabajo final Dise&ntilde;o Aplicado - a&ntilde;o 2015 - </p> -->
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                    <div class="grid grid-design">
+                        <figure class="effect-chico" style="width: 100%">
+                            <img src="img/thumb_1.png" alt="Mapping reactivo" title="Mapping reactivo">
+                            <figcaption>
+                                <h3>Mapping <span>reactivo</span></h3>
+                                <a href="https://youtu.be/Bmcrb8ZsVho" target="_blank"></a>
+                                <!-- <p>Cuento interactivo - dise&ntilde;o y animaci&oacute;n -</p> -->
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                </article>
+            </section>
+        </section>
+        <!-- End Section Design-->
+
+        <!-- Section Fotography and Audiovisual-->
+        <section class="work-section" id="audiovisual-section">
+            <aside style="background-color:#4a4a4a;">
+                <div class="intro-container">
+                    <div class="intro-circle" id="particles-js-audiovisual">
+                        <h2 class="text-oversize-2">Audiovisual</h2>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="item-nav about-li"><a href="#about-me-section">Sobre m&iacute;</a></li>
+                        <li>-</li>
+                        <li class="item-nav works-li">
+                            <a id="works-li">Trabajos</a>
+                            <ul class="sub-menu">
+                                <li class="subitem-nav">
+                                    <a href="#works-section">Programaci&oacute;n</a>
+                                </li>
+                                <li>/</li>
+                                <li class="subitem-nav">
+                                    <a href="#design-section">Dise&ntilde;o</a>
+                                </li>
+                                <li>/</li>
+                                <li class="subitem-nav">
+                                    <a href="#audiovisual-section">Audiovisual</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>-</li>
+                        <li class="item-nav contact-li"><a href="#contact-section">Contacto</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <section class="work-content">
+                <article style="height: 100vh">
+                    <div class="grid grid-audiovisual">
+                        <figure class="effect-chico" style="height: 100%">
+                            <img src="img/works/audiovisual/edicion.JPG" alt="Edici&oacute;n" title="Edici&oacute;n">
+                            <figcaption>
+                                <h3>Trans<span>formaci&oacute;n</span></h3>
+                                <a href="https://youtu.be/sqGl5gWFK3I" target="_blank"></a>
+                            </figcaption>   
+                        </figure>
+
+                    </div>
+                    <div class="grid grid-audiovisual">
+                        <figure class="effect-chico" style="height: 100%">
+                            <img src="img/works/audiovisual/retrato.jpg" alt="Atreverse" title="Atreverse">
+                            <figcaption>
+                                <h3>Atre <span>Verse</span></h3>
+                                <a href="https://youtu.be/sC8Hpo9y48I" target="_blank"></a>
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                    <div class="grid grid-audiovisual">
+                        <figure class="effect-chico" style="height: 100%">
+                            <img src="img/works/audiovisual/suciedad.JPG" alt="Suciedad argentina" title="Suciedad argentina">
+                            <figcaption>
+                                <h3>Suciedad <span>Argentina</span></h3>
+                                <a href="https://youtu.be/zpCwYTf-yUo" target="_blank"></a>
+                            </figcaption>   
+                        </figure>
+
+                    </div>
+                </article>
+            </section>
+        </section>
+        <!-- End Section Fotography and Audiovisual-->
+
+        <!-- Section Contact-->
+        <section id="contact-section">
+            <aside class="contact-aside" style="background-color: #292929;">
+                <div class="intro-container">
+                    <div class="intro-circle" id="particles-js-contact">
+                        <h2>Contacto</h2>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="item-nav about-li"><a href="#about-me-section">Sobre m&iacute;</a></li>
+                        <li>-</li>
+                        <li class="item-nav works-li">
+                            <a id="works-li">Trabajos</a>
+                            <ul class="sub-menu">
+                                <li class="subitem-nav">
+                                    <a href="#works-section">Programaci&oacute;n</a>
+                                </li>
+                                <li>/</li>
+                                <li class="subitem-nav">
+                                    <a href="#design-section">Dise&ntilde;o</a>
+                                </li>
+                                <li>/</li>
+                                <li class="subitem-nav">
+                                    <a href="#audiovisual-section">Audiovisual</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>-</li>
+                        <li class="item-nav contact-li"><a href="#contact-section">Contacto</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <article style="position: relative;" class="c-a">
+                <div class="contract-article">
+                    <ul class="contact-data">
+                        <li>
+                            <i class="fa fa-envelope-o fa-2x"></i>
+                            <p>brendarychter@gmail.com</p>
+                        </li>
+
+                        <li>
+                            <i class="fa fa-whatsapp fa-2x"></i>
+                            <p> +54 156 522 0958</p>
+                        </li>
+                    </ul>
+
+                    <form id="formMailValid" name="sentMessage" class="mail-section section-style">
+                        <input type="text" id="name" class="form-control" placeholder="Nombre" required="required">
+                        <p class="help-block text-danger"></p>
+                        <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                        <p class="help-block text-danger"></p>
+                        <textarea name="message" id="message" class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+                        <p class="help-block text-danger"></p>
+                        <button type="submit" class="styled-button" id="send-form">Enviar</button>
+                        <p style="margin-top: 20px;" id="success-contact">&iexcl;Muchas gracias por contactarte conmigo &#9829;!</p>
+                    </form>
+
+                    <!-- Footer -->
+                    <footer>
+                        <ul>
+                            <li><a href="https://www.facebook.com/brendayaelrychter" target="_blank"><i class="fa fa-facebook color-change-footer"></i></a></li>
+                            <li><a href="https://www.github.com/brendarychter" target="_blank"><i class="fa fa-github color-change-footer"></i></a></li>
+                            <li><a href="https://www.instagram.com/brendarychter" target="_blank"><i class="fa fa-instagram color-change-footer"></i></a></li>
+                            <li><a href="https://ar.linkedin.com/in/brenda-rychter-97a55465" target="_blank"><i class="fa fa-linkedin color-change-footer"></i></a></li>
+                            <li><a href="https://medium.com/@brendarychter" target="_blank"><i class="fa fa-medium color-change-footer"></i></a></li>
+                        </ul>
+                    </footer> 
+                    <!-- End Footer -->
+                </div>
+            </article>
+        </section>
+        <!-- End Section Contact -->
+        
+    </main>
+    <!-- End Main Section -->
+
+    <!-- Start Include Partials -->
+    <script type="text/javascript" src="js/utils/w3data.js"></script>
+    <script>
+        w3IncludeHTML();
+    </script>
+    <!-- End Include Partials -->
+
 </body>
-
-
-
 </html>

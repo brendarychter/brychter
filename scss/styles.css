@@ -638,13 +638,16 @@ figure.effect-chico:hover h3, figure.effect-chico:hover p {
     width: 100%; } }
 @media (min-width: 1px) and (max-width: 768px) {
   main nav {
-    bottom: 20%; }
+    bottom: 25%; 
+  }
+    body nav ul li{
+      padding-left: 0;
+      }}
 
   .work-content {
     width: 100% !important; }
     .work-content figure {
-      margin-top: 0;
-      height: 72vh; } }
+      margin-top: 0; } }
 .grid-audiovisual{
   height: 33.4%;
 }
@@ -658,6 +661,9 @@ figure.effect-chico:hover h3, figure.effect-chico:hover p {
   position: absolute;
   margin-top: 185px;
   margin-left: -105px;
+}
+.grid-audiovisual{
+  height: 33.4%;
 }
 body main section.work-section .work-content article, body main section.work-section .work-content{
   height: 100vh;
@@ -695,10 +701,16 @@ body main section.work-section .work-content article, body main section.work-sec
     padding: 3px 0;
   }
   .grid-design{
-    height: 48.4%;
+    height: 50%;
+  }
+  .grid-design figure{
+    height: 100%;
   }
   body main section.work-section .work-content article, body main section.work-section .work-content{
     height: 75vh;
+  }
+  #design-content{
+    height: 71vh;
   }
 }
 
@@ -715,7 +727,7 @@ body main section.work-section .work-content article, body main section.work-sec
     font-size: 13px;
   }
   figure.effect-chico h3{
-    padding: 50% 25px 20px 25px;
+    padding: 50% 28px 20px 25px;
     font-size: 15px;
   }
   .grid-audiovisual figure.effect-chico h3{
@@ -803,14 +815,27 @@ body main section.work-section .work-content article, body main section.work-sec
   }
 }
 
+.prog-figure{
+   height: 100vh;
+   width: 100%;
+}
+.grid-design{
+  width: 50%;
+  height: 50%;
+}
+.grid-design figure{
+  height: 100%;
+}
+.grid-design figure img{
+  height: 100%;
+}
 @media (max-width: 768px) and (min-width: 1px){
   body main section.cv-section article img{
     margin-top: 135px;
   }
-}
-.prog-figure{
-   height: 100vh;
-   width: 100%;
+  .prog-figure{
+    height: 71vh;
+  }
 }
 #success-contact{
   display: none;
